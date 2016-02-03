@@ -138,7 +138,12 @@ if os.path.exists(OUTPUT_CSV):
 
 with open(OUTPUT_CSV, 'w') as o:
   w = csv.writer(o, lineterminator=os.linesep)
-  w.writerows([['US Order']])
+  w.writerows([
+    ['US Order', '', '', '', '', '', '', '', '']
+  ])
   w.writerows(us_ordered)
-  w.writerows([[], ['UK Order']])
+  w.writerows([
+    ['', '', '', '', '', '', '', '', ''],
+    ['UK Order', '', '', '', '', '', '', '', '']
+  ])
   w.writerows(uk_ordered)

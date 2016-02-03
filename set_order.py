@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import csv
+import os
 import requests
 import time
 import untangle
@@ -10,6 +12,7 @@ from operator import itemgetter
 BASE_URL = 'http://brickset.com'
 LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
+OUTPUT_CSV = 'output.csv'
 
 
 class Config:
@@ -127,12 +130,15 @@ for s in sets:
   print "{}, {}, {}, {}, {}".format(s.id, s.name, s.year, s.url, s.price)
   values.append([s.id, s.name, s.year, s.url, s.price] + get_dates(s.url))
 
-print
+us_ordered = sorted(values, key=itemgetter(5))
+uk_ordered = sorted(values, key=itemgetter(7))
 
-for value in sorted(values, key=itemgetter(5)):
-  print value
+if os.path.exists(OUTPUT_CSV):
+  os.remove(OUTPUT_CSV)
 
-print
-
-for value in sorted(values, key=itemgetter(7)):
-  print value
+with open(OUTPUT_CSV, 'w') as o:
+  w = csv.writer(o, lineterminator=os.linesep)
+  w.writerows([['US Order']])
+  w.writerows(us_ordered)
+  w.writerows([[], ['UK Order']])
+  w.writerows(uk_ordered)

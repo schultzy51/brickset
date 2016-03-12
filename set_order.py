@@ -15,22 +15,23 @@ GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
 CSV_HEADER = ['id',
               'number',
-              'number variant',
+              # 'number variant',
               'name',
               'year',
               'theme',
-              'theme group',
+              # 'theme group',
               'subtheme',
               'pieces',
               'minifigs',
               'released',
               'url',
               'us retail price',
-              'last updated',
+              # 'last updated',
               'us start',
               'us end',
               'uk start',
-              'uk end']
+              'uk end'
+             ]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
 
 
@@ -72,23 +73,25 @@ class Set:
                                                                            self.released,
                                                                            self.url,
                                                                            self.us_retail_price,
-                                                                           self.last_updated)
+                                                                           self.last_updated
+                                                                          )
 
   def to_a(self):
     return [self.id,
             self.number,
-            self.number_variant,
+            # self.number_variant,
             self.name,
             self.year,
             self.theme,
-            self.theme_group,
+            # self.theme_group,
             self.subtheme,
             self.pieces,
             self.minifigs,
             self.released,
             self.url,
             self.us_retail_price,
-            self.last_updated]
+            # self.last_updated
+           ]
 
 def get_config(file='.config'):
   with open(file, 'r') as f:
@@ -198,8 +201,8 @@ for s in sets:
   print s.to_a()
   values.append(s.to_a() + get_dates(s.url))
 
-us_ordered = sorted(values, key=itemgetter(5))
-uk_ordered = sorted(values, key=itemgetter(7))
+us_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('us start')))
+uk_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('uk start')))
 
 if os.path.exists(OUTPUT_CSV):
   os.remove(OUTPUT_CSV)

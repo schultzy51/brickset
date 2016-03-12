@@ -59,6 +59,9 @@ class Set:
     self.us_retail_price = us_retail_price  # us retail price
     self.last_updated = last_updated
 
+  def is_released(self):
+    return 'true' == self.released
+
   def __str__(self):
     return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.id,
                                                                            self.number,
@@ -199,7 +202,8 @@ values = []
 
 for s in sets:
   print s.to_a()
-  values.append(s.to_a() + get_dates(s.url))
+  if s.is_released():
+    values.append(s.to_a() + get_dates(s.url))
 
 us_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('us start')))
 uk_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('uk start')))

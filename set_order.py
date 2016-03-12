@@ -66,7 +66,7 @@ def get_sets(config, token):
     'orderBy': '',
     'pageSize': '50',
     'pageNumber': '1',
-    'userName': config.username
+    'userName': ''
   }
 
   response = requests.post(GET_SETS_URL, data)

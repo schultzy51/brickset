@@ -13,6 +13,7 @@ BASE_URL = 'http://brickset.com'
 LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
+CSV_HEADER = ['id', 'name', 'year', 'url', 'price', 'us start', 'us end', 'uk start', 'uk end']
 
 
 class Config:
@@ -139,11 +140,13 @@ if os.path.exists(OUTPUT_CSV):
 with open(OUTPUT_CSV, 'w') as o:
   w = csv.writer(o, lineterminator=os.linesep)
   w.writerows([
-    ['US Order', '', '', '', '', '', '', '', '']
+    ['US Order', '', '', '', '', '', '', '', ''],
+    CSV_HEADER
   ])
   w.writerows(us_ordered)
   w.writerows([
     ['', '', '', '', '', '', '', '', ''],
-    ['UK Order', '', '', '', '', '', '', '', '']
+    ['UK Order', '', '', '', '', '', '', '', ''],
+    CSV_HEADER
   ])
   w.writerows(uk_ordered)

@@ -1,4 +1,5 @@
 US Order,,,,,,,,
+id,name,year,url,price,us start,us end,uk start,uk end
 23295,Cargo Train,2014,http://brickset.com/sets/60052-1,199.99,20140529,20160312,20140601,20160312
 24227,Millennium Falcon,2015,http://brickset.com/sets/75105-1,149.99,20150905,20160312,20150905,20160312
 24994,Brick Bank,2016,http://brickset.com/sets/10251-1,169.99,20160102,20160312,20160101,20160312
@@ -16,6 +17,7 @@ US Order,,,,,,,,
 25610,{Porsche 911 GT3RS},2016,http://brickset.com/sets/42056-1,,20160312,20160312,20160312,20160312
 ,,,,,,,,
 UK Order,,,,,,,,
+id,name,year,url,price,us start,us end,uk start,uk end
 23295,Cargo Train,2014,http://brickset.com/sets/60052-1,199.99,20140529,20160312,20140601,20160312
 24227,Millennium Falcon,2015,http://brickset.com/sets/75105-1,149.99,20150905,20160312,20150905,20160312
 24907,Drag Racer,2016,http://brickset.com/sets/42050-1,79.99,20160102,20160312,20151226,20160312

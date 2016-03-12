@@ -1,4 +1,4 @@
-US Order,,,,,,,,
+US Order,,,,,,,,,,,,,,,,,
 id,number,number variant,name,year,theme,theme group,subtheme,pieces,minifigs,released,url,us retail price,last updated,us start,us end,uk start,uk end
 24994,10251,1,Brick Bank,2016,Advanced Models,Model making,Modular Buildings,2380,5,true,http://brickset.com/sets/10251-1,169.99,2016-01-14T22:11:20.003,20160102,20160312,20160101,20160312
 25617,10253,1,Big Ben,2016,Advanced Models,Model making,Buildings,,,false,http://brickset.com/sets/10253-1,,2015-12-28T02:43:08.053,20160312,20160312,20160312,20160312
@@ -15,8 +15,8 @@ id,number,number variant,name,year,theme,theme group,subtheme,pieces,minifigs,re
 24910,42054,1,CLAAS XERION 5000 TRAC VC,2016,Technic,Technical,,1977,,false,http://brickset.com/sets/42054-1,179.99,2016-02-19T14:25:50.703,20160312,20160312,20160312,20160312
 24911,42055,1,Bucket Wheel Excavator,2016,Technic,Technical,,3927,,false,http://brickset.com/sets/42055-1,279.99,2016-02-19T14:26:55.263,20160312,20160312,20160312,20160312
 25610,42056,1,{Porsche 911 GT3RS},2016,Technic,Technical,,,,false,http://brickset.com/sets/42056-1,,2016-02-20T03:14:39.597,20160312,20160312,20160312,20160312
-,,,,,,,,
-UK Order,,,,,,,,
+,,,,,,,,,,,,,,,,,
+UK Order,,,,,,,,,,,,,,,,,
 id,number,number variant,name,year,theme,theme group,subtheme,pieces,minifigs,released,url,us retail price,last updated,us start,us end,uk start,uk end
 25658,21305,1,Maze,2016,Ideas,Miscellaneous,,769,,false,http://brickset.com/sets/21305-1,69.99,2016-02-21T22:16:40.727,20160312,20160312,20160312,20160312
 24695,31048,1,Lakeside Lodge,2016,Creator,Basic,,368,1,true,http://brickset.com/sets/31048-1,29.99,2016-02-06T01:16:56.67,20160102,20160310,20160101,20160312

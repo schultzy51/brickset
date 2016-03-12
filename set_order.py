@@ -31,6 +31,7 @@ CSV_HEADER = ['id',
               'us end',
               'uk start',
               'uk end']
+CSV_HEADER_LENGTH = len(CSV_HEADER)
 
 
 class Config:
@@ -206,13 +207,13 @@ if os.path.exists(OUTPUT_CSV):
 with open(OUTPUT_CSV, 'w') as o:
   w = csv.writer(o, lineterminator=os.linesep)
   w.writerows([
-    ['US Order', '', '', '', '', '', '', '', ''],
+    ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH-1)],
     CSV_HEADER
   ])
   w.writerows(us_ordered)
   w.writerows([
-    ['', '', '', '', '', '', '', '', ''],
-    ['UK Order', '', '', '', '', '', '', '', ''],
+    ['' for s in range(CSV_HEADER_LENGTH)],
+    ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH-1)],
     CSV_HEADER
   ])
   w.writerows(uk_ordered)

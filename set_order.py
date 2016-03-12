@@ -14,20 +14,14 @@ LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
 CSV_HEADER = [
-              # 'id',
               'number',
-              # 'number variant',
               'name',
               'year',
               'theme',
-              # 'theme group',
-              # 'subtheme',
               'pieces',
               'minifigs',
-              # 'released',
               'url',
               'us retail price',
-              # 'last updated',
               'us start',
               'us end',
               'uk start',
@@ -83,20 +77,14 @@ class Set:
 
   def to_a(self):
     return [
-            # self.id,
             self.number,
-            # self.number_variant,
             self.name,
             self.year,
             self.theme,
-            # self.theme_group,
-            # self.subtheme,
             self.pieces,
             self.minifigs,
-            # self.released,
             self.url,
             self.us_retail_price,
-            # self.last_updated
            ]
 
 def get_config(file='.config'):
@@ -198,8 +186,6 @@ def get_dates(url):
 config = get_config()
 token = get_token(config)
 sets = get_sets(config, token)
-
-# quick and dirty printing for now...
 
 values = []
 

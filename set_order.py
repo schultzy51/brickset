@@ -13,7 +13,8 @@ BASE_URL = 'http://brickset.com'
 LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
-CSV_HEADER = ['id',
+CSV_HEADER = [
+              # 'id',
               'number',
               # 'number variant',
               'name',
@@ -63,7 +64,8 @@ class Set:
     return 'true' == self.released
 
   def __str__(self):
-    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.id,
+    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
+                                                                           self.id,
                                                                            self.number,
                                                                            self.number_variant,
                                                                            self.name,
@@ -80,7 +82,8 @@ class Set:
                                                                           )
 
   def to_a(self):
-    return [self.id,
+    return [
+            # self.id,
             self.number,
             # self.number_variant,
             self.name,
@@ -201,7 +204,7 @@ sets = get_sets(config, token)
 values = []
 
 for s in sets:
-  print s.to_a()
+  print s
   if s.is_released():
     values.append(s.to_a() + get_dates(s.url))
 

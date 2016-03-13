@@ -202,7 +202,7 @@ def find_dates(tree, location):
   return dates
 
 
-def get_dates(url):
+def get_dates_from_url(url):
   # just a little scraping
   page = requests.get(url)
   tree = html.fromstring(page.content)
@@ -213,35 +213,45 @@ def get_dates(url):
   return us_dates + uk_dates
 
 
+def get_dates(sets):
+  for s in sets:
+    if s.is_released():
+      dates = get_dates_from_url(s.brickset_url)
+      s.us_start_date = dates[0]
+      s.us_end_date = dates[1]
+      s.uk_start_date = dates[2]
+      s.uk_end_date = dates[3]
+    print s
+
+  return sets
+
+
+def output_to_csv(sets):
+  us_ordered = map(lambda s: s.to_a(),
+                   sorted(sorted(sets, key=lambda s: s.us_start_date), key=lambda s: s.is_released(), reverse=True))
+  uk_ordered = map(lambda s: s.to_a(),
+                   sorted(sorted(sets, key=lambda s: s.uk_start_date), key=lambda s: s.is_released(), reverse=True))
+
+  if os.path.exists(OUTPUT_CSV):
+    os.remove(OUTPUT_CSV)
+
+  with open(OUTPUT_CSV, 'w') as o:
+    w = csv.writer(o, lineterminator=os.linesep)
+    w.writerows([
+      ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
+      CSV_HEADER
+    ])
+    w.writerows(us_ordered)
+    w.writerows([
+      ['' for s in range(CSV_HEADER_LENGTH)],
+      ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
+      CSV_HEADER
+    ])
+    w.writerows(uk_ordered)
+
+
 config = get_config()
 token = get_token(config)
 sets = get_sets(config, token)
-
-for s in sets:
-  if s.is_released():
-    dates = get_dates(s.brickset_url)
-    s.us_start_date = dates[0]
-    s.us_end_date = dates[1]
-    s.uk_start_date = dates[2]
-    s.uk_end_date = dates[3]
-  print s
-
-us_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.us_start_date), key=lambda s: s.is_released(), reverse=True))
-uk_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.uk_start_date), key=lambda s: s.is_released(), reverse=True))
-
-if os.path.exists(OUTPUT_CSV):
-  os.remove(OUTPUT_CSV)
-
-with open(OUTPUT_CSV, 'w') as o:
-  w = csv.writer(o, lineterminator=os.linesep)
-  w.writerows([
-    ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
-    CSV_HEADER
-  ])
-  w.writerows(us_ordered)
-  w.writerows([
-    ['' for s in range(CSV_HEADER_LENGTH)],
-    ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
-    CSV_HEADER
-  ])
-  w.writerows(uk_ordered)
+sets = get_dates(sets)
+output_to_csv(sets)

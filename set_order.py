@@ -182,7 +182,7 @@ def get_sets(config, token):
 
 def clean_date(date):
   date = date.strip()
-  if date == 'now':
+  if date == None or date == 'now':
     cleaned = None
   else:
     cleaned = time.strftime("%Y%m%d", time.strptime(date, "%d %b %y"))
@@ -192,10 +192,9 @@ def clean_date(date):
 
 def find_dates(tree, location):
   id = ".//dt[text()='{}']".format(location)
-  default_dates = [time.strftime("%d %b %y"), time.strftime("%d %b %y")]
 
   r = tree.xpath(id)
-  raw_dates = r[0].getnext().text.split('-') if r else default_dates  # default to today
+  raw_dates = r[0].getnext().text.split('-') if r else [None, None]
 
   dates = [clean_date(d) for d in raw_dates]
 

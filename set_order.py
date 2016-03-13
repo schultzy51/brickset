@@ -7,26 +7,25 @@ import time
 import untangle
 import yaml
 from lxml import html
-from operator import itemgetter
 
 BASE_URL = 'http://brickset.com'
 LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
 CSV_HEADER = [
-              'number',
-              'name',
-              'year',
-              'theme',
-              'pieces',
-              'minifigs',
-              'url',
-              'us retail price',
-              'us start',
-              'us end',
-              'uk start',
-              'uk end'
-             ]
+  'number',
+  'name',
+  'year',
+  'theme',
+  'pieces',
+  'minifigs',
+  'url',
+  'us retail price',
+  'us start',
+  'us end',
+  'uk start',
+  'uk end'
+]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
 
 
@@ -38,7 +37,25 @@ class Config:
 
 
 class Set:
-  def __init__(self, id, number, number_variant, name, year, theme, theme_group, subtheme, pieces, minifigs, released, url, us_retail_price, last_updated):
+  def __init__(self,
+               id,
+               number,
+               number_variant=None,
+               name=None,
+               year=None,
+               theme=None,
+               theme_group=None,
+               subtheme=None,
+               pieces=None,
+               minifigs=None,
+               released=None,
+               brickset_url=None,
+               us_retail_price=None,
+               last_updated=None,
+               us_start_date=None,
+               us_end_date=None,
+               uk_start_date=None,
+               uk_end_date=None):
     self.id = id
     self.number = number
     self.number_variant = number_variant
@@ -50,42 +67,55 @@ class Set:
     self.pieces = pieces
     self.minifigs = minifigs
     self.released = released
-    self.url = url  # brickset url
+    self.brickset_url = brickset_url  # brickset url
     self.us_retail_price = us_retail_price  # us retail price
     self.last_updated = last_updated
+    self.us_start_date = us_start_date
+    self.us_end_date = us_end_date
+    self.uk_start_date = uk_start_date
+    self.uk_end_date = uk_end_date
 
   def is_released(self):
     return 'true' == self.released
 
   def __str__(self):
-    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
-                                                                           self.id,
-                                                                           self.number,
-                                                                           self.number_variant,
-                                                                           self.name,
-                                                                           self.year,
-                                                                           self.theme,
-                                                                           self.theme_group,
-                                                                           self.subtheme,
-                                                                           self.pieces,
-                                                                           self.minifigs,
-                                                                           self.released,
-                                                                           self.url,
-                                                                           self.us_retail_price,
-                                                                           self.last_updated
-                                                                          )
+    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
+        self.id,
+        self.number,
+        self.number_variant,
+        self.name,
+        self.year,
+        self.theme,
+        self.theme_group,
+        self.subtheme,
+        self.pieces,
+        self.minifigs,
+        self.released,
+        self.brickset_url,
+        self.us_retail_price,
+        self.last_updated,
+        self.us_start_date,
+        self.us_end_date,
+        self.uk_start_date,
+        self.uk_end_date
+    )
 
   def to_a(self):
     return [
-            self.number,
-            self.name,
-            self.year,
-            self.theme,
-            self.pieces,
-            self.minifigs,
-            self.url,
-            self.us_retail_price,
-           ]
+      self.number,
+      self.name,
+      self.year,
+      self.theme,
+      self.pieces,
+      self.minifigs,
+      self.brickset_url,
+      self.us_retail_price,
+      self.us_start_date,
+      self.us_end_date,
+      self.uk_start_date,
+      self.uk_end_date
+    ]
+
 
 def get_config(file='.config'):
   with open(file, 'r') as f:
@@ -187,15 +217,17 @@ config = get_config()
 token = get_token(config)
 sets = get_sets(config, token)
 
-values = []
-
 for s in sets:
   print s
   if s.is_released():
-    values.append(s.to_a() + get_dates(s.url))
+    dates = get_dates(s.brickset_url)
+    s.us_start_date = dates[0]
+    s.us_end_date = dates[1]
+    s.uk_start_date = dates[2]
+    s.uk_end_date = dates[3]
 
-us_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('us start')))
-uk_ordered = sorted(values, key=itemgetter(CSV_HEADER.index('uk start')))
+us_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.us_start_date), key=lambda s: s.is_released(), reverse=True))
+uk_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.uk_start_date), key=lambda s: s.is_released(), reverse=True))
 
 if os.path.exists(OUTPUT_CSV):
   os.remove(OUTPUT_CSV)
@@ -203,13 +235,13 @@ if os.path.exists(OUTPUT_CSV):
 with open(OUTPUT_CSV, 'w') as o:
   w = csv.writer(o, lineterminator=os.linesep)
   w.writerows([
-    ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH-1)],
+    ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
     CSV_HEADER
   ])
   w.writerows(us_ordered)
   w.writerows([
     ['' for s in range(CSV_HEADER_LENGTH)],
-    ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH-1)],
+    ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
     CSV_HEADER
   ])
   w.writerows(uk_ordered)

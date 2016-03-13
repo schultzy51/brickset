@@ -198,7 +198,7 @@ def find_dates(tree, location):
 
   dates = [clean_date(d) for d in raw_dates]
 
-  return dates
+  return tuple(dates)
 
 
 def get_dates_from_url(url):
@@ -206,20 +206,16 @@ def get_dates_from_url(url):
   page = requests.get(url)
   tree = html.fromstring(page.content)
 
-  us_dates = find_dates(tree, 'United States')
-  uk_dates = find_dates(tree, 'United Kingdom')
+  (us_start_date, us_end_date) = find_dates(tree, 'United States')
+  (uk_start_date, uk_end_date) = find_dates(tree, 'United Kingdom')
 
-  return us_dates + uk_dates
+  return us_start_date, us_end_date, uk_start_date, uk_end_date
 
 
 def get_dates(sets):
   for s in sets:
     if s.is_released():
-      dates = get_dates_from_url(s.brickset_url)
-      s.us_start_date = dates[0]
-      s.us_end_date = dates[1]
-      s.uk_start_date = dates[2]
-      s.uk_end_date = dates[3]
+      (s.us_start_date, s.us_end_date, s.uk_start_date, s.uk_end_date) = get_dates_from_url(s.brickset_url)
     print s
 
   return sets

@@ -30,6 +30,13 @@ CSV_HEADER_LENGTH = len(CSV_HEADER)
 
 
 class Config:
+  @staticmethod
+  def from_yaml(file='.config'):
+    with open(file, 'r') as f:
+      raw = (yaml.load(f))
+
+    return Config(raw)
+
   def __init__(self, raw):
     self.api_key = raw.get('api_key', None)
     self.username = raw.get('username', None)
@@ -115,13 +122,6 @@ class Set:
       self.uk_start_date,
       self.uk_end_date
     ]
-
-
-def get_config(file='.config'):
-  with open(file, 'r') as f:
-    raw = (yaml.load(f))
-
-  return Config(raw)
 
 
 def get_token(config):
@@ -249,7 +249,7 @@ def output_to_csv(sets):
     w.writerows(uk_ordered)
 
 
-config = get_config()
+config = Config.from_yaml()
 token = get_token(config)
 sets = get_sets(config, token)
 sets = get_dates(sets)

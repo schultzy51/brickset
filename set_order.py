@@ -183,7 +183,7 @@ def get_sets(config, token):
 def clean_date(date):
   date = date.strip()
   if date == 'now':
-    cleaned = time.strftime("%Y%m%d")
+    cleaned = None
   else:
     cleaned = time.strftime("%Y%m%d", time.strptime(date, "%d %b %y"))
 
@@ -218,13 +218,13 @@ token = get_token(config)
 sets = get_sets(config, token)
 
 for s in sets:
-  print s
   if s.is_released():
     dates = get_dates(s.brickset_url)
     s.us_start_date = dates[0]
     s.us_end_date = dates[1]
     s.uk_start_date = dates[2]
     s.uk_end_date = dates[3]
+  print s
 
 us_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.us_start_date), key=lambda s: s.is_released(), reverse=True))
 uk_ordered = map(lambda s: s.to_a(), sorted(sorted(sets, key=lambda s: s.uk_start_date), key=lambda s: s.is_released(), reverse=True))

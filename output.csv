@@ -1,13 +1,13 @@
 US Order,,,,,,,,,,,
 number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk start,uk end
-60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,20160312,20140601,20160312
-75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,20160312,20150905,20160312
-10251,Brick Bank,2016,Advanced Models,2380,5,http://brickset.com/sets/10251-1,169.99,20160102,20160312,20160101,20160312
-31048,Lakeside Lodge,2016,Creator,368,1,http://brickset.com/sets/31048-1,29.99,20160102,20160310,20160101,20160312
-42050,Drag Racer,2016,Technic,647,,http://brickset.com/sets/42050-1,79.99,20160102,20160312,20151226,20160312
-42052,Heavy Lift Helicopter,2016,Technic,1042,,http://brickset.com/sets/42052-1,139.99,20160102,20160310,20160101,20160312
-75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,http://brickset.com/sets/75827-1,349.99,20160102,20160312,20160101,20160312
-76052,Batman Classic TV Series - Batcave,2016,DC Comics Super Heroes,2526,9,http://brickset.com/sets/76052-1,269.99,20160301,20160312,20160301,20160312
+60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,,20140601,
+75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,,20150905,
+10251,Brick Bank,2016,Advanced Models,2380,5,http://brickset.com/sets/10251-1,169.99,20160102,,20160101,
+31048,Lakeside Lodge,2016,Creator,368,1,http://brickset.com/sets/31048-1,29.99,20160102,20160310,20160101,
+42050,Drag Racer,2016,Technic,647,,http://brickset.com/sets/42050-1,79.99,20160102,,20151226,
+42052,Heavy Lift Helicopter,2016,Technic,1042,,http://brickset.com/sets/42052-1,139.99,20160102,20160310,20160101,
+75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,http://brickset.com/sets/75827-1,349.99,20160102,,20160101,
+76052,Batman Classic TV Series - Batcave,2016,DC Comics Super Heroes,2526,9,http://brickset.com/sets/76052-1,269.99,20160301,,20160301,
 10253,Big Ben,2016,Advanced Models,,,http://brickset.com/sets/10253-1,,,,,
 21305,Maze,2016,Ideas,769,,http://brickset.com/sets/21305-1,69.99,,,,
 42051,Airport Rescue Vehicle,2016,Technic,,,http://brickset.com/sets/42051-1,,,,,
@@ -18,14 +18,14 @@ number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk st
 ,,,,,,,,,,,
 UK Order,,,,,,,,,,,
 number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk start,uk end
-60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,20160312,20140601,20160312
-75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,20160312,20150905,20160312
-42050,Drag Racer,2016,Technic,647,,http://brickset.com/sets/42050-1,79.99,20160102,20160312,20151226,20160312
-10251,Brick Bank,2016,Advanced Models,2380,5,http://brickset.com/sets/10251-1,169.99,20160102,20160312,20160101,20160312
-31048,Lakeside Lodge,2016,Creator,368,1,http://brickset.com/sets/31048-1,29.99,20160102,20160310,20160101,20160312
-42052,Heavy Lift Helicopter,2016,Technic,1042,,http://brickset.com/sets/42052-1,139.99,20160102,20160310,20160101,20160312
-75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,http://brickset.com/sets/75827-1,349.99,20160102,20160312,20160101,20160312
-76052,Batman Classic TV Series - Batcave,2016,DC Comics Super Heroes,2526,9,http://brickset.com/sets/76052-1,269.99,20160301,20160312,20160301,20160312
+60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,,20140601,
+75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,,20150905,
+42050,Drag Racer,2016,Technic,647,,http://brickset.com/sets/42050-1,79.99,20160102,,20151226,
+10251,Brick Bank,2016,Advanced Models,2380,5,http://brickset.com/sets/10251-1,169.99,20160102,,20160101,
+31048,Lakeside Lodge,2016,Creator,368,1,http://brickset.com/sets/31048-1,29.99,20160102,20160310,20160101,
+42052,Heavy Lift Helicopter,2016,Technic,1042,,http://brickset.com/sets/42052-1,139.99,20160102,20160310,20160101,
+75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,http://brickset.com/sets/75827-1,349.99,20160102,,20160101,
+76052,Batman Classic TV Series - Batcave,2016,DC Comics Super Heroes,2526,9,http://brickset.com/sets/76052-1,269.99,20160301,,20160301,
 10253,Big Ben,2016,Advanced Models,,,http://brickset.com/sets/10253-1,,,,,
 21305,Maze,2016,Ideas,769,,http://brickset.com/sets/21305-1,69.99,,,,
 42051,Airport Rescue Vehicle,2016,Technic,,,http://brickset.com/sets/42051-1,,,,,

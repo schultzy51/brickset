@@ -13,18 +13,18 @@ LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'
 CSV_HEADER = [
-  'number',
-  'name',
-  'year',
-  'theme',
-  'pieces',
-  'minifigs',
-  'url',
-  'us retail price',
-  'us start',
-  'us end',
-  'uk start',
-  'uk end'
+  'Number',
+  'Name',
+  'Year',
+  'Theme',
+  'Pieces',
+  'Minifigs',
+  'Brickset URL',
+  'US Retail Price',
+  'US Start Date',
+  'US End Date',
+  'UK Start Date',
+  'UK End Date'
 ]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
 

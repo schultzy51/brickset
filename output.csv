@@ -1,5 +1,5 @@
 US Order,,,,,,,,,,,
-number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk start,uk end
+Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,US Start Date,US End Date,UK Start Date,UK End Date
 60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,,20140601,
 75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,,20150905,
 10251,Brick Bank,2016,Advanced Models,2380,5,http://brickset.com/sets/10251-1,169.99,20160102,,20160101,
@@ -17,7 +17,7 @@ number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk st
 42056,{Porsche 911 GT3RS},2016,Technic,,,http://brickset.com/sets/42056-1,,,,,
 ,,,,,,,,,,,
 UK Order,,,,,,,,,,,
-number,name,year,theme,pieces,minifigs,url,us retail price,us start,us end,uk start,uk end
+Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,US Start Date,US End Date,UK Start Date,UK End Date
 60052,Cargo Train,2014,City,888,4,http://brickset.com/sets/60052-1,199.99,20140529,,20140601,
 75105,Millennium Falcon,2015,Star Wars,1329,7,http://brickset.com/sets/75105-1,149.99,20150905,,20150905,
 42050,Drag Racer,2016,Technic,647,,http://brickset.com/sets/42050-1,79.99,20160102,,20151226,

@@ -181,7 +181,9 @@ def get_sets(config, token):
 
 
 def clean_date(date):
-  date = date.strip()
+  if date != None:
+    date = date.strip()
+
   if date == None or date == 'now':
     cleaned = None
   else:
@@ -195,6 +197,10 @@ def find_dates(tree, location):
 
   r = tree.xpath(id)
   raw_dates = r[0].getnext().text.split('-') if r else [None, None]
+
+  # sometimes the dates are missing on partially released sets
+  if (len(raw_dates) != 2):
+    raw_dates = [None, None]
 
   dates = [clean_date(d) for d in raw_dates]
 

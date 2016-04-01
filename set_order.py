@@ -229,9 +229,9 @@ def get_dates(sets):
 
 def output_to_csv(sets):
   us_ordered = map(lambda s: s.to_a(),
-                   sorted(sorted(sets, key=lambda s: s.us_start_date), key=lambda s: s.is_released(), reverse=True))
+                   sorted(sorted(sets, key=lambda s: (s.us_start_date is None, s.us_start_date)), key=lambda s: s.is_released(), reverse=True))
   uk_ordered = map(lambda s: s.to_a(),
-                   sorted(sorted(sets, key=lambda s: s.uk_start_date), key=lambda s: s.is_released(), reverse=True))
+                   sorted(sorted(sets, key=lambda s: (s.uk_start_date is None, s.uk_start_date)), key=lambda s: s.is_released(), reverse=True))
 
   if os.path.exists(OUTPUT_CSV):
     os.remove(OUTPUT_CSV)

@@ -184,7 +184,7 @@ def clean_date(date):
   if date != None:
     date = date.strip()
 
-  if date == None or date == 'now':
+  if date == None or date == '' or date == 'now':
     cleaned = None
   else:
     cleaned = time.strftime("%Y%m%d", time.strptime(date, "%d %b %y"))

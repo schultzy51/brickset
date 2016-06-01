@@ -21,6 +21,7 @@ CSV_HEADER = [
   'Minifigs',
   'Brickset URL',
   'US Retail Price',
+  'Released',
   'US Start Date',
   'US End Date',
   'UK Start Date',
@@ -117,6 +118,7 @@ class Set:
       self.minifigs,
       self.brickset_url,
       self.us_retail_price,
+      self.released,
       self.us_start_date,
       self.us_end_date,
       self.uk_start_date,
@@ -227,11 +229,39 @@ def get_dates(sets):
   return sets
 
 
+def us_sort(a, b):
+  return custom_sort(a, b, 'us')
+
+
+def uk_sort(a, b):
+  return custom_sort(a, b, 'uk')
+
+
+def custom_sort(a, b, country='us'):
+  if a.is_released() == b.is_released():
+    if a.is_released():  # both released
+      a_start_date = a.us_start_date if country == 'us' else a.uk_start_date
+      b_start_date = b.us_start_date if country == 'us' else b.uk_start_date
+      # check for start_date, compare if both exist, None is last
+      if a_start_date is None and b_start_date is None:
+        return cmp(a.number, b.number)
+      elif (a_start_date is not None and b_start_date is not None):
+        return cmp(a_start_date, b_start_date)
+      elif a_start_date is None:
+        return 1
+      else:
+        return -1
+    else:  # neither released
+      return cmp(a.number, b.number)
+  elif a.is_released():
+    return -1
+  else:
+    return 1
+
+
 def output_to_csv(sets):
-  us_ordered = map(lambda s: s.to_a(),
-                   sorted(sorted(sets, key=lambda s: (s.us_start_date is None, s.us_start_date)), key=lambda s: s.is_released(), reverse=True))
-  uk_ordered = map(lambda s: s.to_a(),
-                   sorted(sorted(sets, key=lambda s: (s.uk_start_date is None, s.uk_start_date)), key=lambda s: s.is_released(), reverse=True))
+  us_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=us_sort))
+  uk_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=uk_sort))
 
   if os.path.exists(OUTPUT_CSV):
     os.remove(OUTPUT_CSV)

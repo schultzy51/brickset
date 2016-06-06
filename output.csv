@@ -1,14 +1,18 @@
 US Order,,,,,,,,,,,,
 Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US Start Date,US End Date,UK Start Date,UK End Date
 21013,Big Ben,2012,Architecture,346,,http://brickset.com/sets/21013-1,29.99,true,20120602,,20120602,
-45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,20160328,20141230,
+45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,,20141230,
 45504,EV3 Ultrasonic Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45504-1,29.99,true,20141230,,20150113,
+45507,EV3 Touch Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45507-1,19.99,true,20141230,,20141230,
 10696,Medium Creative Brick Box,2015,Classic,484,,http://brickset.com/sets/10696-1,34.99,true,20150101,,20141230,
 10698,Large Creative Brick Box,2015,Classic,790,,http://brickset.com/sets/10698-1,59.99,true,20150101,,20141230,
+10699,32x32 Sand Baseplate,2015,Classic,1,,http://brickset.com/sets/10699-1,7.99,true,20150102,,20141230,
+10700,32x32 Green Baseplate,2015,Classic,1,,http://brickset.com/sets/10700-1,7.99,true,20150107,,20141230,
+10701,48x48 Grey Baseplate,2015,Classic,1,,http://brickset.com/sets/10701-1,14.99,true,20150107,,20141230,
 45505,EV3 Gyro Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45505-1,29.99,true,20150129,20160407,20141230,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
-10702,Creative Building Set,2016,Classic,583,,http://brickset.com/sets/10702-1,29.99,true,20160102,,20160101,
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160601,20160601,
+10702,Creative Building Set,2016,Classic,583,,http://brickset.com/sets/10702-1,29.99,true,20160102,20160604,20160101,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160601,20160601,20160604
 31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160529,20160601,20160602
 60103,Airport Air Show,2016,City,670,,http://brickset.com/sets/60103-1,89.99,true,20160522,,20160602,
 10705,Creative Building Basket,2016,Classic,1000,,http://brickset.com/sets/10705-1,59.99,true,20160601,,20160601,
@@ -32,13 +36,17 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 21013,Big Ben,2012,Architecture,346,,http://brickset.com/sets/21013-1,29.99,true,20120602,,20120602,
 10696,Medium Creative Brick Box,2015,Classic,484,,http://brickset.com/sets/10696-1,34.99,true,20150101,,20141230,
 10698,Large Creative Brick Box,2015,Classic,790,,http://brickset.com/sets/10698-1,59.99,true,20150101,,20141230,
-45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,20160328,20141230,
+10699,32x32 Sand Baseplate,2015,Classic,1,,http://brickset.com/sets/10699-1,7.99,true,20150102,,20141230,
+10700,32x32 Green Baseplate,2015,Classic,1,,http://brickset.com/sets/10700-1,7.99,true,20150107,,20141230,
+10701,48x48 Grey Baseplate,2015,Classic,1,,http://brickset.com/sets/10701-1,14.99,true,20150107,,20141230,
+45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,,20141230,
 45505,EV3 Gyro Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45505-1,29.99,true,20150129,20160407,20141230,
+45507,EV3 Touch Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45507-1,19.99,true,20141230,,20141230,
 45504,EV3 Ultrasonic Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45504-1,29.99,true,20141230,,20150113,
-10702,Creative Building Set,2016,Classic,583,,http://brickset.com/sets/10702-1,29.99,true,20160102,,20160101,
+10702,Creative Building Set,2016,Classic,583,,http://brickset.com/sets/10702-1,29.99,true,20160102,20160604,20160101,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
 10705,Creative Building Basket,2016,Classic,1000,,http://brickset.com/sets/10705-1,59.99,true,20160601,,20160601,
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160601,20160601,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160601,20160601,20160604
 31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160529,20160601,20160602
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,http://brickset.com/sets/75149-1,79.99,true,20160601,,20160601,
 75150,Vader's TIE Advanced vs. A-wing Starfighter,2016,Star Wars,702,,http://brickset.com/sets/75150-1,89.99,true,20160601,,20160601,

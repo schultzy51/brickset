@@ -1,7 +1,5 @@
 US Order,,,,,,,,,,,,
 Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US Start Date,US End Date,UK Start Date,UK End Date
-10220,Volkswagen T1 Camper Van,2011,Advanced Models,1332,,http://brickset.com/sets/10220-1,119.99,true,20110928,20160611,20110928,
-21013,Big Ben,2012,Architecture,346,,http://brickset.com/sets/21013-1,29.99,true,20120602,,20120602,
 45514,Cable Pack,2013,Education,7,,http://brickset.com/sets/45514-1,14.99,true,20140104,,20140103,
 45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,,20141230,
 45504,EV3 Ultrasonic Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45504-1,29.99,true,20141230,,20150113,
@@ -9,8 +7,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 45502,EV3 Large Servo Motor,2013,Mindstorms,1,,http://brickset.com/sets/45502-1,24.99,true,20150110,,20141230,
 45505,EV3 Gyro Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45505-1,29.99,true,20150129,20160407,20141230,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,,20160601,
-31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,,20160601,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160615,20160601,
+31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160615,20160601,
 60103,Airport Air Show,2016,City,670,,http://brickset.com/sets/60103-1,89.99,true,20160522,,20160602,
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,http://brickset.com/sets/75149-1,79.99,true,20160601,,20160601,
 75150,Vader's TIE Advanced vs. A-wing Starfighter,2016,Star Wars,702,4,http://brickset.com/sets/75150-1,89.99,true,20160601,,20160601,
@@ -29,8 +27,6 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 ,,,,,,,,,,,,
 UK Order,,,,,,,,,,,,
 Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US Start Date,US End Date,UK Start Date,UK End Date
-10220,Volkswagen T1 Camper Van,2011,Advanced Models,1332,,http://brickset.com/sets/10220-1,119.99,true,20110928,20160611,20110928,
-21013,Big Ben,2012,Architecture,346,,http://brickset.com/sets/21013-1,29.99,true,20120602,,20120602,
 45514,Cable Pack,2013,Education,7,,http://brickset.com/sets/45514-1,14.99,true,20140104,,20140103,
 45501,DC Rechargeable Battery,2013,Education,,,http://brickset.com/sets/45501-1,84.99,true,20141230,,20141230,
 45502,EV3 Large Servo Motor,2013,Mindstorms,1,,http://brickset.com/sets/45502-1,24.99,true,20150110,,20141230,
@@ -38,8 +34,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 45507,EV3 Touch Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45507-1,19.99,true,20141230,,20141230,
 45504,EV3 Ultrasonic Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45504-1,29.99,true,20141230,,20150113,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,,20160601,
-31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,,20160601,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160615,20160601,
+31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160615,20160601,
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,http://brickset.com/sets/75149-1,79.99,true,20160601,,20160601,
 75150,Vader's TIE Advanced vs. A-wing Starfighter,2016,Star Wars,702,4,http://brickset.com/sets/75150-1,89.99,true,20160601,,20160601,
 75157,Captain Rex's AT-TE,2016,Star Wars,972,,http://brickset.com/sets/75157-1,119.99,true,20160601,,20160601,

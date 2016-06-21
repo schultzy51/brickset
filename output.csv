@@ -7,7 +7,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 45502,EV3 Large Servo Motor,2013,Mindstorms,1,,http://brickset.com/sets/45502-1,24.99,true,20150110,,20141230,
 45505,EV3 Gyro Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45505-1,29.99,true,20150129,20160407,20141230,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160615,20160601,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,,20160601,
 31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160615,20160601,
 60103,Airport Air Show,2016,City,670,,http://brickset.com/sets/60103-1,89.99,true,20160522,,20160602,
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,http://brickset.com/sets/75149-1,79.99,true,20160601,,20160601,
@@ -17,6 +17,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 42054,CLAAS XERION 5000 TRAC VC,2016,Technic,1977,,http://brickset.com/sets/42054-1,179.99,true,,,,
 42055,Bucket Wheel Excavator,2016,Technic,3927,,http://brickset.com/sets/42055-1,279.99,true,,,,
 42056,Porsche 911 GT3 RS,2016,Technic,2704,,http://brickset.com/sets/42056-1,299.99,true,,,,
+10252,Volkswagen Beetle,2016,Advanced Models,1167,,http://brickset.com/sets/10252-1,99.99,false,,,,
 42051,Airport Rescue Vehicle,2017,Technic,,,http://brickset.com/sets/42051-1,,false,,,,
 42053,Volvo EW 160E,2016,Technic,1166,,http://brickset.com/sets/42053-1,119.99,false,,,,
 75143,{?},2016,Star Wars,,,http://brickset.com/sets/75143-1,,false,,,,
@@ -33,7 +34,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 45507,EV3 Touch Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45507-1,19.99,true,20141230,,20141230,
 45504,EV3 Ultrasonic Sensor,2013,Mindstorms,1,,http://brickset.com/sets/45504-1,29.99,true,20141230,,20150113,
 45517,Transformer 10V DC,2015,Mindstorms,1,,http://brickset.com/sets/45517-1,29.99,true,20150415,,20160119,20160224
-31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,20160615,20160601,
+31051,Lighthouse Point,2016,Creator,528,,http://brickset.com/sets/31051-1,59.99,true,20160522,,20160601,
 31052,Vacation Getaways,2016,Creator,792,,http://brickset.com/sets/31052-1,69.99,true,20160522,20160615,20160601,
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,http://brickset.com/sets/75149-1,79.99,true,20160601,,20160601,
 75150,Vader's TIE Advanced vs. A-wing Starfighter,2016,Star Wars,702,4,http://brickset.com/sets/75150-1,89.99,true,20160601,,20160601,
@@ -43,6 +44,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,Brickset URL,US Retail Price,Released,US 
 42054,CLAAS XERION 5000 TRAC VC,2016,Technic,1977,,http://brickset.com/sets/42054-1,179.99,true,,,,
 42055,Bucket Wheel Excavator,2016,Technic,3927,,http://brickset.com/sets/42055-1,279.99,true,,,,
 42056,Porsche 911 GT3 RS,2016,Technic,2704,,http://brickset.com/sets/42056-1,299.99,true,,,,
+10252,Volkswagen Beetle,2016,Advanced Models,1167,,http://brickset.com/sets/10252-1,99.99,false,,,,
 42051,Airport Rescue Vehicle,2017,Technic,,,http://brickset.com/sets/42051-1,,false,,,,
 42053,Volvo EW 160E,2016,Technic,1166,,http://brickset.com/sets/42053-1,119.99,false,,,,
 75143,{?},2016,Star Wars,,,http://brickset.com/sets/75143-1,,false,,,,

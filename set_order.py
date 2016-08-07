@@ -5,7 +5,7 @@ import os
 import requests
 import time
 import untangle
-import yaml
+import ConfigParser
 from lxml import html
 
 BASE_URL = 'http://brickset.com'
@@ -28,20 +28,6 @@ CSV_HEADER = [
   'UK End Date'
 ]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
-
-
-class Config:
-  @staticmethod
-  def from_yaml(file='.config'):
-    with open(file, 'r') as f:
-      raw = (yaml.load(f))
-
-    return Config(raw)
-
-  def __init__(self, raw):
-    self.api_key = raw.get('api_key', None)
-    self.username = raw.get('username', None)
-    self.password = raw.get('password', None)
 
 
 class Set:
@@ -88,24 +74,24 @@ class Set:
 
   def __str__(self):
     return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
-        self.id,
-        self.number,
-        self.number_variant,
-        self.name,
-        self.year,
-        self.theme,
-        self.theme_group,
-        self.subtheme,
-        self.pieces,
-        self.minifigs,
-        self.released,
-        self.brickset_url,
-        self.us_retail_price,
-        self.last_updated,
-        self.us_start_date,
-        self.us_end_date,
-        self.uk_start_date,
-        self.uk_end_date
+      self.id,
+      self.number,
+      self.number_variant,
+      self.name,
+      self.year,
+      self.theme,
+      self.theme_group,
+      self.subtheme,
+      self.pieces,
+      self.minifigs,
+      self.released,
+      self.brickset_url,
+      self.us_retail_price,
+      self.last_updated,
+      self.us_start_date,
+      self.us_end_date,
+      self.uk_start_date,
+      self.uk_end_date
     )
 
   def to_a(self):
@@ -128,9 +114,9 @@ class Set:
 
 def get_token(config):
   data = {
-    'apiKey': config.api_key,
-    'username': config.username,
-    'password': config.password
+    'apiKey': config['api_key'],
+    'username': config['username'],
+    'password': config['password']
   }
 
   response = requests.post(LOGIN_URL, data)
@@ -142,7 +128,7 @@ def get_token(config):
 
 def get_sets(config, token):
   data = {
-    'apiKey': config.api_key,
+    'apiKey': config['api_key'],
     'userHash': token,
     'query': '',
     'theme': '',
@@ -259,14 +245,14 @@ def custom_sort(a, b, country='us'):
     return 1
 
 
-def output_to_csv(sets):
+def output_to_csv(sets, filename=OUTPUT_CSV):
   us_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=us_sort))
   uk_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=uk_sort))
 
-  if os.path.exists(OUTPUT_CSV):
-    os.remove(OUTPUT_CSV)
+  if os.path.exists(filename):
+    os.remove(filename)
 
-  with open(OUTPUT_CSV, 'w') as o:
+  with open(filename, 'w') as o:
     w = csv.writer(o, lineterminator=os.linesep)
     w.writerows([
       ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
@@ -281,8 +267,17 @@ def output_to_csv(sets):
     w.writerows(uk_ordered)
 
 
-config = Config.from_yaml()
-token = get_token(config)
-sets = get_sets(config, token)
+config = ConfigParser.ConfigParser()
+config.read('.config')
+wanted_config = dict(config.items('wanted_account'))
+retired_config = dict(config.items('retired_account'))
+
+token = get_token(wanted_config)
+sets = get_sets(wanted_config, token)
 sets = get_dates(sets)
-output_to_csv(sets)
+output_to_csv(sets, filename='wanted.csv')
+
+token = get_token(retired_config)
+sets = get_sets(retired_config, token)
+sets = get_dates(sets)
+output_to_csv(sets, filename='retired.csv')

@@ -245,9 +245,10 @@ def custom_sort(a, b, country='us'):
     return 1
 
 
-def output_to_csv(sets, filename=OUTPUT_CSV):
+def output_to_csv(sets, filename=OUTPUT_CSV, uk_order_enabled=False):
   us_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=us_sort))
-  # uk_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=uk_sort))
+  if uk_order_enabled:
+    uk_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=uk_sort))
 
   if os.path.exists(filename):
     os.remove(filename)
@@ -259,12 +260,13 @@ def output_to_csv(sets, filename=OUTPUT_CSV):
       CSV_HEADER
     ])
     w.writerows(us_ordered)
-    # w.writerows([
-    #   ['' for s in range(CSV_HEADER_LENGTH)],
-    #   ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
-    #   CSV_HEADER
-    # ])
-    # w.writerows(uk_ordered)
+    if uk_order_enabled:
+      w.writerows([
+        ['' for s in range(CSV_HEADER_LENGTH)],
+        ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
+        CSV_HEADER
+      ])
+      w.writerows(uk_ordered)
 
 
 config = ConfigParser.ConfigParser()

@@ -147,6 +147,9 @@ def get_sets(config, token):
   text = response.text.encode(response.encoding)
   doc = untangle.parse(text)
 
+  if len(doc.ArrayOfSets.children) == 0:
+    return []
+
   sets = [
     Set(s.setID.cdata.strip(),
         s.number.cdata.strip(),

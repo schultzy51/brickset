@@ -2,5 +2,6 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'savon', '~> 2.11.0'
 gem 'pry'
+gem 'configparser'
+gem 'brickset-api'

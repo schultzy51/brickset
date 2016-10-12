@@ -258,8 +258,11 @@ def output_to_csv(sets, filename=OUTPUT_CSV, uk_order_enabled=False):
 
   with open(filename, 'w') as o:
     w = csv.writer(o, lineterminator=os.linesep)
+    if uk_order_enabled:
+        w.writerows([
+          ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)]
+        ])
     w.writerows([
-      ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
       CSV_HEADER
     ])
     w.writerows(us_ordered)

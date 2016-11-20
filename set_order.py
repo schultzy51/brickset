@@ -19,13 +19,13 @@ CSV_HEADER = [
   'Theme',
   'Pieces',
   'Minifigs',
-  'Brickset URL',
   'US Retail Price',
   'Released',
   'US Start Date',
   'US End Date',
   'UK Start Date',
-  'UK End Date'
+  'UK End Date',
+  'Brickset URL'
 ]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
 
@@ -85,13 +85,13 @@ class Set:
       self.pieces,
       self.minifigs,
       self.released,
-      self.brickset_url,
       self.us_retail_price,
       self.last_updated,
       self.us_start_date,
       self.us_end_date,
       self.uk_start_date,
-      self.uk_end_date
+      self.uk_end_date,
+      self.brickset_url
     )
 
   def to_a(self):
@@ -102,13 +102,13 @@ class Set:
       self.theme,
       self.pieces,
       self.minifigs,
-      self.brickset_url,
       self.us_retail_price,
       self.released,
       self.us_start_date,
       self.us_end_date,
       self.uk_start_date,
-      self.uk_end_date
+      self.uk_end_date,
+      self.brickset_url
     ]
 
 

@@ -1,6 +1,6 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US End Date,UK Start Date,UK End Date,Brickset URL
-75159,Death Star,2016,Star Wars,4016,27,499.99,true,20161001,,20161001,,http://brickset.com/sets/75159-1
-71040,Disney Castle,2016,Advanced Models,4080,7,349.99,true,20161006,,20160923,,http://brickset.com/sets/71040-1
+75159,Death Star,2016,Star Wars,4016,27,499.99,true,20161001,20170130,20161001,20170130,http://brickset.com/sets/75159-1
+71040,Disney Castle,2016,Advanced Models,4080,7,349.99,true,20161006,20170130,20160923,20170130,http://brickset.com/sets/71040-1
 31058,Mighty Dinosaurs,2017,Creator,174,,14.99,true,20161127,,20161227,,http://brickset.com/sets/31058-1
 42057,Ultralight Helicopter,2017,Technic,199,,19.99,true,20161127,,20161220,,http://brickset.com/sets/42057-1
 60145,Buggy,2017,City,81,1,9.99,true,20161127,,20161227,,http://brickset.com/sets/60145-1
@@ -25,10 +25,6 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 40172,Brick Calendar,2017,Miscellaneous,278,1,19.99,true,20170117,,20161230,,http://brickset.com/sets/40172-1
 40174,LEGO Chess,2017,Miscellaneous,1450,,54.99,true,20170117,,20170113,,http://brickset.com/sets/40174-1
 40226,Birthday Buddy,2016,Miscellaneous,,,,true,,,,,http://brickset.com/sets/40226-1
-41490,Superman & Wonder Woman,2016,BrickHeadz,220,,39.99,true,,,,,http://brickset.com/sets/41490-1
-41491,Batman & The Joker,2016,BrickHeadz,212,,39.99,true,,,,,http://brickset.com/sets/41491-1
-41492,Iron Man & Captain America,2016,BrickHeadz,184,,39.99,true,,,,,http://brickset.com/sets/41492-1
-41493,Black Panther & Doctor Strange,2016,BrickHeadz,173,,39.99,true,,,,,http://brickset.com/sets/41493-1
 42063,BMW R 1200 GS Adventure,2017,Technic,603,,,true,,,20161220,,http://brickset.com/sets/42063-1
 42064,Ocean Explorer,2017,Technic,1327,,,true,,,20161220,,http://brickset.com/sets/42064-1
 42065,RC Tracked Racer,2017,Technic,370,,,true,,,20161220,,http://brickset.com/sets/42065-1
@@ -41,7 +37,23 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 75173,Luke's Landspeeder,2017,Star Wars,149,4,,true,,,20161216,,http://brickset.com/sets/75173-1
 75174,Desert Skiff Escape,2017,Star Wars,277,4,,true,,,20161217,,http://brickset.com/sets/75174-1
 75175,A-wing Starfighter,2017,Star Wars,358,3,,true,,,20161217,,http://brickset.com/sets/75175-1
+31066,Space Shuttle Explorer,2017,Creator,,,,false,,,,,http://brickset.com/sets/31066-1
+31069,Family Villa,2017,Creator,,,,false,,,,,http://brickset.com/sets/31069-1
+31070,Turbo Track Racer,2017,Creator,,,,false,,,,,http://brickset.com/sets/31070-1
+41585,Batman,2017,BrickHeadz,91,,9.99,false,,,,,http://brickset.com/sets/41585-1
+41586,Batgirl,2017,BrickHeadz,99,,9.99,false,,,,,http://brickset.com/sets/41586-1
+41587,Robin,2017,BrickHeadz,101,,9.99,false,,,,,http://brickset.com/sets/41587-1
+41588,The Joker,2017,BrickHeadz,151,,9.99,false,,,,,http://brickset.com/sets/41588-1
+41589,Captain America,2017,BrickHeadz,79,,9.99,false,,,,,http://brickset.com/sets/41589-1
+41590,Iron Man,2017,BrickHeadz,96,,9.99,false,,,,,http://brickset.com/sets/41590-1
+41591,Black Widow,2017,BrickHeadz,143,,9.99,false,,,,,http://brickset.com/sets/41591-1
+41592,The Hulk,2017,BrickHeadz,93,,9.99,false,,,,,http://brickset.com/sets/41592-1
+41595,Belle,2017,BrickHeadz,,,9.99,false,,,,,http://brickset.com/sets/41595-1
+41596,Beast,2017,BrickHeadz,,,9.99,false,,,,,http://brickset.com/sets/41596-1
 42051,Airport Rescue Vehicle,2016,Technic,,,,false,,,,,http://brickset.com/sets/42051-1
+42068,Fire Rescue Vehicle,2017,Technic,,,,false,,,,,http://brickset.com/sets/42068-1
+42069,Extreme Adventure,2017,Technic,,,,false,,,,,http://brickset.com/sets/42069-1
+42070,6x6 All Terrain Tow Truck,2017,Technic,1862,,,false,,,,,http://brickset.com/sets/42070-1
 70913,Scarecrow Fearful Face-off,2017,The LEGO Batman Movie,,,14.99,false,,,,,http://brickset.com/sets/70913-1
 70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,,,49.99,false,,,,,http://brickset.com/sets/70914-1
 70915,Two-Face Double Demolition,2017,The LEGO Batman Movie,,,59.99,false,,,,,http://brickset.com/sets/70915-1

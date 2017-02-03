@@ -1,6 +1,6 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US End Date,UK Start Date,UK End Date,Brickset URL
-75159,Death Star,2016,Star Wars,4016,27,499.99,true,20161001,20170130,20161001,20170130,http://brickset.com/sets/75159-1
-71040,Disney Castle,2016,Advanced Models,4080,7,349.99,true,20161006,20170130,20160923,20170130,http://brickset.com/sets/71040-1
+75159,Death Star,2016,Star Wars,4016,27,499.99,true,20161001,,20161001,,http://brickset.com/sets/75159-1
+71040,Disney Castle,2016,Advanced Models,4080,7,349.99,true,20161006,,20160923,,http://brickset.com/sets/71040-1
 31058,Mighty Dinosaurs,2017,Creator,174,,14.99,true,20161127,,20161227,,http://brickset.com/sets/31058-1
 42057,Ultralight Helicopter,2017,Technic,199,,19.99,true,20161127,,20161220,,http://brickset.com/sets/42057-1
 60145,Buggy,2017,City,81,1,9.99,true,20161127,,20161227,,http://brickset.com/sets/60145-1
@@ -48,8 +48,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 41590,Iron Man,2017,BrickHeadz,96,,9.99,false,,,,,http://brickset.com/sets/41590-1
 41591,Black Widow,2017,BrickHeadz,143,,9.99,false,,,,,http://brickset.com/sets/41591-1
 41592,The Hulk,2017,BrickHeadz,93,,9.99,false,,,,,http://brickset.com/sets/41592-1
-41595,Belle,2017,BrickHeadz,,,9.99,false,,,,,http://brickset.com/sets/41595-1
-41596,Beast,2017,BrickHeadz,,,9.99,false,,,,,http://brickset.com/sets/41596-1
+41595,Belle,2017,BrickHeadz,139,,9.99,false,,,,,http://brickset.com/sets/41595-1
+41596,Beast,2017,BrickHeadz,116,,9.99,false,,,,,http://brickset.com/sets/41596-1
 42051,Airport Rescue Vehicle,2016,Technic,,,,false,,,,,http://brickset.com/sets/42051-1
 42068,Fire Rescue Vehicle,2017,Technic,,,,false,,,,,http://brickset.com/sets/42068-1
 42069,Extreme Adventure,2017,Technic,,,,false,,,,,http://brickset.com/sets/42069-1
@@ -59,6 +59,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 70915,Two-Face Double Demolition,2017,The LEGO Batman Movie,,,59.99,false,,,,,http://brickset.com/sets/70915-1
 70916,The Batwing,2017,The LEGO Batman Movie,,,89.99,false,,,,,http://brickset.com/sets/70916-1
 70917,{?},2017,The LEGO Batman Movie,,,,false,,,,,http://brickset.com/sets/70917-1
+71267,The Goonies Level Pack,2017,Dimensions,118,,29.99,false,,,,,http://brickset.com/sets/71267-1
 75143,{?},2016,Star Wars,,,,false,,,,,http://brickset.com/sets/75143-1
 75144,Snowspeeder,2017,Star Wars,,,199.99,false,,,,,http://brickset.com/sets/75144-1
 75877,Mercedes-AMG GT3,2017,Speed Champions,,,,false,,,,,http://brickset.com/sets/75877-1

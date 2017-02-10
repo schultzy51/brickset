@@ -138,7 +138,7 @@ def get_sets(config, token):
     'owned': '',
     'wanted': '1',
     'orderBy': '',
-    'pageSize': '50',
+    'pageSize': '80',
     'pageNumber': '1',
     'userName': ''
   }

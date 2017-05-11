@@ -19,7 +19,7 @@ parser.add_argument('-t', '--theme', action='store', dest='theme', help='Theme')
 # parser.add_argument('-o', '--output', action='store', dest='output', default='jsonl', help='Output format')
 
 args = parser.parse_args()
-client = zeep.Client('http://brickset.com/api/v2.asmx?WSDL')
+client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
 
 
 def sets_params(overrides):

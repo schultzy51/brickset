@@ -8,7 +8,7 @@ import untangle
 import ConfigParser
 from lxml import html
 
-BASE_URL = 'http://brickset.com'
+BASE_URL = 'https://brickset.com'
 LOGIN_URL = BASE_URL + '/api/v2.asmx/login'
 GET_SETS_URL = BASE_URL + '/api/v2.asmx/getSets'
 OUTPUT_CSV = 'output.csv'

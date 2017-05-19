@@ -23,8 +23,6 @@ CSV_HEADER = [
   'Released',
   'US Start Date',
   'US End Date',
-  'UK Start Date',
-  'UK End Date',
   'Brickset URL'
 ]
 CSV_HEADER_LENGTH = len(CSV_HEADER)
@@ -47,9 +45,7 @@ class Set:
                us_retail_price=None,
                last_updated=None,
                us_start_date=None,
-               us_end_date=None,
-               uk_start_date=None,
-               uk_end_date=None):
+               us_end_date=None):
     self.id = id
     self.number = number
     self.number_variant = number_variant
@@ -66,14 +62,12 @@ class Set:
     self.last_updated = last_updated
     self.us_start_date = us_start_date
     self.us_end_date = us_end_date
-    self.uk_start_date = uk_start_date
-    self.uk_end_date = uk_end_date
 
   def is_released(self):
     return 'true' == self.released
 
   def __str__(self):
-    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
+    return "{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}".format(
       self.id,
       self.number,
       self.number_variant,
@@ -89,8 +83,6 @@ class Set:
       self.last_updated,
       self.us_start_date,
       self.us_end_date,
-      self.uk_start_date,
-      self.uk_end_date,
       self.brickset_url
     )
 
@@ -106,8 +98,6 @@ class Set:
       self.released,
       self.us_start_date,
       self.us_end_date,
-      self.uk_start_date,
-      self.uk_end_date,
       self.brickset_url
     ]
 
@@ -166,7 +156,7 @@ def get_sets(config, token):
         s.USRetailPrice.cdata.strip(),
         s.lastUpdated.cdata.strip())
     for s in doc.ArrayOfSets.sets
-    ]
+  ]
 
   return sets
 
@@ -204,39 +194,28 @@ def get_dates_from_url(url):
   tree = html.fromstring(page.content)
 
   (us_start_date, us_end_date) = find_dates(tree, 'United States')
-  (uk_start_date, uk_end_date) = find_dates(tree, 'United Kingdom')
 
-  return us_start_date, us_end_date, uk_start_date, uk_end_date
+  return us_start_date, us_end_date
 
 
 def get_dates(sets):
   for s in sets:
     if s.is_released():
-      (s.us_start_date, s.us_end_date, s.uk_start_date, s.uk_end_date) = get_dates_from_url(s.brickset_url)
+      (s.us_start_date, s.us_end_date) = get_dates_from_url(s.brickset_url)
     print s
 
   return sets
 
 
-def us_sort(a, b):
-  return custom_sort(a, b, 'us')
-
-
-def uk_sort(a, b):
-  return custom_sort(a, b, 'uk')
-
-
-def custom_sort(a, b, country='us'):
+def custom_sort(a, b):
   if a.is_released() == b.is_released():
     if a.is_released():  # both released
-      a_start_date = a.us_start_date if country == 'us' else a.uk_start_date
-      b_start_date = b.us_start_date if country == 'us' else b.uk_start_date
       # check for start_date, compare if both exist, None is last
-      if a_start_date is None and b_start_date is None:
+      if a.us_start_date is None and b.us_start_date is None:
         return cmp(a.number, b.number)
-      elif (a_start_date is not None and b_start_date is not None):
-        return cmp(a_start_date, b_start_date)
-      elif a_start_date is None:
+      elif (a.us_start_date is not None and b.us_start_date is not None):
+        return cmp(a.us_start_date, b.us_start_date)
+      elif a.us_start_date is None:
         return 1
       else:
         return -1
@@ -249,30 +228,17 @@ def custom_sort(a, b, country='us'):
 
 
 def output_to_csv(sets, filename=OUTPUT_CSV, uk_order_enabled=False):
-  us_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=us_sort))
-  if uk_order_enabled:
-    uk_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=uk_sort))
+  us_ordered = map(lambda s: s.to_a(), sorted(sets, cmp=custom_sort))
 
   if os.path.exists(filename):
     os.remove(filename)
 
   with open(filename, 'w') as o:
     w = csv.writer(o, lineterminator=os.linesep)
-    if uk_order_enabled:
-        w.writerows([
-          ['US Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)]
-        ])
     w.writerows([
       CSV_HEADER
     ])
     w.writerows(us_ordered)
-    if uk_order_enabled:
-      w.writerows([
-        ['' for s in range(CSV_HEADER_LENGTH)],
-        ['UK Order'] + ['' for s in range(CSV_HEADER_LENGTH - 1)],
-        CSV_HEADER
-      ])
-      w.writerows(uk_ordered)
 
 
 config = ConfigParser.ConfigParser()

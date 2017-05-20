@@ -72,6 +72,10 @@ for set in sets:
     if isinstance(set[k], str):
       set[k] = set[k].strip()
 
+  # shorten the datetime
+  if set['lastUpdated']:
+    set['lastUpdated'] = set['lastUpdated'].strftime("%Y%m%d %H:%M:%S")
+
   # use true/false rather than True/False
   set['released'] = 'true' if set['released'] else 'false'
 

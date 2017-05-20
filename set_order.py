@@ -81,3 +81,5 @@ with open('wanted.csv', 'w') as f:
   dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)
   dict_writer.writerow(key_header)
   dict_writer.writerows(sets)
+
+print "{} sets wanted".format(len(sets))

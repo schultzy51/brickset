@@ -9,6 +9,7 @@ from datetime import datetime
 from collections import OrderedDict
 
 logging.basicConfig()
+logging.getLogger('zeep').setLevel(logging.ERROR)
 
 config = ConfigParser.ConfigParser()
 config.read('.config')
@@ -56,7 +57,8 @@ key_header = OrderedDict([
   ('released', 'Released'),
   ('USDateAddedToSAH', 'US Start Date'),
   ('USDateRemovedFromSAH', 'US End Date'),
-  ('bricksetURL', 'Brickset URL')
+  ('bricksetURL', 'Brickset URL'),
+  ('lastUpdated', 'Last Updated')
 ])
 
 sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)

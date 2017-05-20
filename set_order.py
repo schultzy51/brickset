@@ -72,12 +72,6 @@ for set in sets:
     if isinstance(set[k], str):
       set[k] = set[k].strip()
 
-  # format the dates to YYYYMMDD
-  if set['USDateAddedToSAH']:
-    set['USDateAddedToSAH'] = datetime.strptime(set['USDateAddedToSAH'], "%Y-%m-%d").strftime("%Y%m%d")
-  if set['USDateRemovedFromSAH']:
-    set['USDateRemovedFromSAH'] = datetime.strptime(set['USDateRemovedFromSAH'], "%Y-%m-%d").strftime("%Y%m%d")
-
   # use true/false rather than True/False
   set['released'] = 'true' if set['released'] else 'false'
 

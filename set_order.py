@@ -5,7 +5,6 @@ import logging
 import os
 import zeep
 import ConfigParser
-from datetime import datetime
 from collections import OrderedDict
 
 logging.basicConfig()
@@ -57,7 +56,6 @@ key_header = OrderedDict([
   ('released', 'Released'),
   ('USDateAddedToSAH', 'US Start Date'),
   ('USDateRemovedFromSAH', 'US End Date'),
-  ('bricksetURL', 'Brickset URL'),
   ('lastUpdated', 'Last Updated')
 ])
 
@@ -66,18 +64,18 @@ sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAdded
 sets = sorted(sets, key=lambda k: (k['released'] is None, k['released']), reverse=True)
 
 # clean up the data
-for set in sets:
+for wset in sets:
   # remove whitespace
-  for k in set.keys():
-    if isinstance(set[k], str):
-      set[k] = set[k].strip()
+  for k in wset.keys():
+    if isinstance(wset[k], str):
+      wset[k] = wset[k].strip()
 
   # shorten the datetime
-  if set['lastUpdated']:
-    set['lastUpdated'] = set['lastUpdated'].strftime("%Y%m%d %H:%M:%S")
+  if wset['lastUpdated']:
+    wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
 
   # use true/false rather than True/False
-  set['released'] = 'true' if set['released'] else 'false'
+  wset['released'] = 'true' if wset['released'] else 'false'
 
 with open('wanted.csv', 'w') as f:
   dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)

@@ -54,15 +54,26 @@ key_header = OrderedDict([
   ('year', 'Year'),
   ('theme', 'Theme'),
   ('pieces', 'Pieces'),
-  # ('minifigs', 'Minifigs'),
   ('USRetailPrice', 'US Retail Price'),
-  # ('bricksetURL', 'Brickset URL'),
   ('lastUpdated', 'Last Updated')
 ])
 
 sets = list(filter(lambda d: d['theme'] not in unwanted_themes, sets))
 sets.reverse()
 
-for set in sets:
-  set = {k: set[k] for k in key_header.keys()}
-  print(json.dumps(set, default=json_serial))
+for rset in sets:
+  # remove unwanted keys
+  unwanted_keys = set(rset.keys()) - set(key_header.keys())
+  for k in unwanted_keys:
+    del rset[k]
+
+  # remove whitespace
+  for k in rset.keys():
+    if isinstance(rset[k], str):
+      rset[k] = rset[k].strip()
+
+  # shorten the datetime
+  if rset['lastUpdated']:
+    rset['lastUpdated'] = rset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
+
+  print(json.dumps(rset, default=json_serial))

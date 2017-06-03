@@ -16,7 +16,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 75169,Duel on Naboo,2017,Star Wars,208,3,24.99,true,2017-02-17,,2016-12-13 07:32:26
 75170,The Phantom,2017,Star Wars,269,3,29.99,true,2017-02-17,,2016-12-18 23:28:03
 75172,Y-wing Starfighter,2017,Star Wars,691,5,59.99,true,2017-02-17,,2016-12-13 07:32:32
-75173,Luke's Landspeeder,2017,Star Wars,149,4,19.99,true,2017-02-17,,2016-12-13 07:32:33
+75173,Luke's Landspeeder,2017,Star Wars,149,4,19.99,true,2017-02-17,2017-06-02,2016-12-13 07:32:33
 75174,Desert Skiff Escape,2017,Star Wars,277,4,29.99,true,2017-02-17,,2016-12-13 07:32:35
 75175,A-wing Starfighter,2017,Star Wars,358,3,39.99,true,2017-02-17,2017-05-23,2016-12-13 07:32:37
 75877,Mercedes-AMG GT3,2017,Speed Champions,196,1,14.99,true,2017-02-17,,2017-04-10 02:00:06
@@ -36,10 +36,22 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 41594,Captain Armando Salazar,2017,BrickHeadz,118,,9.99,true,2017-04-02,,2017-03-20 16:12:53
 75144,Snowspeeder,2017,Star Wars,1703,,199.99,true,2017-05-05,,2017-05-03 17:14:14
 71267,The Goonies Level Pack,2017,Dimensions,118,,29.99,true,2017-05-10,,2017-02-12 19:18:32
+31066,Space Shuttle Explorer,2017,Creator,285,,29.99,true,2017-05-29,,2017-05-16 13:54:32
+31069,Modular Family Villa,2017,Creator,728,,69.99,true,2017-05-29,,2017-05-16 13:54:39
+31070,Turbo Track Racer,2017,Creator,664,,59.99,true,2017-05-29,,2017-05-16 13:54:40
+60154,Bus Station,2017,City,,,49.99,true,2017-05-29,,2017-05-11 11:40:55
+21309,NASA Apollo Saturn V,2017,Ideas,1969,,119.99,true,2017-06-02,2017-06-02,2017-04-28 14:11:28
+70913,Scarecrow Fearful Face-off,2017,The LEGO Batman Movie,141,1,14.99,true,2017-06-02,,2017-05-16 22:38:16
+70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,366,,49.99,true,2017-06-02,,2017-05-16 22:38:17
+70915,Two-Face Double Demolition,2017,The LEGO Batman Movie,564,,59.99,true,2017-06-02,,2017-05-16 22:38:18
+70916,The Batwing,2017,The LEGO Batman Movie,1053,,89.99,true,2017-06-02,,2017-05-16 22:38:20
+70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,,139.99,true,2017-06-02,,2017-05-16 22:38:21
+75182,Republic Fighter Tank,2017,Star Wars,305,,24.99,true,2017-06-02,,2017-05-20 15:34:14
+75183,Darth Vader Transformation,2017,Star Wars,282,1,24.99,true,2017-06-02,,2017-05-16 14:53:24
+75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,,99.99,true,2017-06-02,,2017-05-26 02:34:10
+75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,true,2017-06-02,,2017-05-16 14:53:50
+75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,true,2017-06-02,,2017-05-16 14:53:51
 30611,R2-D2,2017,Star Wars,70,,,true,,,2017-04-30 13:56:12
-31066,Space Shuttle Explorer,2017,Creator,285,,29.99,true,,,2017-05-16 13:54:32
-31069,Modular Family Villa,2017,Creator,728,,69.99,true,,,2017-05-16 13:54:39
-31070,Turbo Track Racer,2017,Creator,664,,59.99,true,,,2017-05-16 13:54:40
 40173,Picture Frame,2017,Miscellaneous,,,,true,,,2017-05-17 18:39:51
 40176,Scarif Stormtrooper,2017,Star Wars,25,,,true,,,2017-05-25 12:52:26
 40226,Birthday Buddy,2016,Miscellaneous,,,,true,,,2016-07-03 12:24:16
@@ -47,28 +59,18 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Released,US Start Date,US
 42064,Ocean Explorer,2017,Technic,1327,,,true,,,2016-11-09 02:26:19
 42065,RC Tracked Racer,2017,Technic,370,,,true,,,2016-11-09 02:28:40
 42066,Air Race Jet,2017,Technic,1151,,159.99,true,,,2017-02-19 00:11:04
-60154,Bus Station,2017,City,,,49.99,true,,,2017-05-11 11:40:55
-70913,Scarecrow Fearful Face-off,2017,The LEGO Batman Movie,141,,14.99,true,,,2017-05-16 22:38:16
-70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,366,,49.99,true,,,2017-05-16 22:38:17
-70915,Two-Face Double Demolition,2017,The LEGO Batman Movie,564,,59.99,true,,,2017-05-16 22:38:18
-70916,The Batwing,2017,The LEGO Batman Movie,1053,,89.99,true,,,2017-05-16 22:38:20
-70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,,129.99,true,,,2017-05-16 22:38:21
-75182,Republic Fighter Tank,2017,Star Wars,305,,24.99,true,,,2017-05-20 15:34:14
-75183,Darth Vader Transformation,2017,Star Wars,282,,24.99,true,,,2017-05-16 14:53:24
-75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,,,true,,,2017-05-26 02:34:10
-75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,true,,,2017-05-16 14:53:50
-75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,true,,,2017-05-16 14:53:51
 75995,Mercedes AMG Petronas Team Gift 2017,2017,Speed Champions,120,,,true,,,2017-05-23 13:37:33
-21309,NASA Apollo Saturn V,2017,Ideas,1969,,119.99,false,,,2017-04-28 14:11:28
+21310,Old Fishing Store,2017,Ideas,2049,,149.99,false,,,2017-06-01 02:11:42
 40251,Mini Piggy Bank,2017,Creator,,,,false,,,2017-05-19 00:52:50
 42051,Airport Rescue Vehicle,2016,Technic,,,,false,,,2016-11-08 20:53:30
 42068,Airport Rescue Vehicle,2017,Technic,,,99.99,false,,,2017-02-19 00:10:18
 42069,Extreme Adventure,2017,Technic,,,179.99,false,,,2017-02-19 00:12:28
 42070,6x6 All Terrain Tow Truck,2017,Technic,1862,,289.99,false,,,2017-02-19 00:15:24
 60155,City Advent Calendar,2017,City,248,,29.99,false,,,2017-02-20 21:22:35
+71349,Beetlejuice,2017,Dimensions,56,,11.99,false,,,2017-05-31 15:40:22
 75143,{?},2016,Star Wars,,,,false,,,2016-05-26 18:55:45
 75184,Star Wars Advent Calendar,2017,Star Wars,309,,39.99,false,,,2017-02-19 20:41:35
-75188,Resistance Bomber,2017,Star Wars,,,,false,,,2017-05-26 22:36:08
-75189,First Order Heavy Assault Walker,2017,Star Wars,,,,false,,,2017-05-26 22:35:02
-75190,First Order Star Destroyer,2017,Star Wars,,,,false,,,2017-05-26 22:34:05
+75188,?,2017,Star Wars,,,,false,,,2017-06-03 08:10:17
+75189,?,2017,Star Wars,,,,false,,,2017-06-03 08:10:35
+75190,?,2017,Star Wars,,,,false,,,2017-06-03 08:10:55
 75192,{?},2017,Star Wars,,,,false,,,2016-10-14 13:55:55

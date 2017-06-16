@@ -6,6 +6,7 @@ import os
 import zeep
 import ConfigParser
 from collections import OrderedDict
+from decimal import Decimal
 
 logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
@@ -53,6 +54,7 @@ key_header = OrderedDict([
   ('pieces', 'Pieces'),
   ('minifigs', 'Minifigs'),
   ('USRetailPrice', 'US Retail Price'),
+  ('total', 'Running Total'),
   ('released', 'Released'),
   ('USDateAddedToSAH', 'US Start Date'),
   ('USDateRemovedFromSAH', 'US End Date'),
@@ -62,6 +64,8 @@ key_header = OrderedDict([
 sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
 sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
 sets = sorted(sets, key=lambda k: (k['released'] is None, k['released']), reverse=True)
+
+total = 0
 
 # clean up the data
 for wset in sets:
@@ -76,6 +80,11 @@ for wset in sets:
 
   # use true/false rather than True/False
   wset['released'] = 'true' if wset['released'] else 'false'
+
+  # running total
+  if wset['released'] and wset['USDateAddedToSAH'] and wset['USRetailPrice']:
+    total = total + Decimal(wset['USRetailPrice'])
+    wset['total'] = total
 
 with open('wanted.csv', 'w') as f:
   dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)

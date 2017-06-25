@@ -1,17 +1,17 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import csv
 import logging
 import os
 import zeep
-import ConfigParser
+from configparser import ConfigParser
 from collections import OrderedDict
 from decimal import Decimal
 
 logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
 
-config = ConfigParser.ConfigParser()
+config = ConfigParser()
 config.read('.config')
 wanted = dict(config.items('wanted_account'))
 
@@ -91,4 +91,4 @@ with open('wanted.csv', 'w') as f:
   dict_writer.writerow(key_header)
   dict_writer.writerows(sets)
 
-print "{} sets wanted".format(len(sets))
+print("{} sets wanted".format(len(sets)))

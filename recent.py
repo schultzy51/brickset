@@ -1,12 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import argparse
 import logging
 import zeep
-import ConfigParser
 import simplejson as json
 import webbrowser
 from collections import OrderedDict
+from configparser import ConfigParser
 from datetime import datetime, timedelta
 
 logging.basicConfig()
@@ -24,7 +24,7 @@ parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', he
 
 args = parser.parse_args()
 
-config = ConfigParser.ConfigParser()
+config = ConfigParser()
 config.read('.config')
 wanted = dict(config.items('wanted_account'))
 

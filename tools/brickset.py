@@ -75,7 +75,7 @@ elif args.command == 'wanted':
   if token == 'ERROR: invalid username and/or password':
     sys.exit('ERROR: invalid credentials')
 
-  zeep_sets = client.service.getSets(**sets_params({'userHash': token, 'wanted': 1}))
+  zeep_sets = client.service.getSets(**sets_params({'userHash': token, 'wanted': 1, 'apiKey': api_key}))
   items.extend(zeep.helpers.serialize_object(zeep_sets))
 
 elif args.command == 'themes':
@@ -95,7 +95,7 @@ elif args.command == 'sets':
   page_size = 50
 
   while True:
-    params = sets_params({'theme': args.theme, 'pageSize': page_size, 'pageNumber': page_number})
+    params = sets_params({'theme': args.theme, 'apiKey': api_key, 'pageSize': page_size, 'pageNumber': page_number})
     zeep_sets = client.service.getSets(**params)
     sets = zeep.helpers.serialize_object(zeep_sets)
 

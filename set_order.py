@@ -3,6 +3,7 @@
 import csv
 import logging
 import os
+import sys
 import zeep
 from configparser import ConfigParser
 from collections import OrderedDict
@@ -11,13 +12,16 @@ from decimal import Decimal
 logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
 
-config = ConfigParser()
-config.read('.config')
-wanted = dict(config.items('wanted_account'))
+DEFAULT_SECTION = 'wanted'
+DEFAULT_CONFIG = '.config'
 
-username = wanted['username']
-password = wanted['password']
-api_key = wanted['api_key']
+config = ConfigParser()
+config.read(DEFAULT_CONFIG)
+section = config[DEFAULT_SECTION]
+
+username = section.get('username', 'username')
+password = section.get('password', 'password')
+api_key = section.get('api_key', 'api_key')
 
 client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
 
@@ -43,6 +47,10 @@ def sets_params(overrides):
 
 
 token = client.service.login(apiKey=api_key, username=username, password=password)
+
+if token == 'ERROR: invalid username and/or password':
+  sys.exit('ERROR: invalid credentials')
+
 zeep_sets = client.service.getSets(**sets_params({'userHash': token, 'wanted': 1, 'apiKey': api_key, 'pageSize': 80}))
 sets = zeep.helpers.serialize_object(zeep_sets)
 

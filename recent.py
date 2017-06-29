@@ -13,10 +13,6 @@ logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
 
 parser = argparse.ArgumentParser(description='Brickset Tooling')
-# parser.add_argument('command', help='Command to execute')
-# parser.add_argument('-a', '--api-key', action='store', dest='api_key', help='Developer api-key', required=True)
-# parser.add_argument('-u', '--username', action='store', dest='username', help='Username')
-# parser.add_argument('-p', '--password', action='store', dest='password', help='Password')
 parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', type=int, default=10080, help='Recent minutes ago')
 parser.add_argument('-s', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0,
                     help='Recent minutes ago stop')
@@ -24,13 +20,14 @@ parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', he
 
 args = parser.parse_args()
 
-config = ConfigParser()
-config.read('.config')
-wanted = dict(config.items('wanted_account'))
+DEFAULT_SECTION = 'DEFAULT'
+DEFAULT_CONFIG = '.config'
 
-username = wanted['username']
-password = wanted['password']
-api_key = wanted['api_key']
+config = ConfigParser()
+config.read(DEFAULT_CONFIG)
+section = config[DEFAULT_SECTION]
+
+api_key = section.get('api_key', 'api_key')
 
 client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
 

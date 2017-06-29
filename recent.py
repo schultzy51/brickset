@@ -91,4 +91,4 @@ for rset in sets:
   if rset['lastUpdated']:
     rset['lastUpdated'] = rset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
 
-  print(json.dumps(rset, default=json_serial))
+print(json.dumps(sets, default=json_serial))

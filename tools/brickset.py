@@ -63,12 +63,11 @@ def json_serial(obj):
   raise TypeError("Type not serializable")
 
 
+items = []
+
 if args.command == 'recent':
   zeep_sets = client.service.getRecentlyUpdatedSets(apiKey=api_key, minutesAgo=args.minutes_ago)
-  sets = zeep.helpers.serialize_object(zeep_sets)
-
-  for set in sets:
-    print(json.dumps(set, default=json_serial))
+  items.extend(zeep.helpers.serialize_object(zeep_sets))
 
 elif args.command == 'wanted':
   token = client.service.login(apiKey=api_key, username=username, password=password)
@@ -77,31 +76,19 @@ elif args.command == 'wanted':
     sys.exit('ERROR: invalid credentials')
 
   zeep_sets = client.service.getSets(**sets_params({'userHash': token, 'wanted': 1}))
-  sets = zeep.helpers.serialize_object(zeep_sets)
-
-  for set in sets:
-    print(json.dumps(set, default=json_serial))
+  items.extend(zeep.helpers.serialize_object(zeep_sets))
 
 elif args.command == 'themes':
   zeep_themes = client.service.getThemes(apiKey=api_key)
-  themes = zeep.helpers.serialize_object(zeep_themes)
-
-  for theme in themes:
-    print(json.dumps(theme, default=json_serial))
+  items.extend(zeep.helpers.serialize_object(zeep_themes))
 
 elif args.command == 'subthemes':
   zeep_subthemes = client.service.getSubthemes(apiKey=api_key, theme=args.theme)
-  subthemes = zeep.helpers.serialize_object(zeep_subthemes)
-
-  for subtheme in subthemes:
-    print(json.dumps(subtheme, default=json_serial))
+  items.extend(zeep.helpers.serialize_object(zeep_subthemes))
 
 elif args.command == 'years':
   zeep_years = client.service.getYears(apiKey=api_key, theme=args.theme)
-  years = zeep.helpers.serialize_object(zeep_years)
-
-  for year in years:
-    print(json.dumps(year, default=json_serial))
+  items.extend(zeep.helpers.serialize_object(zeep_years))
 
 elif args.command == 'sets':
   page_number = 1
@@ -112,8 +99,7 @@ elif args.command == 'sets':
     zeep_sets = client.service.getSets(**params)
     sets = zeep.helpers.serialize_object(zeep_sets)
 
-    for set in sets:
-      print(json.dumps(set, default=json_serial))
+    items.extend(sets)
 
     if len(sets) != page_size:
       break
@@ -123,3 +109,5 @@ elif args.command == 'sets':
 
 else:
   sys.exit('ERROR: Unknown Command')
+
+print(json.dumps(items, default=json_serial))

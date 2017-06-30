@@ -4,26 +4,27 @@ import csv
 import logging
 import os
 import sys
+import yaml
 import zeep
-from configparser import ConfigParser
 from collections import OrderedDict
 from decimal import Decimal
 
 logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
 
-DEFAULT_SECTION = 'wanted'
-DEFAULT_CONFIG = '.config'
 
-config = ConfigParser()
-config.read(DEFAULT_CONFIG)
-section = config[DEFAULT_SECTION]
+def config(config='.config', section='default'):
+  with open(config, 'r') as f:
+    cfg = yaml.load(f)
 
-username = section.get('username', 'username')
-password = section.get('password', 'password')
-api_key = section.get('api_key', 'api_key')
+  section = cfg[section]
+  section.update(cfg['default'])
 
-client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+  api_key = section.get('api_key', 'api_key')
+  username = section.get('username', 'username')
+  password = section.get('password', 'password')
+
+  return api_key, username, password
 
 
 def sets_params(overrides):
@@ -46,6 +47,8 @@ def sets_params(overrides):
   return params
 
 
+api_key, username, password = config(section='wanted')
+client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
 token = client.service.login(apiKey=api_key, username=username, password=password)
 
 if token == 'ERROR: invalid username and/or password':

@@ -6,7 +6,7 @@ import zeep
 import simplejson as json
 import sys
 import webbrowser
-from configparser import ConfigParser
+import yaml
 from datetime import datetime, timedelta
 from time import sleep
 
@@ -19,23 +19,26 @@ parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', t
 parser.add_argument('-ms', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0, help='Recent minutes ago stop')
 parser.add_argument('-d', '--delay', action='store', dest='delay', type=int, default=2, help='Delay between api calls in seconds')
 parser.add_argument('-t', '--theme', action='store', dest='theme', help='Theme')
-parser.add_argument('-s', '--section', action='store', dest='section', default='DEFAULT', help='Section')
+parser.add_argument('-s', '--section', action='store', dest='section', default='default', help='Section')
 parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', help='Open a web tab for each set found')
 parser.add_argument('-c', '--custom', action='store_true', dest='custom', help='Custom filtering and ordering')
 
 args = parser.parse_args()
 
-DEFAULT_CONFIG = '.config'
 
-config = ConfigParser()
-config.read(DEFAULT_CONFIG)
-section = config[args.section]
+def config(config='.config', section='default'):
+  with open(config, 'r') as f:
+    cfg = yaml.load(f)
 
-username = section.get('username', 'username')
-password = section.get('password', 'password')
-api_key = section.get('api_key', 'api_key')
+  section = cfg[section]
+  section.update(cfg['default'])
 
-client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+  api_key = section.get('api_key', 'api_key')
+  username = section.get('username', 'username')
+  password = section.get('password', 'password')
+  unwanted_themes = section.get('unwanted_themes', None)
+
+  return api_key, username, password, unwanted_themes
 
 
 def sets_params(overrides):
@@ -73,21 +76,9 @@ def wanted_custom(sets):
   return sets
 
 
-def recent_custom(sets, minutes_ago_stop=0, open_web=False):
-  # TODO: move this to config
-  unwanted_themes = [
-    'Books',
-    'Collectable Minifigures',
-    'DC Super Hero Girls',
-    'Duplo',
-    'Elves',
-    'Friends',
-    'Gear',
-    'Juniors',
-    'Nexo Knights',
-    'Ninjago',
-    'The LEGO Ninjago Movie'
-  ]
+def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None):
+  if unwanted_themes is None:
+    unwanted_themes = []
 
   datetime_stop = datetime.utcnow() - timedelta(minutes=minutes_ago_stop)
 
@@ -102,6 +93,9 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False):
   return sets
 
 
+api_key, username, password, unwanted_themes = config(section=args.section)
+client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+
 items = []
 
 if args.command == 'recent':
@@ -109,7 +103,7 @@ if args.command == 'recent':
   sets = zeep.helpers.serialize_object(zeep_sets)
 
   if args.custom:
-    sets = recent_custom(sets, args.minutes_ago_stop, args.open_web)
+    sets = recent_custom(sets, args.minutes_ago_stop, args.open_web, unwanted_themes)
 
   sets.reverse()
 

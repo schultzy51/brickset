@@ -5,8 +5,8 @@ import logging
 import zeep
 import simplejson as json
 import webbrowser
+import yaml
 from collections import OrderedDict
-from configparser import ConfigParser
 from datetime import datetime, timedelta
 
 logging.basicConfig()
@@ -19,16 +19,20 @@ parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', he
 
 args = parser.parse_args()
 
-DEFAULT_SECTION = 'DEFAULT'
-DEFAULT_CONFIG = '.config'
 
-config = ConfigParser()
-config.read(DEFAULT_CONFIG)
-section = config[DEFAULT_SECTION]
+def config(config='.config', section='default'):
+  with open(config, 'r') as f:
+    cfg = yaml.load(f)
 
-api_key = section.get('api_key', 'api_key')
+  section = cfg[section]
+  section.update(cfg['default'])
 
-client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+  api_key = section.get('api_key', 'api_key')
+  username = section.get('username', 'username')
+  password = section.get('password', 'password')
+  unwanted_themes = section.get('unwanted_themes', None)
+
+  return api_key, username, password, unwanted_themes
 
 
 def json_serial(obj):
@@ -38,22 +42,10 @@ def json_serial(obj):
   raise TypeError("Type not serializable")
 
 
+api_key, username, password, unwanted_themes = config()
+client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
 zeep_sets = client.service.getRecentlyUpdatedSets(apiKey=api_key, minutesAgo=args.minutes_ago)
 sets = zeep.helpers.serialize_object(zeep_sets)
-
-unwanted_themes = [
-  'Books',
-  'Collectable Minifigures',
-  'DC Super Hero Girls',
-  'Duplo',
-  'Elves',
-  'Friends',
-  'Gear',
-  'Juniors',
-  'Nexo Knights',
-  'Ninjago',
-  'The LEGO Ninjago Movie'
-]
 
 key_header = OrderedDict([
   ('number', 'Number'),
@@ -64,6 +56,9 @@ key_header = OrderedDict([
   ('USRetailPrice', 'US Retail Price'),
   ('lastUpdated', 'Last Updated')
 ])
+
+if unwanted_themes is None:
+  unwanted_themes = []
 
 datetime_stop = datetime.utcnow() - timedelta(minutes=args.minutes_ago_stop)
 

@@ -14,8 +14,7 @@ logging.getLogger('zeep').setLevel(logging.ERROR)
 
 parser = argparse.ArgumentParser(description='Brickset Tooling')
 parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', type=int, default=10080, help='Recent minutes ago')
-parser.add_argument('-s', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0,
-                    help='Recent minutes ago stop')
+parser.add_argument('-ms', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0, help='Recent minutes ago stop')
 parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', help='Open a web tab for each set found')
 
 args = parser.parse_args()
@@ -66,11 +65,11 @@ key_header = OrderedDict([
   ('lastUpdated', 'Last Updated')
 ])
 
-datetime_stop = datetime.now() - timedelta(minutes=args.minutes_ago_stop)
+datetime_stop = datetime.utcnow() - timedelta(minutes=args.minutes_ago_stop)
 
 sets = list(filter(lambda d: d['theme'] not in unwanted_themes, sets))
+sets = list(filter(lambda d: d['year'] > str(datetime.utcnow().year - 1), sets))
 sets = list(filter(lambda d: d['lastUpdated'] < datetime_stop, sets))
-sets = list(filter(lambda d: d['year'] > str(datetime.now().year - 1), sets))
 sets.reverse()
 
 for rset in sets:

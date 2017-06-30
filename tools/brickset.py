@@ -135,6 +135,49 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None
   return sets
 
 
+def set_order_csv(sets):
+  key_header = OrderedDict([
+    ('number', 'Number'),
+    ('name', 'Name'),
+    ('year', 'Year'),
+    ('theme', 'Theme'),
+    ('pieces', 'Pieces'),
+    ('minifigs', 'Minifigs'),
+    ('USRetailPrice', 'US Retail Price'),
+    ('total', 'Running Total'),
+    ('released', 'Released'),
+    ('USDateAddedToSAH', 'US Start Date'),
+    ('USDateRemovedFromSAH', 'US End Date'),
+    ('lastUpdated', 'Last Updated')
+  ])
+
+  total = 0
+
+  # clean up the data
+  for wset in sets:
+    # remove whitespace
+    for k in wset.keys():
+      if isinstance(wset[k], str):
+        wset[k] = wset[k].strip()
+
+    # shorten the datetime
+    if wset['lastUpdated']:
+      wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
+
+    # use true/false rather than True/False
+    wset['released'] = 'true' if wset['released'] else 'false'
+
+    # running total
+    if wset['released'] and wset['USDateAddedToSAH'] and wset['USRetailPrice']:
+      total = total + Decimal(wset['USRetailPrice'])
+      wset['total'] = total
+
+  with open('wanted.csv', 'w') as f:
+    dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)
+    dict_writer.writerow(key_header)
+    dict_writer.writerows(sets)
+
+
 items = []
 
 try:
@@ -186,48 +229,9 @@ try:
   elif args.command == 'set_order':
     sets = brickset.wanted()
     sets = wanted_custom(sets)
+    set_order_csv(sets)
+
     items.extend(sets)
-
-    key_header = OrderedDict([
-      ('number', 'Number'),
-      ('name', 'Name'),
-      ('year', 'Year'),
-      ('theme', 'Theme'),
-      ('pieces', 'Pieces'),
-      ('minifigs', 'Minifigs'),
-      ('USRetailPrice', 'US Retail Price'),
-      ('total', 'Running Total'),
-      ('released', 'Released'),
-      ('USDateAddedToSAH', 'US Start Date'),
-      ('USDateRemovedFromSAH', 'US End Date'),
-      ('lastUpdated', 'Last Updated')
-    ])
-
-    total = 0
-
-    # clean up the data
-    for wset in sets:
-      # remove whitespace
-      for k in wset.keys():
-        if isinstance(wset[k], str):
-          wset[k] = wset[k].strip()
-
-      # shorten the datetime
-      if wset['lastUpdated']:
-        wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
-
-      # use true/false rather than True/False
-      wset['released'] = 'true' if wset['released'] else 'false'
-
-      # running total
-      if wset['released'] and wset['USDateAddedToSAH'] and wset['USRetailPrice']:
-        total = total + Decimal(wset['USRetailPrice'])
-        wset['total'] = total
-
-    with open('wanted.csv', 'w') as f:
-      dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)
-      dict_writer.writerow(key_header)
-      dict_writer.writerows(sets)
   else:
     raise RuntimeError('ERROR: Unknown Command')
 

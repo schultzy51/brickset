@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 
 import argparse
+import csv
 import logging
-import zeep
+import os
 import simplejson as json
 import sys
 import webbrowser
 import yaml
+import zeep
+from collections import OrderedDict
 from datetime import datetime, timedelta
+from decimal import Decimal
 from time import sleep
 
 logging.basicConfig()
@@ -26,6 +30,64 @@ parser.add_argument('-c', '--custom', action='store_true', dest='custom', help='
 args = parser.parse_args()
 
 
+class Brickset:
+  def __init__(self, api_key, username, password):
+    self._client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+    self._api_key = api_key
+    self._username = username
+    self._password = password
+
+  def recent(self, minutes_ago):
+    zeep_sets = self._client.service.getRecentlyUpdatedSets(apiKey=self._api_key, minutesAgo=minutes_ago)
+    return zeep.helpers.serialize_object(zeep_sets)
+
+  def wanted(self):
+    token = self._client.service.login(apiKey=self._api_key, username=self._username, password=self._password)
+
+    if token == 'ERROR: invalid username and/or password':
+      raise 'ERROR: invalid credentials'
+
+    zeep_sets = self._client.service.getSets(**self.sets_params({'userHash': token, 'wanted': 1, 'apiKey': self._api_key, 'pageSize': 80}))
+    return zeep.helpers.serialize_object(zeep_sets)
+
+  def themes(self):
+    zeep_themes = self._client.service.getThemes(apiKey=self._api_key)
+    return zeep.helpers.serialize_object(zeep_themes)
+
+  def subthemes(self, theme):
+    zeep_subthemes = self._client.service.getSubthemes(apiKey=self._api_key, theme=theme)
+    return zeep.helpers.serialize_object(zeep_subthemes)
+
+  def years(self, theme):
+    zeep_years = self._client.service.getYears(apiKey=self._api_key, theme=theme)
+    return zeep.helpers.serialize_object(zeep_years)
+
+  def sets(self, theme, page_size, page_number):
+    params = self.sets_params({'theme': theme, 'apiKey': self._api_key, 'pageSize': page_size, 'pageNumber': page_number})
+    zeep_sets = self._client.service.getSets(**params)
+    return zeep.helpers.serialize_object(zeep_sets)
+
+  @staticmethod
+  def sets_params(overrides):
+    params = {
+      'apiKey': '',
+      'userHash': '',
+      'query': '',
+      'theme': '',
+      'subtheme': '',
+      'setNumber': '',
+      'year': '',
+      'owned': '',
+      'wanted': '',
+      'orderBy': 'Number',
+      'pageSize': 50,
+      'pageNumber': 1,
+      'userName': ''
+    }
+    params.update(overrides)
+    return params
+
+
 def config(config='.config', section='default'):
   with open(config, 'r') as f:
     cfg = yaml.load(f)
@@ -39,26 +101,6 @@ def config(config='.config', section='default'):
   unwanted_themes = section.get('unwanted_themes', None)
 
   return api_key, username, password, unwanted_themes
-
-
-def sets_params(overrides):
-  params = {
-    'apiKey': '',
-    'userHash': '',
-    'query': '',
-    'theme': '',
-    'subtheme': '',
-    'setNumber': '',
-    'year': '',
-    'owned': '',
-    'wanted': '',
-    'orderBy': 'Number',
-    'pageSize': 50,
-    'pageNumber': 1,
-    'userName': ''
-  }
-  params.update(overrides)
-  return params
 
 
 def json_serial(obj):
@@ -94,13 +136,11 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None
 
 
 api_key, username, password, unwanted_themes = config(section=args.section)
-client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
-
+brickset = Brickset(api_key, username, password)
 items = []
 
 if args.command == 'recent':
-  zeep_sets = client.service.getRecentlyUpdatedSets(apiKey=api_key, minutesAgo=args.minutes_ago)
-  sets = zeep.helpers.serialize_object(zeep_sets)
+  sets = brickset.recent(args.minutes_ago)
 
   if args.custom:
     sets = recent_custom(sets, args.minutes_ago_stop, args.open_web, unwanted_themes)
@@ -110,13 +150,7 @@ if args.command == 'recent':
   items.extend(sets)
 
 elif args.command == 'wanted':
-  token = client.service.login(apiKey=api_key, username=username, password=password)
-
-  if token == 'ERROR: invalid username and/or password':
-    sys.exit('ERROR: invalid credentials')
-
-  zeep_sets = client.service.getSets(**sets_params({'userHash': token, 'wanted': 1, 'apiKey': api_key, 'pageSize': 80}))
-  sets = zeep.helpers.serialize_object(zeep_sets)
+  sets = brickset.wanted()
 
   if args.custom:
     sets = wanted_custom(sets)
@@ -124,31 +158,20 @@ elif args.command == 'wanted':
   items.extend(sets)
 
 elif args.command == 'themes':
-  zeep_themes = client.service.getThemes(apiKey=api_key)
-  themes = zeep.helpers.serialize_object(zeep_themes)
-
-  items.extend(themes)
+  items.extend(brickset.themes())
 
 elif args.command == 'subthemes':
-  zeep_subthemes = client.service.getSubthemes(apiKey=api_key, theme=args.theme)
-  subthemes = zeep.helpers.serialize_object(zeep_subthemes)
-
-  items.extend(subthemes)
+  items.extend(brickset.subthemes(args.theme))
 
 elif args.command == 'years':
-  zeep_years = client.service.getYears(apiKey=api_key, theme=args.theme)
-  years = zeep.helpers.serialize_object(zeep_years)
-
-  items.extend(years)
+  items.extend(brickset.years(args.theme))
 
 elif args.command == 'sets':
   page_number = 1
   page_size = 50
 
   while True:
-    params = sets_params({'theme': args.theme, 'apiKey': api_key, 'pageSize': page_size, 'pageNumber': page_number})
-    zeep_sets = client.service.getSets(**params)
-    sets = zeep.helpers.serialize_object(zeep_sets)
+    sets = brickset.sets(args.theme, page_size, page_number)
 
     items.extend(sets)
 
@@ -158,6 +181,51 @@ elif args.command == 'sets':
       page_number += 1
       sleep(args.delay)
 
+elif args.command == 'set_order':
+  sets = brickset.wanted()
+  sets = wanted_custom(sets)
+  items.extend(sets)
+
+  key_header = OrderedDict([
+    ('number', 'Number'),
+    ('name', 'Name'),
+    ('year', 'Year'),
+    ('theme', 'Theme'),
+    ('pieces', 'Pieces'),
+    ('minifigs', 'Minifigs'),
+    ('USRetailPrice', 'US Retail Price'),
+    ('total', 'Running Total'),
+    ('released', 'Released'),
+    ('USDateAddedToSAH', 'US Start Date'),
+    ('USDateRemovedFromSAH', 'US End Date'),
+    ('lastUpdated', 'Last Updated')
+  ])
+
+  total = 0
+
+  # clean up the data
+  for wset in sets:
+    # remove whitespace
+    for k in wset.keys():
+      if isinstance(wset[k], str):
+        wset[k] = wset[k].strip()
+
+    # shorten the datetime
+    if wset['lastUpdated']:
+      wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
+
+    # use true/false rather than True/False
+    wset['released'] = 'true' if wset['released'] else 'false'
+
+    # running total
+    if wset['released'] and wset['USDateAddedToSAH'] and wset['USRetailPrice']:
+      total = total + Decimal(wset['USRetailPrice'])
+      wset['total'] = total
+
+  with open('wanted.csv', 'w') as f:
+    dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)
+    dict_writer.writerow(key_header)
+    dict_writer.writerows(sets)
 else:
   sys.exit('ERROR: Unknown Command')
 

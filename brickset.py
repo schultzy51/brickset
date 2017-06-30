@@ -135,7 +135,7 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None
   return sets
 
 
-def set_order_csv(sets):
+def set_order_csv(sets, filename='wanted.csv'):
   key_header = OrderedDict([
     ('number', 'Number'),
     ('name', 'Name'),
@@ -172,7 +172,7 @@ def set_order_csv(sets):
       total = total + Decimal(wset['USRetailPrice'])
       wset['total'] = total
 
-  with open('wanted.csv', 'w') as f:
+  with open(filename, 'w') as f:
     dict_writer = csv.DictWriter(f, fieldnames=key_header.keys(), extrasaction='ignore', lineterminator=os.linesep)
     dict_writer.writerow(key_header)
     dict_writer.writerows(sets)

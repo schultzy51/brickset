@@ -88,19 +88,15 @@ class Brickset:
     return params
 
 
-def config(config='.config', section='default'):
-  with open(config, 'r') as f:
+def get_config(filename='.config.yml', section='default'):
+  with open(filename, 'r') as f:
     cfg = yaml.load(f)
 
-  section = cfg[section]
-  section.update(cfg['default'])
+  config = cfg['default']
+  config.update(cfg[section])
 
-  api_key = section.get('api_key', 'api_key')
-  username = section.get('username', 'username')
-  password = section.get('password', 'password')
-  unwanted_themes = section.get('unwanted_themes', None)
-
-  return api_key, username, password, unwanted_themes
+  # TODO: how to handle missing keys?
+  return config
 
 
 def json_serial(obj):
@@ -136,6 +132,7 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None
 
 
 def set_order_csv(sets, filename='wanted.csv'):
+  # TODO: load key_header from config
   key_header = OrderedDict([
     ('number', 'Number'),
     ('name', 'Name'),
@@ -178,20 +175,24 @@ def set_order_csv(sets, filename='wanted.csv'):
     dict_writer.writerows(sets)
 
 
+def filter_keys(items, wanted_keys):
+  return [{k: v for (k, v) in item.items() if k in wanted_keys} for item in items]
+
+
 items = []
 
 try:
-  api_key, username, password, unwanted_themes = config(section=args.section)
-  brickset = Brickset(api_key, username, password)
+  config = get_config(section=args.section)
+  brickset = Brickset(config['api_key'], config['username'], config['password'])
 
   if args.command == 'recent':
     sets = brickset.recent(args.minutes_ago)
 
     if args.custom:
-      sets = recent_custom(sets, args.minutes_ago_stop, args.open_web, unwanted_themes)
+      sets = recent_custom(sets, args.minutes_ago_stop, args.open_web, config['unwanted_themes'])
 
     sets.reverse()
-
+    sets = filter_keys(sets, config['output']['recent'])
     items.extend(sets)
 
   elif args.command == 'wanted':
@@ -200,16 +201,23 @@ try:
     if args.custom:
       sets = wanted_custom(sets)
 
+    sets = filter_keys(sets, config['output']['wanted'])
     items.extend(sets)
 
   elif args.command == 'themes':
-    items.extend(brickset.themes())
+    themes = brickset.themes()
+    themes = filter_keys(themes, config['output']['themes'])
+    items.extend(themes)
 
   elif args.command == 'subthemes':
-    items.extend(brickset.subthemes(args.theme))
+    subthemes = brickset.subthemes(args.theme)
+    subthemes = filter_keys(subthemes, config['output']['subthemes'])
+    items.extend(subthemes)
 
   elif args.command == 'years':
-    items.extend(brickset.years(args.theme))
+    years = brickset.years(args.theme)
+    years = filter_keys(years, config['output']['years'])
+    items.extend(years)
 
   elif args.command == 'sets':
     page_number = 1
@@ -217,7 +225,7 @@ try:
 
     while True:
       sets = brickset.sets(args.theme, page_size, page_number)
-
+      sets = filter_keys(sets, config['output']['sets'])
       items.extend(sets)
 
       if len(sets) != page_size:
@@ -230,6 +238,7 @@ try:
     sets = brickset.wanted()
     sets = wanted_custom(sets)
     set_order_csv(sets)
+    sets = filter_keys(sets, config['output']['set_order'])
 
     items.extend(sets)
   else:

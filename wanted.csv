@@ -3,7 +3,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75169,Duel on Naboo,2017,Star Wars,208,3,24.99,79.98,true,2017-02-17,,2016-12-13 07:32:26
 75172,Y-wing Starfighter,2017,Star Wars,691,5,59.99,139.97,true,2017-02-17,,2016-12-13 07:32:32
 75174,Desert Skiff Escape,2017,Star Wars,277,4,29.99,169.96,true,2017-02-17,2017-06-30,2016-12-13 07:32:35
-75175,A-wing Starfighter,2017,Star Wars,358,3,39.99,209.95,true,2017-02-17,,2016-12-13 07:32:37
+75175,A-wing Starfighter,2017,Star Wars,358,3,39.99,209.95,true,2017-02-17,2017-07-01,2016-12-13 07:32:37
 75144,Snowspeeder,2017,Star Wars,1703,2,199.99,409.94,true,2017-05-05,,2017-05-03 17:14:14
 31066,Space Shuttle Explorer,2017,Creator,285,,29.99,439.93,true,2017-05-29,,2017-05-16 13:54:32
 31070,Turbo Track Racer,2017,Creator,664,,59.99,499.92,true,2017-05-29,,2017-05-16 13:54:40
@@ -18,6 +18,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,,99.99,1124.83,true,2017-06-02,,2017-05-26 02:34:10
 75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,1149.82,true,2017-06-02,,2017-05-16 14:53:50
 75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,1204.81,true,2017-06-02,,2017-05-16 14:53:51
+10258,London Bus,2017,Advanced Models,1686,,139.99,,true,,,2017-07-02 16:21:40
 30611,R2-D2,2017,Star Wars,70,,,,true,,,2017-04-30 13:56:12
 40173,Picture Frame,2017,Miscellaneous,,,,,true,,,2017-05-17 18:39:51
 40176,Scarif Stormtrooper,2017,Star Wars,25,,,,true,,,2017-05-25 12:52:26
@@ -28,7 +29,6 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 42065,RC Tracked Racer,2017,Technic,370,,,,true,,,2016-11-09 02:28:40
 42066,Air Race Jet,2017,Technic,1151,,159.99,,true,,,2017-02-19 00:11:04
 75995,Mercedes AMG Petronas Team Gift 2017,2017,Speed Champions,120,,,,true,,,2017-05-23 13:37:33
-10258,London Bus,2017,Advanced Models,1686,,139.99,,false,,,2017-06-30 16:16:11
 21310,Old Fishing Store,2017,Ideas,2049,,149.99,,false,,,2017-06-01 02:11:42
 42051,Airport Rescue Vehicle,2016,Technic,,,,,false,,,2016-11-08 20:53:30
 42068,Airport Rescue Vehicle,2017,Technic,,,99.99,,false,,,2017-02-19 00:10:18
@@ -36,7 +36,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 42070,6x6 All Terrain Tow Truck,2017,Technic,1862,,289.99,,false,,,2017-02-19 00:15:24
 60155,City Advent Calendar,2017,City,248,,29.99,,false,,,2017-02-20 21:22:35
 70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,,299.99,,false,,,2017-06-22 16:36:55
-71019,LEGO Minifigures - The LEGO NINJAGO Movie Series {Random bag},2017,Collectable Minifigures,,,,,false,,,2017-06-22 19:03:13
+71019,LEGO Minifigures - The LEGO NINJAGO Movie Series - Random bag,2017,Collectable Minifigures,,,,,false,,,2017-07-03 13:43:07
 71349,Beetlejuice,2017,Dimensions,56,,11.99,,false,,,2017-05-31 15:40:22
 75143,{?},2016,Star Wars,,,,,false,,,2016-05-26 18:55:45
 75184,Star Wars Advent Calendar,2017,Star Wars,309,,39.99,,false,,,2017-02-19 20:41:35

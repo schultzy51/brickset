@@ -42,13 +42,10 @@ class Brickset:
     return zeep.helpers.serialize_object(zeep_sets)
 
   def wanted(self):
-    token = self._client.service.login(apiKey=self._api_key, username=self._username, password=self._password)
+    return self.sets(action='wanted')
 
-    if token == 'ERROR: invalid username and/or password':
-      raise RuntimeError('ERROR: invalid credentials')
-
-    zeep_sets = self._client.service.getSets(**self.sets_params({'userHash': token, 'wanted': 1, 'apiKey': self._api_key, 'pageSize': 80}))
-    return zeep.helpers.serialize_object(zeep_sets)
+  def owned(self):
+    return self.sets(action='owned')
 
   def themes(self):
     zeep_themes = self._client.service.getThemes(apiKey=self._api_key)
@@ -62,10 +59,41 @@ class Brickset:
     zeep_years = self._client.service.getYears(apiKey=self._api_key, theme=theme)
     return zeep.helpers.serialize_object(zeep_years)
 
-  def sets(self, theme, page_size, page_number):
-    params = self.sets_params({'theme': theme, 'apiKey': self._api_key, 'pageSize': page_size, 'pageNumber': page_number})
-    zeep_sets = self._client.service.getSets(**params)
+  def sets_page(self, page_size=50, page_number=1, theme=None, action=None):
+    params = {'apiKey': self._api_key, 'pageSize': page_size, 'pageNumber': page_number}
+
+    if action:
+      if action not in ['wanted', 'owned']:
+        raise RuntimeError('ERROR: invalid action')
+
+      token = self._client.service.login(apiKey=self._api_key, username=self._username, password=self._password)
+
+      if token == 'ERROR: invalid username and/or password':
+        raise RuntimeError('ERROR: invalid credentials')
+
+      params.update({'userHash': token, action: '1'})
+
+    if theme:
+      params.update({'theme': theme})
+
+    zeep_sets = self._client.service.getSets(**self.sets_params(params))
     return zeep.helpers.serialize_object(zeep_sets)
+
+  def sets(self, page_size=50, theme=None, action=None, delay=2):
+    items = []
+    page_number = 1
+
+    while True:
+      sets = brickset.sets_page(page_size=page_size, page_number=page_number, theme=theme, action=action)
+      items.extend(sets)
+
+      if len(sets) != page_size:
+        break
+      else:
+        page_number += 1
+        sleep(delay)
+
+    return items
 
   @staticmethod
   def sets_params(overrides):
@@ -113,6 +141,10 @@ def wanted_custom(sets):
 
   return sets
 
+def owned_custom(sets):
+  sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
+
+  return sets
 
 def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None):
   if unwanted_themes is None:
@@ -131,7 +163,7 @@ def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None
   return sets
 
 
-def set_order_csv(sets, filename='wanted.csv'):
+def set_order_csv(sets, filename):
   # TODO: load key_header from config
   key_header = OrderedDict([
     ('number', 'Number'),
@@ -204,6 +236,15 @@ try:
     sets = filter_keys(sets, config['output']['wanted'])
     items.extend(sets)
 
+  elif args.command == 'owned':
+    sets = brickset.owned()
+
+    if args.custom:
+      sets = owned_custom(sets)
+
+    sets = filter_keys(sets, config['output']['owned'])
+    items.extend(sets)
+
   elif args.command == 'themes':
     themes = brickset.themes()
     themes = filter_keys(themes, config['output']['themes'])
@@ -220,24 +261,22 @@ try:
     items.extend(years)
 
   elif args.command == 'sets':
-    page_number = 1
-    page_size = 50
-
-    while True:
-      sets = brickset.sets(args.theme, page_size, page_number)
-      sets = filter_keys(sets, config['output']['sets'])
-      items.extend(sets)
-
-      if len(sets) != page_size:
-        break
-      else:
-        page_number += 1
-        sleep(args.delay)
+    sets = brickset.sets(theme=args.theme)
+    sets = filter_keys(sets, config['output']['sets'])
+    items.extend(sets)
 
   elif args.command == 'set_order':
     sets = brickset.wanted()
     sets = wanted_custom(sets)
-    set_order_csv(sets)
+    set_order_csv(sets, 'wanted.csv')
+    sets = filter_keys(sets, config['output']['set_order'])
+
+    items.extend(sets)
+
+  elif args.command == 'set_order_owned':
+    sets = brickset.owned()
+    sets = owned_custom(sets)
+    set_order_csv(sets, 'owned.csv')
     sets = filter_keys(sets, config['output']['set_order'])
 
     items.extend(sets)

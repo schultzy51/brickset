@@ -5,20 +5,20 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 10220,Volkswagen T1 Camper Van,2011,Advanced Models,1332,,119.99,1009.96,true,2011-09-28,,2012-09-15 00:55:05
 10225,R2-D2,2012,Star Wars,2127,1,179.99,1189.95,true,2012-05-04,2014-11-08,2012-01-16 01:56:08
 10227,B-Wing Starfighter,2012,Star Wars,1487,,199.99,1389.94,true,2012-10-01,2013-11-05,2012-10-07 15:50:08
-10232,Palace Cinema,2013,Advanced Models,2196,6,149.99,1539.93,true,2013-03-01,2017-10-24,2017-01-17 15:47:14
+10232,Palace Cinema,2013,Advanced Models,2196,6,149.99,1539.93,true,2013-03-01,2017-10-29,2017-01-17 15:47:14
 10236,Ewok Village,2013,Star Wars,1990,17,249.99,1789.92,true,2013-09-01,2016-11-29,2016-04-14 19:47:28
 10240,Red Five X-wing Starfighter,2013,Star Wars,1559,1,199.99,1989.91,true,2013-05-05,2015-10-15,2013-05-02 04:18:10
 10242,MINI Cooper MK VII,2014,Advanced Models,1077,,99.99,2089.90,true,2014-08-01,,2016-10-20 21:35:01
 10243,Parisian Restaurant,2014,Advanced Models,2469,5,159.99,2249.89,true,2014-01-02,,2015-02-21 22:15:05
 10245,Santa's Workshop,2014,Advanced Models,883,6,69.99,2319.88,true,2014-09-18,2016-11-26,2015-02-21 22:17:42
-10246,Detective's Office,2015,Advanced Models,2262,6,159.99,2479.87,true,2015-01-01,2017-10-26,2015-02-21 22:25:00
+10246,Detective's Office,2015,Advanced Models,2262,6,159.99,2479.87,true,2015-01-01,2017-10-29,2015-02-21 22:25:00
 10248,Ferrari F40,2015,Advanced Models,1158,,99.99,2579.86,true,2015-08-02,,2015-07-21 02:16:30
 10249,Winter Toy Shop,2015,Advanced Models,898,8,79.99,2659.85,true,2015-10-02,,2016-06-14 23:36:38
-10251,Brick Bank,2016,Advanced Models,2380,5,169.99,2829.84,true,2016-01-02,,2016-01-14 22:11:20
+10251,Brick Bank,2016,Advanced Models,2380,5,169.99,2829.84,true,2016-01-02,2017-10-30,2016-01-14 22:11:20
 10252,Volkswagen Beetle,2016,Advanced Models,1167,,99.99,2929.83,true,2016-08-01,,2016-11-19 06:00:58
 10253,Big Ben,2016,Advanced Models,4163,,249.99,3179.82,true,2016-07-02,,2016-06-14 23:39:35
-10254,Winter Holiday Train,2016,Advanced Models,734,5,99.99,3279.81,true,2016-10-02,2017-10-12,2017-10-16 21:53:59
-10255,Assembly Square,2017,Advanced Models,4002,9,279.99,3559.80,true,2017-01-02,2017-10-25,2016-12-08 19:36:22
+10254,Winter Holiday Train,2016,Advanced Models,734,5,99.99,3279.81,true,2016-10-02,,2017-10-16 21:53:59
+10255,Assembly Square,2017,Advanced Models,4002,9,279.99,3559.80,true,2017-01-02,,2016-12-08 19:36:22
 10696,Medium Creative Brick Box,2015,Classic,484,,34.99,3594.79,true,2015-01-01,,2014-12-28 03:10:32
 10699,32x32 Sand Baseplate,2015,Classic,1,,7.99,3602.78,true,2015-01-02,,2014-12-30 11:29:29
 10700,32x32 Green Baseplate,2015,Classic,1,,7.99,3610.77,true,2015-01-07,,2014-12-30 11:29:30
@@ -26,7 +26,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 21003,Seattle Space Needle,2009,Architecture,57,,19.99,3645.75,true,2009-02-01,2015-12-26,2012-05-25 20:35:17
 21027,Berlin,2016,Architecture,289,,29.99,3675.74,true,2016-01-02,,2015-12-31 17:41:45
 21033,Chicago,2017,Architecture,444,,39.99,3715.73,true,2017-01-02,,2016-11-16 19:34:28
-21034,London,2017,Architecture,468,,39.99,3755.72,true,2017-01-02,,2016-11-21 13:17:22
+21034,London,2017,Architecture,468,,39.99,3755.72,true,2017-01-02,2017-11-01,2016-11-21 13:17:22
 21050,Architecture Studio,2013,Architecture,1210,,159.99,3915.71,true,2013-08-01,,2013-08-31 19:00:24
 21102,Minecraft Micro World: The Forest,2012,Ideas,480,2,34.99,3950.70,true,2012-06-19,2015-01-15,2016-04-07 02:53:13
 21103,The DeLorean Time Machine,2013,Ideas,401,2,34.99,3985.69,true,2013-08-01,2014-12-30,2016-04-07 02:53:27
@@ -65,7 +65,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 31313,Mindstorms EV3,2013,Mindstorms,601,,349.99,5675.44,true,2013-09-02,,2013-06-29 05:21:50
 40172,Brick Calendar,2017,Miscellaneous,278,1,19.99,5695.43,true,2017-01-17,2017-04-05,2016-12-21 20:57:55
 40176,Scarif Stormtrooper,2017,Star Wars,25,1,,,true,,,2017-08-03 20:56:06
-40178,Exclusive VIP Set,2017,Promotional,205,2,,,true,,,2017-10-14 04:28:10
+40178,Exclusive VIP Set,2017,Promotional,205,2,,,true,,,2017-10-30 08:56:13
 40205,Little Elf Helpers,2016,Seasonal,238,,9.99,5705.42,true,2016-11-20,2016-12-10,2016-11-25 19:08:41
 40206,Santa,2016,Seasonal,155,,9.99,5715.41,true,2016-11-20,2016-12-10,2016-11-27 22:14:25
 40220,London Bus,2016,Creator,118,,,,true,,,2017-10-20 02:14:11
@@ -75,12 +75,12 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 40251,Mini Piggy Bank,2017,Creator,248,,,,true,,,2017-08-03 21:00:02
 41487,Lloyd,2017,BrickHeadz,102,,9.99,5725.40,true,2017-09-24,,2017-09-27 04:51:11
 41488,Master Wu,2017,BrickHeadz,89,,9.99,5735.39,true,2017-09-24,,2017-09-27 04:51:02
-41585,Batman,2017,BrickHeadz,91,,9.99,5745.38,true,2017-03-01,,2017-02-28 20:45:39
+41585,Batman,2017,BrickHeadz,91,,9.99,5745.38,true,2017-03-01,2017-10-31,2017-02-28 20:45:39
 41586,Batgirl,2017,BrickHeadz,99,,9.99,5755.37,true,2017-03-01,,2017-02-28 20:46:14
-41587,Robin,2017,BrickHeadz,101,,9.99,5765.36,true,2017-03-01,,2017-02-28 20:46:24
+41587,Robin,2017,BrickHeadz,101,,9.99,5765.36,true,2017-03-01,2017-11-01,2017-02-28 20:46:24
 41588,The Joker,2017,BrickHeadz,151,,9.99,5775.35,true,2017-03-01,,2017-02-28 20:46:38
-41589,Captain America,2017,BrickHeadz,79,,9.99,5785.34,true,2017-03-01,,2017-02-28 20:46:59
-41590,Iron Man,2017,BrickHeadz,96,,9.99,5795.33,true,2017-03-01,,2017-02-28 20:47:11
+41589,Captain America,2017,BrickHeadz,79,,9.99,5785.34,true,2017-03-01,2017-11-01,2017-02-28 20:46:59
+41590,Iron Man,2017,BrickHeadz,96,,9.99,5795.33,true,2017-03-01,2017-11-01,2017-02-28 20:47:11
 41591,Black Widow,2017,BrickHeadz,143,,9.99,5805.32,true,2017-03-01,,2017-02-28 20:47:22
 41592,The Hulk,2017,BrickHeadz,93,,9.99,5815.31,true,2017-03-01,,2017-02-28 20:47:32
 41593,Captain Jack Sparrow,2017,BrickHeadz,109,,9.99,5825.30,true,2017-04-02,,2017-03-20 16:13:09

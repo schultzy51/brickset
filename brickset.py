@@ -142,6 +142,7 @@ def wanted_custom(sets):
   return sets
 
 def owned_custom(sets):
+  sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
   sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
 
   return sets
@@ -247,22 +248,22 @@ try:
 
   elif args.command == 'themes':
     themes = brickset.themes()
-    themes = filter_keys(themes, config['output']['themes'])
+    themes = filter_keys(themes, config['output']['theme'])
     items.extend(themes)
 
   elif args.command == 'subthemes':
     subthemes = brickset.subthemes(args.theme)
-    subthemes = filter_keys(subthemes, config['output']['subthemes'])
+    subthemes = filter_keys(subthemes, config['output']['subtheme'])
     items.extend(subthemes)
 
   elif args.command == 'years':
     years = brickset.years(args.theme)
-    years = filter_keys(years, config['output']['years'])
+    years = filter_keys(years, config['output']['year'])
     items.extend(years)
 
   elif args.command == 'sets':
     sets = brickset.sets(theme=args.theme)
-    sets = filter_keys(sets, config['output']['sets'])
+    sets = filter_keys(sets, config['output']['set'])
     items.extend(sets)
 
   elif args.command == 'set_order':
@@ -277,7 +278,7 @@ try:
     sets = brickset.owned()
     sets = owned_custom(sets)
     set_order_csv(sets, 'owned.csv')
-    sets = filter_keys(sets, config['output']['set_order'])
+    sets = filter_keys(sets, config['output']['set_order_owned'])
 
     items.extend(sets)
   else:

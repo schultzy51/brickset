@@ -2,7 +2,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 10179,Ultimate Collector's Millennium Falcon,2007,Star Wars,5197,5,499.99,499.99,true,2007-10-24,2010-05-04,2017-08-23 21:44:34
 10214,Tower Bridge,2010,Advanced Models,4287,,239.99,739.98,true,2010-10-03,,2015-02-21 22:21:09
 10218,Pet Shop,2011,Advanced Models,2032,4,149.99,889.97,true,2011-05-12,2016-11-26,2013-01-24 09:38:07
-10220,Volkswagen T1 Camper Van,2011,Advanced Models,1332,,119.99,1009.96,true,2011-09-28,2017-11-08,2012-09-15 00:55:05
+10220,Volkswagen T1 Camper Van,2011,Advanced Models,1332,,119.99,1009.96,true,2011-09-28,,2012-09-15 00:55:05
 10225,R2-D2,2012,Star Wars,2127,1,179.99,1189.95,true,2012-05-04,2014-11-08,2012-01-16 01:56:08
 10227,B-Wing Starfighter,2012,Star Wars,1487,,199.99,1389.94,true,2012-10-01,2013-11-05,2012-10-07 15:50:08
 10232,Palace Cinema,2013,Advanced Models,2196,6,149.99,1539.93,true,2013-03-01,,2017-01-17 15:47:14
@@ -17,7 +17,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 10251,Brick Bank,2016,Advanced Models,2380,5,169.99,2829.84,true,2016-01-02,,2016-01-14 22:11:20
 10252,Volkswagen Beetle,2016,Advanced Models,1167,,99.99,2929.83,true,2016-08-01,,2016-11-19 06:00:58
 10253,Big Ben,2016,Advanced Models,4163,,249.99,3179.82,true,2016-07-02,,2016-06-14 23:39:35
-10254,Winter Holiday Train,2016,Advanced Models,734,5,99.99,3279.81,true,2016-10-02,2017-11-02,2017-10-16 21:53:59
+10254,Winter Holiday Train,2016,Advanced Models,734,5,99.99,3279.81,true,2016-10-02,2017-11-12,2017-10-16 21:53:59
 10255,Assembly Square,2017,Advanced Models,4002,9,279.99,3559.80,true,2017-01-02,,2016-12-08 19:36:22
 10696,Medium Creative Brick Box,2015,Classic,484,,34.99,3594.79,true,2015-01-01,,2014-12-28 03:10:32
 10699,32x32 Sand Baseplate,2015,Classic,1,,7.99,3602.78,true,2015-01-02,,2014-12-30 11:29:29
@@ -26,7 +26,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 21003,Seattle Space Needle,2009,Architecture,57,,19.99,3645.75,true,2009-02-01,2015-12-26,2012-05-25 20:35:17
 21027,Berlin,2016,Architecture,289,,29.99,3675.74,true,2016-01-02,,2015-12-31 17:41:45
 21033,Chicago,2017,Architecture,444,,39.99,3715.73,true,2017-01-02,,2016-11-16 19:34:28
-21034,London,2017,Architecture,468,,39.99,3755.72,true,2017-01-02,2017-11-08,2016-11-21 13:17:22
+21034,London,2017,Architecture,468,,39.99,3755.72,true,2017-01-02,,2016-11-21 13:17:22
 21050,Architecture Studio,2013,Architecture,1210,,159.99,3915.71,true,2013-08-01,,2013-08-31 19:00:24
 21102,Minecraft Micro World: The Forest,2012,Ideas,480,2,34.99,3950.70,true,2012-06-19,2015-01-15,2016-04-07 02:53:13
 21103,The DeLorean Time Machine,2013,Ideas,401,2,34.99,3985.69,true,2013-08-01,2014-12-30,2016-04-07 02:53:27
@@ -41,7 +41,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 21305,Maze,2016,Ideas,769,,69.99,4425.60,true,2016-04-02,2016-11-25,2016-08-19 19:04:39
 21306,The Beatles Yellow Submarine,2016,Ideas,553,5,59.99,4485.59,true,2016-11-01,,2017-04-10 01:55:44
 21307,Caterham Seven 620R,2016,Ideas,771,,79.99,,true,,,2017-02-21 08:26:17
-21309,NASA Apollo Saturn V,2017,Ideas,1969,,119.99,4605.58,true,2017-06-02,2017-10-26,2017-10-15 16:23:29
+21309,NASA Apollo Saturn V,2017,Ideas,1969,,119.99,4605.58,true,2017-06-02,2017-11-18,2017-10-15 16:23:29
 21310,Old Fishing Store,2017,Ideas,2049,4,149.99,4755.57,true,2017-09-02,,2017-10-04 04:37:16
 21312,Women of NASA,2017,Ideas,231,,24.99,4780.56,true,2017-11-01,2017-11-06,2017-10-26 12:39:41
 30372,Robin's Mini Fortrex,2016,Nexo Knights,45,1,,,true,,,2016-03-25 09:21:05
@@ -57,11 +57,11 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 31048,Lakeside Lodge,2016,Creator,368,1,29.99,5030.52,true,2016-01-02,,2016-02-06 01:16:56
 31049,Twin Spin Helicopter,2016,Creator,326,,29.99,5060.51,true,2016-05-22,,2016-05-15 16:33:15
 31051,Lighthouse Point,2016,Creator,528,2,59.99,5120.50,true,2016-05-22,,2016-07-10 01:08:11
-31052,Vacation Getaways,2016,Creator,792,2,69.99,5190.49,true,2016-05-22,,2016-11-02 20:27:11
+31052,Vacation Getaways,2016,Creator,792,2,69.99,5190.49,true,2016-05-22,2017-11-09,2016-11-02 20:27:11
 31053,Treehouse Adventures,2016,Creator,387,2,34.99,5225.48,true,2016-05-22,,2016-07-10 01:10:10
-31058,Mighty Dinosaurs,2017,Creator,174,,14.99,5240.47,true,2016-11-27,2017-11-08,2016-11-10 14:19:35
+31058,Mighty Dinosaurs,2017,Creator,174,,14.99,5240.47,true,2016-11-27,,2016-11-10 14:19:35
 31062,Robo Explorer,2017,Creator,205,,19.99,5260.46,true,2017-01-02,,2016-12-05 03:16:04
-31066,Space Shuttle Explorer,2017,Creator,285,1,29.99,5290.45,true,2017-05-29,2017-11-02,2017-05-16 13:54:32
+31066,Space Shuttle Explorer,2017,Creator,285,1,29.99,5290.45,true,2017-05-29,,2017-05-16 13:54:32
 31070,Turbo Track Racer,2017,Creator,664,,59.99,5350.44,true,2017-05-29,,2017-05-16 13:54:40
 31313,Mindstorms EV3,2013,Mindstorms,601,,349.99,5700.43,true,2013-09-02,,2013-06-29 05:21:50
 40165,Minifigure Wedding Favour Set,2016,Miscellaneous,89,2,9.99,5710.42,true,2016-03-01,,2016-02-13 03:11:30
@@ -69,13 +69,14 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 40176,Scarif Stormtrooper,2017,Star Wars,25,1,,,true,,,2017-08-03 20:56:06
 40178,Exclusive VIP Set,2017,Promotional,205,2,,,true,,,2017-10-30 08:56:13
 40205,Little Elf Helpers,2016,Seasonal,238,,9.99,5740.40,true,2016-11-20,2016-12-10,2016-11-25 19:08:41
-40206,Santa,2016,Seasonal,155,,9.99,5750.39,true,2016-11-20,2016-12-10,2016-11-27 22:14:25
+40206,Santa,2016,Seasonal,155,,9.99,5750.39,true,2016-11-20,2016-12-10,2017-11-14 19:54:47
 40220,London Bus,2016,Creator,118,,,,true,,,2017-10-20 02:14:11
 40221,Fountain,2016,Creator,105,2,,,true,,,2016-08-17 08:47:13
 40222,Christmas Build-Up,2016,Seasonal,250,,,,true,,,2016-11-26 23:56:34
 40223,Snowglobe,2016,Seasonal,215,1,,,true,,,2016-11-25 01:52:23
 40251,Mini Piggy Bank,2017,Creator,248,,,,true,,,2017-08-03 21:00:02
-40253,Christmas Build-Up,2017,Seasonal,254,,,,false,,,2017-10-05 02:36:50
+40253,Christmas Build-Up,2017,Seasonal,254,,,,true,,,2017-11-14 21:07:52
+40268,R3-M2,2017,Star Wars,21,1,,,true,,,2017-10-29 23:16:56
 40308,Lester,2017,Promotional,5,,,,true,,,2017-10-16 13:21:57
 41485,Finn,2017,BrickHeadz,91,,9.99,5760.38,true,2017-11-01,,2017-10-06 20:51:28
 41486,Captain Phasma,2017,BrickHeadz,127,,9.99,5770.37,true,2017-11-01,,2017-10-06 20:50:45
@@ -85,14 +86,14 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 41586,Batgirl,2017,BrickHeadz,99,,9.99,5810.33,true,2017-03-01,,2017-02-28 20:46:14
 41587,Robin,2017,BrickHeadz,101,,9.99,5820.32,true,2017-03-01,,2017-02-28 20:46:24
 41588,The Joker,2017,BrickHeadz,151,,9.99,5830.31,true,2017-03-01,,2017-02-28 20:46:38
-41589,Captain America,2017,BrickHeadz,79,,9.99,5840.30,true,2017-03-01,2017-11-01,2017-02-28 20:46:59
+41589,Captain America,2017,BrickHeadz,79,,9.99,5840.30,true,2017-03-01,,2017-02-28 20:46:59
 41590,Iron Man,2017,BrickHeadz,96,,9.99,5850.29,true,2017-03-01,,2017-02-28 20:47:11
 41591,Black Widow,2017,BrickHeadz,143,,9.99,5860.28,true,2017-03-01,,2017-02-28 20:47:22
 41592,The Hulk,2017,BrickHeadz,93,,9.99,5870.27,true,2017-03-01,,2017-02-28 20:47:32
 41593,Captain Jack Sparrow,2017,BrickHeadz,109,,9.99,5880.26,true,2017-04-02,,2017-03-20 16:13:09
 41594,Captain Armando Salazar,2017,BrickHeadz,118,,9.99,5890.25,true,2017-04-02,,2017-03-20 16:12:53
-41595,Belle,2017,BrickHeadz,139,,9.99,5900.24,true,2017-03-01,2017-11-02,2017-02-28 20:48:33
-41596,Beast,2017,BrickHeadz,116,,9.99,5910.23,true,2017-03-01,2017-11-02,2017-02-28 20:48:45
+41595,Belle,2017,BrickHeadz,139,,9.99,5900.24,true,2017-03-01,,2017-02-28 20:48:33
+41596,Beast,2017,BrickHeadz,116,,9.99,5910.23,true,2017-03-01,,2017-02-28 20:48:45
 42000,Grand Prix Racer,2013,Technic,1141,,129.99,6040.22,true,2013-03-01,2014-12-14,2013-04-12 01:05:24
 42007,Moto Cross Bike,2013,Technic,253,,39.99,6080.21,true,2012-12-28,2014-12-17,2013-04-12 01:06:11
 42009,Mobile Crane MK II,2013,Technic,2606,,219.99,6300.20,true,2013-08-01,2015-11-08,2013-12-07 19:21:07
@@ -103,7 +104,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 42036,Street Motorcycle,2015,Technic,375,,39.99,6880.15,true,2015-08-02,2016-12-07,2014-12-21 00:20:22
 42039,24 Hours Race Car,2015,Technic,1219,,129.99,7010.14,true,2015-08-02,2016-12-18,2014-12-27 09:14:19
 42040,Fire Plane,2015,Technic,578,,49.99,7060.13,true,2015-08-02,2016-10-28,2015-07-31 09:04:39
-42041,Race Truck,2015,Technic,608,,69.99,7130.12,true,2015-01-01,2016-11-17,2015-06-03 23:25:01
+42041,Race Truck,2015,Technic,608,,69.99,7130.12,true,2015-01-01,2016-11-17,2017-11-13 21:03:25
 42042,Crawler Crane,2015,Technic,1401,,149.99,7280.11,true,2015-08-02,2016-11-21,2016-05-18 13:16:34
 42050,Drag Racer,2016,Technic,647,,79.99,7360.10,true,2016-01-02,,2016-11-02 20:29:20
 42052,Heavy Lift Helicopter,2016,Technic,1042,,139.99,7500.09,true,2016-01-02,,2016-02-06 09:45:17
@@ -204,7 +205,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75149,Resistance X-wing Fighter,2016,Star Wars,740,4,79.99,13839.31,true,2016-06-01,,2016-05-15 16:34:30
 75150,Vader's TIE Advanced vs. A-wing Starfighter,2016,Star Wars,702,4,89.99,13929.30,true,2016-06-01,2016-12-01,2016-12-11 09:44:20
 75152,Imperial Assault Hovertank,2016,Star Wars,385,3,29.99,13959.29,true,2016-10-01,,2017-01-07 22:02:16
-75153,AT-ST Walker,2016,Star Wars,449,3,39.99,13999.28,true,2016-10-01,,2016-09-23 22:09:03
+75153,AT-ST Walker,2016,Star Wars,449,3,39.99,13999.28,true,2016-10-01,2017-11-09,2016-09-23 22:09:03
 75154,TIE Striker,2016,Star Wars,543,4,69.99,14069.27,true,2016-10-01,,2016-09-23 22:09:04
 75155,Rebel U-wing Fighter,2016,Star Wars,659,5,79.99,14149.26,true,2016-10-01,,2016-09-23 22:09:06
 75157,Captain Rex's AT-TE,2016,Star Wars,972,5,119.99,14269.25,true,2016-06-01,,2016-05-15 16:34:36
@@ -225,7 +226,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75873,Audi R8 LMS ultra,2016,Speed Champions,175,1,14.99,15544.11,true,2016-03-01,,2016-02-21 15:59:16
 75874,Chevrolet Camaro Drag Race,2016,Speed Champions,445,3,29.99,15574.10,true,2016-03-01,,2016-03-16 12:55:51
 75877,Mercedes-AMG GT3,2017,Speed Champions,196,1,14.99,15589.09,true,2017-02-17,,2017-04-10 02:00:06
-75879,Scuderia Ferrari SF16-H,2017,Speed Champions,,1,14.99,15604.08,true,2017-02-17,,2017-02-13 09:58:13
+75879,Scuderia Ferrari SF16-H,2017,Speed Champions,184,1,14.99,15604.08,true,2017-02-17,,2017-11-10 13:10:20
 75881,2016 Ford GT & 1966 Ford GT40,2017,Speed Champions,366,3,29.99,15634.07,true,2017-02-17,,2017-04-10 02:01:02
 75902,The Mystery Machine,2015,Scooby-Doo,301,3,29.99,15664.06,true,2015-08-29,2016-10-31,2017-11-08 08:10:24
 75904,Mystery Mansion,2015,Scooby-Doo,860,6,89.99,15754.05,true,2015-08-08,2016-11-11,2017-11-08 08:09:21

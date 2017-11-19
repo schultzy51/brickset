@@ -8,11 +8,11 @@ import simplejson as json
 import sys
 import webbrowser
 import yaml
-import zeep
 from collections import OrderedDict
 from datetime import datetime, timedelta
 from decimal import Decimal
-from time import sleep
+
+from brickset.service import Brickset
 
 logging.basicConfig()
 logging.getLogger('zeep').setLevel(logging.ERROR)
@@ -28,92 +28,6 @@ parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', he
 parser.add_argument('-c', '--custom', action='store_true', dest='custom', help='Custom filtering and ordering')
 
 args = parser.parse_args()
-
-
-class Brickset:
-  def __init__(self, api_key, username, password):
-    self._client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
-    self._api_key = api_key
-    self._username = username
-    self._password = password
-
-  def recent(self, minutes_ago):
-    zeep_sets = self._client.service.getRecentlyUpdatedSets(apiKey=self._api_key, minutesAgo=minutes_ago)
-    return zeep.helpers.serialize_object(zeep_sets)
-
-  def wanted(self):
-    return self.sets(action='wanted')
-
-  def owned(self):
-    return self.sets(action='owned')
-
-  def themes(self):
-    zeep_themes = self._client.service.getThemes(apiKey=self._api_key)
-    return zeep.helpers.serialize_object(zeep_themes)
-
-  def subthemes(self, theme):
-    zeep_subthemes = self._client.service.getSubthemes(apiKey=self._api_key, theme=theme)
-    return zeep.helpers.serialize_object(zeep_subthemes)
-
-  def years(self, theme):
-    zeep_years = self._client.service.getYears(apiKey=self._api_key, theme=theme)
-    return zeep.helpers.serialize_object(zeep_years)
-
-  def sets_page(self, page_size=50, page_number=1, theme=None, action=None):
-    params = {'apiKey': self._api_key, 'pageSize': page_size, 'pageNumber': page_number}
-
-    if action:
-      if action not in ['wanted', 'owned']:
-        raise RuntimeError('ERROR: invalid action')
-
-      token = self._client.service.login(apiKey=self._api_key, username=self._username, password=self._password)
-
-      if token == 'ERROR: invalid username and/or password':
-        raise RuntimeError('ERROR: invalid credentials')
-
-      params.update({'userHash': token, action: '1'})
-
-    if theme:
-      params.update({'theme': theme})
-
-    zeep_sets = self._client.service.getSets(**self.sets_params(params))
-    return zeep.helpers.serialize_object(zeep_sets)
-
-  def sets(self, page_size=50, theme=None, action=None, delay=2):
-    items = []
-    page_number = 1
-
-    while True:
-      sets = brickset.sets_page(page_size=page_size, page_number=page_number, theme=theme, action=action)
-      items.extend(sets)
-
-      if len(sets) != page_size:
-        break
-      else:
-        page_number += 1
-        sleep(delay)
-
-    return items
-
-  @staticmethod
-  def sets_params(overrides):
-    params = {
-      'apiKey': '',
-      'userHash': '',
-      'query': '',
-      'theme': '',
-      'subtheme': '',
-      'setNumber': '',
-      'year': '',
-      'owned': '',
-      'wanted': '',
-      'orderBy': 'Number',
-      'pageSize': 50,
-      'pageNumber': 1,
-      'userName': ''
-    }
-    params.update(overrides)
-    return params
 
 
 def get_config(filename='.config.yml', section='default'):
@@ -141,11 +55,13 @@ def wanted_custom(sets):
 
   return sets
 
+
 def owned_custom(sets):
   sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
   sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
 
   return sets
+
 
 def recent_custom(sets, minutes_ago_stop=0, open_web=False, unwanted_themes=None):
   if unwanted_themes is None:

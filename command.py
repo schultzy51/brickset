@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 
 import argparse
-import logging
 import simplejson as json
 import sys
 from datetime import datetime
 
 from brickset.service import Brickset
 from brickset.config import get_config
-
-logging.basicConfig()
-logging.getLogger('zeep').setLevel(logging.ERROR)
 
 parser = argparse.ArgumentParser(description='Brickset Tooling')
 parser.add_argument('command', help='Command to execute')
@@ -27,7 +23,7 @@ def json_serial(obj):
   if isinstance(obj, datetime):
     serial = obj.isoformat()
     return serial
-  raise TypeError("Type not serializable")
+  raise TypeError('Type not serializable')
 
 
 def filter_keys(items, wanted_keys):

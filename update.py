@@ -2,7 +2,6 @@
 
 import argparse
 import csv
-import logging
 import os
 import simplejson as json
 import sys
@@ -13,9 +12,6 @@ from decimal import Decimal
 
 from brickset.service import Brickset
 from brickset.config import get_config
-
-logging.basicConfig()
-logging.getLogger('zeep').setLevel(logging.ERROR)
 
 parser = argparse.ArgumentParser(description='Brickset Tooling')
 parser.add_argument('command', help='Command to execute')

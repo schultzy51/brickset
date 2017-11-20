@@ -1,0 +1,4 @@
+jsonlines
+pyyaml
+simplejson
+zeep

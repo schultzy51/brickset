@@ -1,5 +1,9 @@
 # brickset
 
+```
+pip3 install -r requirements.txt
+```
+
 A script to assist with determining the optimal order
 
 ```

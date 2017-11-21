@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from datetime import datetime
+from brickset import json_serial
 from brickset.service import Brickset
 from brickset.config import get_config
 import simplejson as json
@@ -10,13 +11,6 @@ from time import sleep
 
 DELAY = 1
 PAGE_SIZE = 100
-
-
-def json_serial(obj):
-  if isinstance(obj, datetime):
-    serial = obj.isoformat()
-    return serial
-  raise TypeError('Type not serializable')
 
 
 def write_jsonl(filename, items):

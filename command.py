@@ -3,8 +3,8 @@
 import argparse
 import simplejson as json
 import sys
-from datetime import datetime
 
+from brickset import filter_keys, json_serial
 from brickset.service import Brickset
 from brickset.config import get_config
 
@@ -17,18 +17,6 @@ parser.add_argument('-t', '--theme', action='store', dest='theme', help='Theme')
 parser.add_argument('-s', '--section', action='store', dest='section', default='default', help='Section')
 
 args = parser.parse_args()
-
-
-def json_serial(obj):
-  if isinstance(obj, datetime):
-    serial = obj.isoformat()
-    return serial
-  raise TypeError('Type not serializable')
-
-
-def filter_keys(items, wanted_keys):
-  return [{k: v for (k, v) in item.items() if k in wanted_keys} for item in items]
-
 
 items = []
 

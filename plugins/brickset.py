@@ -1,20 +1,10 @@
 from slackbot.bot import respond_to
+from brickset import filter_keys
 from brickset.service import Brickset
 from brickset.config import get_config
-from datetime import datetime
 import re
 
 config = get_config(section='wanted')
-
-def json_serial(obj):
-  if isinstance(obj, datetime):
-    serial = obj.isoformat()
-    return serial
-  raise TypeError("Type not serializable")
-
-
-def filter_keys(items, wanted_keys):
-  return [{k: v for (k, v) in item.items() if k in wanted_keys} for item in items]
 
 @respond_to('recent', re.IGNORECASE)
 def recent(message):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from datetime import datetime
-from brickset import write_jsonl
+from brickset import write_jsonl, parameterize
 from brickset.service import Brickset
 from brickset.config import get_config
 import os
@@ -29,7 +29,7 @@ for theme in themes:
   theme_name = theme['theme']
   theme_set_count = theme['setCount']
   theme_subtheme_count = theme['subthemeCount']
-  theme_prefix = theme_name.replace(' ', '_').lower()
+  theme_prefix = parameterize(theme_name, sep='_')
 
   os.makedirs(os.path.join('data', theme_prefix), exist_ok=True)
 

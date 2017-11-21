@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brickset import read_jsonl
+from brickset import read_jsonl, parameterize
 import os
 
 if not os.path.exists('data'):
@@ -10,11 +10,27 @@ themes_file = os.path.join('data', 'themes.jsonl')
 if not os.path.exists(themes_file):
   raise RuntimeError('themes.json missing!')
 
-themes_directories = [name for name in os.listdir('data') if os.path.isdir(os.path.join('data', name))]
+themes = read_jsonl(themes_file)
 
-# TODO: check themes against directories
+themes_directories = [name for name in os.listdir('data') if os.path.isdir(os.path.join('data', name))]
+parameterized_theme_names = [parameterize(theme['theme'], sep='_') for theme in themes]
+
+remote_missing_themes = list(set(themes_directories) - set(parameterized_theme_names))
+
+if len(remote_missing_themes) > 0:
+  print("Remove missing themes: {}".format(remote_missing_themes))
+
+local_missing_themes = list(set(parameterized_theme_names) - set(themes_directories))
+
+if len(local_missing_themes) > 0:
+  print("Local missing themes: {}".format(local_missing_themes))
+
+theme_dict = {}
+for theme in themes:
+  param_theme_name = parameterize(theme['theme'], sep='_')
+  theme_dict[param_theme_name] = {'set_count': theme['setCount'], 'subtheme_count': theme['subthemeCount']}
+
 # TODO: check set count from themes.jsonl
-# TODO: check subtheme count from themes.jsonl
 
 for theme_directory in themes_directories:
   years_file = os.path.join('data', theme_directory, '{}_years.jsonl'.format(theme_directory))
@@ -42,7 +58,8 @@ for theme_directory in themes_directories:
   if subthemes_set_count != sets_set_count:
     print("'{}' Subtheme set count mismatch (expected={}, found={})".format(theme_directory, subthemes_set_count, sets_set_count))
 
-  # found_subtheme_count = len(subthemes) - 1  # subtract null subtheme
-  # if found_subtheme_count != theme_subtheme_count:
-  #   print("'{}' Subtheme count mismatch (expected={}, found={})".format(theme_name, theme_subtheme_count, found_subtheme_count))
-  #   errors.extend({'theme': theme_name, 'type': 'subtheme count mismatch', 'expected': theme_subtheme_count, 'found': found_subtheme_count})
+  found_subtheme_count = len(subthemes) - 1  # subtract null subtheme
+  expect_subtheme_count = theme_dict[theme_directory]['subtheme_count']
+  # some fuzzy math with subthemes
+  if expect_subtheme_count - found_subtheme_count > 1 or found_subtheme_count - expect_subtheme_count > 0:
+    print("'{}' Subtheme count mismatch (expected={}, found={})".format(theme_directory, expect_subtheme_count, found_subtheme_count))

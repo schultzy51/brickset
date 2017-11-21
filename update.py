@@ -6,6 +6,7 @@ import sys
 from collections import OrderedDict
 from decimal import Decimal
 
+from brickset import write_jsonl
 from brickset.service import Brickset
 from brickset.config import get_config
 
@@ -71,6 +72,7 @@ try:
     ('lastUpdated', 'Last Updated')
   ])
 
+  write_jsonl('wanted.jsonl', sets)
   clean(sets)
   running_total(sets)
   set_order_csv(sets, 'wanted.csv', key_header)
@@ -93,6 +95,7 @@ try:
     ('USDateAddedToSAH', 'US Start Date'),
   ])
 
+  write_jsonl('owned.jsonl', sets)
   clean(sets)
   set_order_csv(sets, 'owned.csv', key_header)
 

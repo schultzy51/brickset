@@ -1,22 +1,14 @@
 #!/usr/bin/env python3
 
 from datetime import datetime
-from brickset import json_serial
+from brickset import write_jsonl
 from brickset.service import Brickset
 from brickset.config import get_config
-import simplejson as json
-import jsonlines
 import os
 from time import sleep
 
 DELAY = 1
 PAGE_SIZE = 100
-
-
-def write_jsonl(filename, items):
-  with jsonlines.open(filename, mode='w', dumps=json.JSONEncoder(default=json_serial).encode) as writer:
-    writer.write_all(items)
-
 
 config = get_config()
 brickset = Brickset(config['api_key'], config['username'], config['password'])

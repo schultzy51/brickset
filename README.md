@@ -7,7 +7,9 @@ pip3 install -r requirements.txt
 A script to assist with determining the optimal order
 
 ```
-./brickset.py themes | jq -c '.[]'
-./brickset.py -m 10080 -o recent | jq -c '.[]'
-./brickset.py -s wanted set_order | jq -c '.[]'
+./command.py themes | jq -c '.[]'
+./recent.py -m 40000 -ms 30000 -o | jq -c '.[]'
+./update.py
+./dump.py
+SLACKBOT_API_TOKEN=#### ./slackbot_run.py
 ```

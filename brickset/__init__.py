@@ -17,3 +17,12 @@ def filter_keys(items, wanted_keys):
 def write_jsonl(filename, items):
   with jsonlines.open(filename, mode='w', dumps=json.JSONEncoder(default=json_serial).encode) as writer:
     writer.write_all(items)
+
+
+def read_jsonl(filename):
+  items = []
+  with jsonlines.open(filename) as reader:
+    for item in reader:
+      items.append(item)
+
+  return items

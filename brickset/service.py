@@ -17,11 +17,11 @@ class Brickset:
     zeep_sets = self._client.service.getRecentlyUpdatedSets(apiKey=self._api_key, minutesAgo=minutes_ago)
     return zeep.helpers.serialize_object(zeep_sets)
 
-  def wanted(self):
-    return self.sets(action='wanted')
+  def wanted(self, page_size=50, delay=2):
+    return self.sets(page_size=page_size, action='wanted', delay=delay)
 
-  def owned(self):
-    return self.sets(action='owned')
+  def owned(self, page_size=50, delay=2):
+    return self.sets(page_size=page_size, action='owned', delay=delay)
 
   def themes(self):
     zeep_themes = self._client.service.getThemes(apiKey=self._api_key)

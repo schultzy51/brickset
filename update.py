@@ -49,7 +49,7 @@ try:
   config = get_config(section='wanted')
   brickset = Brickset(config['api_key'], config['username'], config['password'])
 
-  sets = brickset.wanted()
+  sets = brickset.wanted(page_size=100, delay=1)
 
   sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
   sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
@@ -75,10 +75,11 @@ try:
   running_total(sets)
   set_order_csv(sets, 'wanted.csv', key_header)
 
-  sets = brickset.owned()
+  sets = brickset.owned(page_size=100, delay=1)
 
-  sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
   sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
 
   # TODO: load key_header from config
   key_header = OrderedDict([

@@ -21,8 +21,6 @@ themes = brickset.themes()
 filename = os.path.join('data', 'themes.jsonl')
 write_jsonl(filename, themes)
 
-# themes = filter(lambda theme: theme['theme'] == 'Legends of Chima', themes)
-
 for theme in themes:
   print(theme)
 
@@ -45,21 +43,11 @@ for theme in themes:
   subthemes = brickset.subthemes(theme=theme_name)
   write_jsonl(filename, subthemes)
 
-  # found_subtheme_count = len(subthemes) - 1  # subtract null subtheme
-  # if found_subtheme_count != theme_subtheme_count:
-  #   print("'{}' Subtheme count mismatch (expected={}, found={})".format(theme_name, theme_subtheme_count, found_subtheme_count))
-  #   errors.extend({'theme': theme_name, 'type': 'subtheme count mismatch', 'expected': theme_subtheme_count, 'found': found_subtheme_count})
-
   sleep(DELAY)
 
   filename = os.path.join('data', theme_prefix, "{}_sets.jsonl".format(theme_prefix))
   sets = brickset.sets(theme=theme_name, order_by='YearFrom', page_size=PAGE_SIZE, delay=DELAY)
   write_jsonl(filename, sets)
-
-  found_set_count = len(sets)
-  if found_set_count != theme_set_count:
-    print("'{}' Set count mismatch (expected={}, found={})".format(theme_name, theme_set_count, found_set_count))
-    errors.extend({'theme': theme_name, 'type': 'set count mismatch', 'expected': theme_set_count, 'found': found_set_count})
 
 filename = os.path.join('data', '0000_timestamp.jsonl')
 write_jsonl(filename, [{'start': start, 'end': datetime.now()}])

@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-import csv
-import os
 import sys
 from collections import OrderedDict
 from decimal import Decimal
 
-from brickset import write_jsonl
+from brickset import write_jsonl, write_csv
 from brickset.service import Brickset
 from brickset.config import get_config
 
@@ -35,13 +33,6 @@ def running_total(sets):
     if wset['released'] and wset['USDateAddedToSAH'] and wset['USRetailPrice']:
       total = total + Decimal(wset['USRetailPrice'])
       wset['total'] = total
-
-
-def set_order_csv(sets, filename, header_hash):
-  with open(filename, 'w') as f:
-    dict_writer = csv.DictWriter(f, fieldnames=header_hash.keys(), extrasaction='ignore', lineterminator=os.linesep)
-    dict_writer.writerow(key_header)
-    dict_writer.writerows(sets)
 
 
 items = []
@@ -75,7 +66,7 @@ try:
   write_jsonl('wanted.jsonl', sets)
   clean(sets)
   running_total(sets)
-  set_order_csv(sets, 'wanted.csv', key_header)
+  write_csv('wanted.csv', sets, key_header)
 
   sets = brickset.owned(page_size=100, delay=1)
 
@@ -97,7 +88,7 @@ try:
 
   write_jsonl('owned.jsonl', sets)
   clean(sets)
-  set_order_csv(sets, 'owned.csv', key_header)
+  write_csv('owned.csv', sets, key_header)
 
 except Exception as e:
   sys.exit(e)

@@ -1,5 +1,7 @@
 from datetime import datetime
+import csv
 import jsonlines
+import os
 import simplejson as json
 import re
 import unicodedata
@@ -28,6 +30,13 @@ def read_jsonl(filename):
       items.append(item)
 
   return items
+
+
+def write_csv(filename, items, header_hash):
+  with open(filename, 'w') as f:
+    dict_writer = csv.DictWriter(f, fieldnames=header_hash.keys(), extrasaction='ignore', lineterminator=os.linesep)
+    dict_writer.writerow(header_hash)
+    dict_writer.writerows(items)
 
 
 # https://coderwall.com/p/nmu4bg/python-parameterize-equivalent-to-rails-parameterize

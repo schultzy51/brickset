@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 from datetime import datetime
-from brickset import write_jsonl, parameterize
+from time import sleep
+import os
+
+from brickset import write_jsonl, write_csv, parameterize
 from brickset.service import Brickset
 from brickset.config import get_config
-import os
-from time import sleep
 
 DELAY = 1
 PAGE_SIZE = 100

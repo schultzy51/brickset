@@ -1,28 +1,25 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date,Last Updated
-850850,LEGO Santa Holiday Bauble,2013,Seasonal,23,,7.99,7.99,true,2013-11-01,2017-10-02,2013-11-11 11:46:45
-850949,Christmas Snow Hut Ornament,2014,Seasonal,45,,7.99,15.98,true,2014-10-05,2017-10-02,2014-10-02 08:18:42
-853574,Christmas Ornament Reindeer,2016,Seasonal,21,,7.99,23.97,true,2016-09-20,2017-10-02,2016-09-02 23:12:07
-40174,LEGO Chess,2017,Miscellaneous,1450,,54.99,78.96,true,2017-01-17,,2017-01-07 01:40:54
-75144,Snowspeeder,2017,Star Wars,1703,2,199.99,278.95,true,2017-05-05,,2017-05-03 17:14:14
-70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,366,3,49.99,328.94,true,2017-06-02,,2017-05-16 22:38:17
-70916,The Batwing,2017,The LEGO Batman Movie,1053,3,89.99,418.93,true,2017-06-02,,2017-05-16 22:38:20
-70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,8,139.99,558.92,true,2017-06-02,,2017-05-16 22:38:21
-75182,Republic Fighter Tank,2017,Star Wars,305,4,24.99,583.91,true,2017-06-02,,2017-05-20 15:34:14
-75183,Darth Vader Transformation,2017,Star Wars,282,6,24.99,608.90,true,2017-06-02,,2017-05-16 14:53:24
-75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,708.89,true,2017-06-02,,2017-05-26 02:34:10
-75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,733.88,true,2017-06-02,,2017-05-16 14:53:50
-75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,788.87,true,2017-06-02,,2017-05-16 14:53:51
-10258,London Bus,2017,Advanced Models,1686,,139.99,928.86,true,2017-08-01,,2017-07-02 16:21:40
-42064,Ocean Explorer,2017,Technic,1327,,119.99,1048.85,true,2017-08-01,,2016-11-09 02:26:19
-42065,RC Tracked Racer,2017,Technic,370,,99.99,1148.84,true,2017-08-01,2017-11-20,2016-11-09 02:28:40
-42066,Air Race Jet,2017,Technic,1151,,159.99,1308.83,true,2017-08-01,,2017-02-19 00:11:04
-42069,Extreme Adventure,2017,Technic,2382,,179.99,1488.82,true,2017-08-01,,2017-07-29 20:08:05
-42070,6x6 All Terrain Tow Truck,2017,Technic,1862,,289.99,1778.81,true,2017-08-01,,2017-07-29 20:08:07
-70618,Destiny's Bounty,2017,The LEGO Ninjago Movie,2295,7,159.99,1938.80,true,2017-08-01,,2017-07-08 21:44:29
-40173,Picture Frame,2017,Miscellaneous,,,16.99,1955.79,true,2017-08-04,2017-09-07,2017-05-17 18:39:51
-70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,2255.78,true,2017-09-01,,2017-08-22 01:13:23
-10259,Winter Village Station,2017,Advanced Models,902,5,79.99,2335.77,true,2017-10-01,,2017-10-30 08:52:55
-853670,Christmas Ornament Snowman,2017,Seasonal,,,7.99,2343.76,true,2017-10-02,2017-10-12,2017-10-01 08:39:36
+40174,LEGO Chess,2017,Miscellaneous,1450,,54.99,54.99,true,2017-01-17,,2017-01-07 01:40:54
+75144,Snowspeeder,2017,Star Wars,1703,2,199.99,254.98,true,2017-05-05,,2017-05-03 17:14:14
+70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,366,3,49.99,304.97,true,2017-06-02,,2017-05-16 22:38:17
+70916,The Batwing,2017,The LEGO Batman Movie,1053,3,89.99,394.96,true,2017-06-02,,2017-05-16 22:38:20
+70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,8,139.99,534.95,true,2017-06-02,,2017-05-16 22:38:21
+75182,Republic Fighter Tank,2017,Star Wars,305,4,24.99,559.94,true,2017-06-02,,2017-05-20 15:34:14
+75183,Darth Vader Transformation,2017,Star Wars,282,6,24.99,584.93,true,2017-06-02,,2017-05-16 14:53:24
+75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,684.92,true,2017-06-02,,2017-05-26 02:34:10
+75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,709.91,true,2017-06-02,,2017-05-16 14:53:50
+75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,764.90,true,2017-06-02,,2017-05-16 14:53:51
+10258,London Bus,2017,Advanced Models,1686,,139.99,904.89,true,2017-08-01,,2017-07-02 16:21:40
+42064,Ocean Explorer,2017,Technic,1327,,119.99,1024.88,true,2017-08-01,,2016-11-09 02:26:19
+42065,RC Tracked Racer,2017,Technic,370,,99.99,1124.87,true,2017-08-01,2017-11-20,2016-11-09 02:28:40
+42066,Air Race Jet,2017,Technic,1151,,159.99,1284.86,true,2017-08-01,,2017-02-19 00:11:04
+42069,Extreme Adventure,2017,Technic,2382,,179.99,1464.85,true,2017-08-01,,2017-07-29 20:08:05
+42070,6x6 All Terrain Tow Truck,2017,Technic,1862,,289.99,1754.84,true,2017-08-01,,2017-07-29 20:08:07
+70618,Destiny's Bounty,2017,The LEGO Ninjago Movie,2295,7,159.99,1914.83,true,2017-08-01,,2017-07-08 21:44:29
+40173,Picture Frame,2017,Miscellaneous,,,16.99,1931.82,true,2017-08-04,2017-09-07,2017-05-17 18:39:51
+70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,2231.81,true,2017-09-01,,2017-08-22 01:13:23
+10259,Winter Village Station,2017,Advanced Models,902,5,79.99,2311.80,true,2017-10-01,,2017-10-30 08:52:55
+853670,Christmas Ornament Snowman,2017,Seasonal,,,7.99,2319.79,true,2017-10-02,2017-10-12,2017-10-01 08:39:36
 21037,LEGO House,2017,Architecture,774,,,,true,,,2017-08-22 11:45:51
 30478,Jolly Santa,2017,Seasonal,74,,,,true,,,2017-11-21 16:10:58
 40226,Birthday Buddy,2016,Seasonal,133,,,,true,,,2017-06-15 11:49:34

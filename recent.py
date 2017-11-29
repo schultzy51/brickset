@@ -10,7 +10,7 @@ from brickset import filter_keys, json_serial
 from brickset.service import Brickset
 from brickset.config import get_config
 
-parser = argparse.ArgumentParser(description='Brickset Tooling')
+parser = argparse.ArgumentParser(description='Brickset Tooling', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', type=int, default=10080, help='Recent minutes ago')
 parser.add_argument('-ms', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0, help='Recent minutes ago stop')
 parser.add_argument('-s', '--section', action='store', dest='section', default='default', help='Section')

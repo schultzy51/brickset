@@ -5,6 +5,7 @@ import simplejson as json
 import sys
 import webbrowser
 from datetime import datetime, timedelta
+from time import sleep
 
 from brickset import filter_keys, json_serial
 from brickset.service import Brickset
@@ -39,6 +40,7 @@ try:
   if args.open_web:
     for rset in sets:
       webbrowser.open_new_tab(rset['bricksetURL'])
+      sleep(0.5)
 
   sets.reverse()
   sets = filter_keys(sets, config['output']['recent'])

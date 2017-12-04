@@ -3,7 +3,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75144,Snowspeeder,2017,Star Wars,1703,2,199.99,254.98,true,2017-05-05,,2017-05-03 17:14:14
 70914,Bane Toxic Truck Attack,2017,The LEGO Batman Movie,366,3,49.99,304.97,true,2017-06-02,,2017-05-16 22:38:17
 70916,The Batwing,2017,The LEGO Batman Movie,1053,3,89.99,394.96,true,2017-06-02,,2017-05-16 22:38:20
-70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,8,139.99,534.95,true,2017-06-02,,2017-05-16 22:38:21
+70917,The Ultimate Batmobile,2017,The LEGO Batman Movie,1456,8,139.99,534.95,true,2017-06-02,2017-11-25,2017-05-16 22:38:21
 75182,Republic Fighter Tank,2017,Star Wars,305,4,24.99,559.94,true,2017-06-02,,2017-05-20 15:34:14
 75183,Darth Vader Transformation,2017,Star Wars,282,6,24.99,584.93,true,2017-06-02,,2017-05-16 14:53:24
 75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,684.92,true,2017-06-02,,2017-05-26 02:34:10
@@ -18,18 +18,21 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 70618,Destiny's Bounty,2017,The LEGO Ninjago Movie,2295,7,159.99,1914.83,true,2017-08-01,,2017-07-08 21:44:29
 40173,Picture Frame,2017,Miscellaneous,,,16.99,1931.82,true,2017-08-04,2017-09-07,2017-05-17 18:39:51
 70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,2231.81,true,2017-09-01,,2017-08-22 01:13:23
-10259,Winter Village Station,2017,Advanced Models,902,5,79.99,2311.80,true,2017-10-01,,2017-10-30 08:52:55
+10259,Winter Village Station,2017,Advanced Models,902,5,79.99,2311.80,true,2017-10-01,,2017-12-03 04:42:14
 853670,Christmas Ornament Snowman,2017,Seasonal,,,7.99,2319.79,true,2017-10-02,2017-10-12,2017-10-01 08:39:36
 70922,The Joker Manor,2017,The LEGO Batman Movie,3444,,269.99,2589.78,true,2017-11-25,,2017-11-24 19:12:23
+31075,Outback Adventures,2018,Creator,225,,19.99,2609.77,true,2017-11-26,,2017-10-27 20:43:58
+31076,Daredevil Stunt Plane,2018,Creator,200,,19.99,2629.76,true,2017-11-26,2017-12-02,2017-11-03 17:00:53
+60180,Monster Truck,2018,City,192,,19.99,2649.75,true,2017-11-26,,2017-10-27 21:10:56
+60182,Pickup & Caravan,2018,City,344,,29.99,2679.74,true,2017-11-26,2017-11-28,2017-10-27 21:09:33
 21037,LEGO House,2017,Architecture,774,,,,true,,,2017-08-22 11:45:51
-30478,Jolly Santa,2017,Seasonal,74,,,,true,,,2017-11-21 16:10:58
+30478,Jolly Santa,2017,Seasonal,74,,,,true,,,2017-11-30 23:42:20
 40226,Birthday Buddy,2016,Seasonal,133,,,,true,,,2017-06-15 11:49:34
 40254,Nutcracker,2017,Seasonal,230,,,,true,,,2017-11-24 20:48:39
-41489,Rey & Kylo Ren,2018,BrickHeadz,0,,19.99,,true,,,2017-11-15 18:40:53
-5004934,Christmas Ornament,2017,Seasonal,66,,,,true,,,2017-10-20 19:30:06
+41489,Rey & Kylo Ren,2017,BrickHeadz,0,,19.99,,true,,,2017-12-01 05:14:19
+5004934,Christmas Ornament,2017,Seasonal,66,,,,true,,,2017-12-01 19:39:09
 75995,Mercedes AMG Petronas Team Gift 2017,2017,Speed Champions,120,,,,true,,,2017-05-23 13:37:33
-31075,Outback Adventures,2018,Creator,225,,,,false,,,2017-10-27 20:43:58
-31076,Daredevil Stunt Plane,2018,Creator,200,,,,false,,,2017-11-03 17:00:53
+10260,Downtown Diner,2018,Advanced Models,2480,,169.99,,false,,,2017-12-01 00:11:34
 41597,{?},2018,BrickHeadz,,,,,false,,,2017-08-23 05:40:52
 41598,The Flash,2018,BrickHeadz,,,,,false,,,2017-11-17 23:14:52
 41599,Wonder Woman,2018,BrickHeadz,,,,,false,,,2017-11-17 23:15:08
@@ -46,8 +49,6 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 42077,Rally Car,2018,Technic,,,,,false,,,2017-11-18 21:34:28
 42078,Mack Anthem,2018,Technic,,,,,false,,,2017-11-18 21:27:31
 5005376,Star Wars Anniversary Pod,2017,Star Wars,,,,,false,,,2017-11-02 15:52:16
-60180,Monster Truck,2018,City,192,,,,false,,,2017-10-27 21:10:56
-60182,Pickup & Caravan,2018,City,344,,,,false,,,2017-10-27 21:09:33
 70918,The Bat-Dune Buggy,2018,The LEGO Batman Movie,198,,19.99,,false,,,2017-11-25 17:39:56
 70919,The Justice League Anniversary Party,2018,The LEGO Batman Movie,267,,29.99,,false,,,2017-11-25 17:40:26
 70920,Egghead Mech Food Fight,2018,The LEGO Batman Movie,293,,29.99,,false,,,2017-11-25 17:40:43

@@ -9,8 +9,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,684.92,true,2017-06-02,,2017-05-26 02:34:10
 75531,Stormtrooper Commander,2017,Star Wars,100,,24.99,709.91,true,2017-06-02,,2017-05-16 14:53:50
 75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,764.90,true,2017-06-02,,2017-05-16 14:53:51
-10258,London Bus,2017,Advanced Models,1686,,139.99,904.89,true,2017-08-01,2017-12-17,2017-07-02 16:21:40
-42064,Ocean Explorer,2017,Technic,1327,,119.99,1024.88,true,2017-08-01,,2016-11-09 02:26:19
+10258,London Bus,2017,Advanced Models,1686,,139.99,904.89,true,2017-08-01,,2017-07-02 16:21:40
+42064,Ocean Explorer,2017,Technic,1327,,119.99,1024.88,true,2017-08-01,2017-12-21,2016-11-09 02:26:19
 42065,RC Tracked Racer,2017,Technic,370,,99.99,1124.87,true,2017-08-01,2017-12-17,2016-11-09 02:28:40
 42066,Air Race Jet,2017,Technic,1151,,159.99,1284.86,true,2017-08-01,,2017-02-19 00:11:04
 42069,Extreme Adventure,2017,Technic,2382,,179.99,1464.85,true,2017-08-01,,2017-07-29 20:08:05
@@ -21,30 +21,32 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 10259,Winter Village Station,2017,Advanced Models,902,5,79.99,2311.80,true,2017-10-01,,2017-12-03 04:42:14
 853670,Christmas Ornament Snowman,2017,Seasonal,,,7.99,2319.79,true,2017-10-02,2017-10-12,2017-10-01 08:39:36
 70922,The Joker Manor,2017,The LEGO Batman Movie,3444,10,269.99,2589.78,true,2017-11-25,2017-12-17,2017-11-24 19:12:23
-31075,Outback Adventures,2018,Creator,225,,19.99,2609.77,true,2017-11-26,,2017-10-27 20:43:58
+31075,Outback Adventures,2018,Creator,225,1,19.99,2609.77,true,2017-11-26,,2017-10-27 20:43:58
 31076,Daredevil Stunt Plane,2018,Creator,200,1,19.99,2629.76,true,2017-11-26,,2017-11-03 17:00:53
 60180,Monster Truck,2018,City,192,,19.99,2649.75,true,2017-11-26,,2017-10-27 21:10:56
-60182,Pickup & Caravan,2018,City,344,,29.99,2679.74,true,2017-11-26,,2017-10-27 21:09:33
+60182,Pickup & Caravan,2018,City,344,3,29.99,2679.74,true,2017-11-26,,2017-10-27 21:09:33
 21037,LEGO House,2017,Architecture,774,,,,true,,,2017-08-22 11:45:51
 30478,Jolly Santa,2017,Seasonal,74,,,,true,,,2017-11-30 23:42:20
 40226,Birthday Buddy,2016,Seasonal,133,,,,true,,,2017-06-15 11:49:34
-40254,Nutcracker,2017,Seasonal,230,,,,true,,,2017-11-24 20:48:39
+40254,Nutcracker,2017,Seasonal,230,,,,true,,,2017-12-24 02:58:21
 41489,Rey & Kylo Ren,2017,BrickHeadz,0,,19.99,,true,,,2017-12-01 05:14:19
+41598,The Flash,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:31
+41599,Wonder Woman,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:33
+41600,Aquaman,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:35
+41601,Cyborg,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:37
+41602,Rey,2018,BrickHeadz,,,9.99,,true,,,2017-12-24 20:08:41
+41603,Kylo Ren,2018,BrickHeadz,,,9.99,,true,,,2017-12-24 20:08:43
 42077,Rally Car,2018,Technic,,,,,true,,,2017-12-04 14:09:42
 5004934,Christmas Ornament,2017,Seasonal,66,2,,,true,,,2017-12-01 19:39:09
 70918,The Bat-Dune Buggy,2018,The LEGO Batman Movie,198,,19.99,,true,,,2017-12-17 18:57:41
 70919,The Justice League Anniversary Party,2018,The LEGO Batman Movie,267,,29.99,,true,,,2017-12-17 18:57:40
 70920,Egghead Mech Food Fight,2018,The LEGO Batman Movie,293,,29.99,,true,,,2017-12-17 18:57:38
+75533,Boba Fett,2018,Star Wars,144,,,,true,,,2017-12-24 20:05:34
+75534,Darth Vader,2018,Star Wars,168,,,,true,,,2017-12-24 20:05:37
 75995,Mercedes AMG Petronas Team Gift 2017,2017,Speed Champions,120,,,,true,,,2017-05-23 13:37:33
 10260,Downtown Diner,2018,Advanced Models,2480,,169.99,,false,,,2017-12-01 00:11:34
 40290,60 Years of the LEGO Brick,2018,Promotional,421,,,,false,,,2017-12-02 23:20:21
 41597,{?},2018,BrickHeadz,,,,,false,,,2017-08-23 05:40:52
-41598,The Flash,2018,BrickHeadz,,,,,false,,,2017-11-17 23:14:52
-41599,Wonder Woman,2018,BrickHeadz,,,,,false,,,2017-11-17 23:15:08
-41600,Aquaman,2018,BrickHeadz,,,,,false,,,2017-11-17 23:18:15
-41601,Cyborg,2018,BrickHeadz,,,,,false,,,2017-11-17 23:16:35
-41602,Rey,2018,BrickHeadz,,,9.99,,false,,,2017-10-06 14:32:48
-41603,Kylo Ren,2018,BrickHeadz,,,9.99,,false,,,2017-10-05 16:01:53
 41604,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:14
 41605,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:21
 41606,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:29
@@ -56,5 +58,3 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 70921,Harley Quinn Cannonball Attack,2018,The LEGO Batman Movie,425,,49.99,,false,,,2017-11-25 17:41:21
 70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,,79.99,,false,,,2017-11-25 17:43:25
 75143,{?},2016,Star Wars,,,,,false,,,2016-05-26 18:55:45
-75533,Boba Fett,2018,Star Wars,144,,,,false,,,2017-12-05 13:29:06
-75534,Darth Vader,2018,Star Wars,168,,,,false,,,2017-12-05 13:29:33

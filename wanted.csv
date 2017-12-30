@@ -27,8 +27,10 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 60182,Pickup & Caravan,2018,City,344,3,29.99,2679.74,true,2017-11-26,,2017-10-27 21:09:33
 21037,LEGO House,2017,Architecture,774,,,,true,,,2017-08-22 11:45:51
 30478,Jolly Santa,2017,Seasonal,74,,,,true,,,2017-11-30 23:42:20
+40197,Wedding Favor Set 2018,2018,Miscellaneous,132,,9.99,,true,,,2017-12-30 00:51:15
 40226,Birthday Buddy,2016,Seasonal,133,,,,true,,,2017-06-15 11:49:34
 40254,Nutcracker,2017,Seasonal,230,,,,true,,,2017-12-24 02:58:21
+40270,Valentine's Bee,2018,BrickHeadz,140,,9.99,,true,,,2017-12-27 22:24:53
 41489,Rey & Kylo Ren,2017,BrickHeadz,0,,19.99,,true,,,2017-12-01 05:14:19
 41598,The Flash,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:31
 41599,Wonder Woman,2018,BrickHeadz,,,,,true,,,2017-12-24 20:08:33
@@ -37,24 +39,34 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 41602,Rey,2018,BrickHeadz,,,9.99,,true,,,2017-12-24 20:08:41
 41603,Kylo Ren,2018,BrickHeadz,,,9.99,,true,,,2017-12-24 20:08:43
 42077,Rally Car,2018,Technic,,,,,true,,,2017-12-04 14:09:42
+42078,Mack Anthem,2018,Technic,,,,,true,,,2017-12-28 16:52:41
 5004934,Christmas Ornament,2017,Seasonal,66,2,,,true,,,2017-12-01 19:39:09
+5005233,Hamleys Royal Guard,2018,Promotional,5,,,,true,,,2017-12-22 11:41:25
 70918,The Bat-Dune Buggy,2018,The LEGO Batman Movie,198,,19.99,,true,,,2017-12-17 18:57:41
 70919,The Justice League Anniversary Party,2018,The LEGO Batman Movie,267,,29.99,,true,,,2017-12-17 18:57:40
 70920,Egghead Mech Food Fight,2018,The LEGO Batman Movie,293,,29.99,,true,,,2017-12-17 18:57:38
+70921,Harley Quinn Cannonball Attack,2018,The LEGO Batman Movie,425,,49.99,,true,,,2017-11-25 17:41:21
+70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,,79.99,,true,,,2017-11-25 17:43:25
+75205,Mos Eisley Cantina,2018,Star Wars,378,,39.99,,true,,,2017-12-26 10:51:44
 75533,Boba Fett,2018,Star Wars,144,,,,true,,,2017-12-24 20:05:34
 75534,Darth Vader,2018,Star Wars,168,,,,true,,,2017-12-24 20:05:37
 75995,Mercedes AMG Petronas Team Gift 2017,2017,Speed Champions,120,,,,true,,,2017-05-23 13:37:33
-10260,Downtown Diner,2018,Advanced Models,2480,,169.99,,false,,,2017-12-01 00:11:34
+10260,Downtown Diner,2018,Advanced Models,2480,,169.99,,false,,,2017-12-28 17:45:59
+21313,Ship in a Bottle,2018,Ideas,,,,,false,,,2017-12-27 08:18:32
 40290,60 Years of the LEGO Brick,2018,Promotional,421,,,,false,,,2017-12-02 23:20:21
 41597,{?},2018,BrickHeadz,,,,,false,,,2017-08-23 05:40:52
-41604,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:14
-41605,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:21
-41606,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:29
-41607,{?},2018,BrickHeadz,,,,,false,,,2017-08-21 21:16:36
-41608,{?},2018,BrickHeadz,,,,,false,,,2017-08-23 05:41:17
-41609,{?},2018,BrickHeadz,,,,,false,,,2017-08-23 05:41:40
-42078,Mack Anthem,2018,Technic,,,,,false,,,2017-11-18 21:27:31
+41604,Iron Man,2018,BrickHeadz,101,,9.99,,false,,,2017-12-29 02:50:51
+41605,Thanos,2018,BrickHeadz,105,,9.99,,false,,,2017-12-29 02:51:16
+41606,Star-Lord,2018,BrickHeadz,113,,9.99,,false,,,2017-12-29 02:51:44
+41607,Gamora,2018,BrickHeadz,136,,9.99,,false,,,2017-12-29 02:52:10
+41608,Han Solo,2018,BrickHeadz,,,9.99,,false,,,2017-12-29 03:02:04
+41609,Chewbacca,2018,BrickHeadz,,,9.99,,false,,,2017-12-29 03:01:50
+41615,{?},2018,BrickHeadz,,,19.99,,false,,,2017-12-23 00:47:20
+41619,Darth Vader,2018,BrickHeadz,,,9.99,,false,,,2017-12-23 00:47:49
+41620,Stormtrooper,2018,BrickHeadz,,,9.99,,false,,,2017-12-23 00:48:07
+41624,Luke Skywalker,2018,BrickHeadz,,,9.99,,false,,,2017-12-29 03:03:23
+41625,Princess Leia,2018,BrickHeadz,,,9.99,,false,,,2017-12-29 03:03:41
+41627,{?},2018,BrickHeadz,,,19.99,,false,,,2017-12-23 00:49:23
 5005376,Star Wars Anniversary Pod,2017,Star Wars,,,,,false,,,2017-12-07 17:24:38
-70921,Harley Quinn Cannonball Attack,2018,The LEGO Batman Movie,425,,49.99,,false,,,2017-11-25 17:41:21
-70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,,79.99,,false,,,2017-11-25 17:43:25
 75143,{?},2016,Star Wars,,,,,false,,,2016-05-26 18:55:45
+75214,Anakin's Jedi Starfighter,2018,Star Wars,,,,,false,,,2017-12-23 00:54:20

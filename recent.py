@@ -40,7 +40,7 @@ try:
   if args.open_web:
     for rset in sets:
       webbrowser.open_new_tab(rset['bricksetURL'])
-      sleep(0.5)
+      sleep(1)
 
   sets.reverse()
   sets = filter_keys(sets, config['output']['recent'])

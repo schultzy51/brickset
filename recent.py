@@ -39,12 +39,12 @@ try:
   sets = list(filter(lambda d: d['year'] > str(datetime.utcnow().year - 1), sets))
   sets = list(filter(lambda d: d['lastUpdated'] < datetime_stop, sets))
 
+  sets.reverse()
+
   if args.open_web:
     for rset in sets:
       webbrowser.open_new_tab(rset['bricksetURL'])
       sleep(1)
-
-  sets.reverse()
 
   if args.slack:
     slack = Slack(config['slack_api_token'], config['slack_channel'], config['slack_username'])

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 from collections import OrderedDict
 from decimal import Decimal
@@ -47,6 +48,8 @@ try:
   sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
   sets = sorted(sets, key=lambda k: (k['released'] is None, k['released']), reverse=True)
 
+  os.makedirs('lists', exist_ok=True)
+
   # TODO: load key_header from config
   key_header = OrderedDict([
     ('number', 'Number'),
@@ -63,10 +66,12 @@ try:
     ('lastUpdated', 'Last Updated')
   ])
 
-  write_jsonl('wanted.jsonl', sets)
+  filename = os.path.join('lists', 'wanted.jsonl')
+  write_jsonl(filename, sets)
   clean(sets)
   running_total(sets)
-  write_csv('wanted.csv', sets, key_header)
+  filename = os.path.join('lists', 'wanted.csv')
+  write_csv(filename, sets, key_header)
 
   sets = brickset.owned(page_size=100, delay=1)
 
@@ -86,9 +91,11 @@ try:
     ('USDateAddedToSAH', 'US Start Date'),
   ])
 
-  write_jsonl('owned.jsonl', sets)
+  filename = os.path.join('lists', 'owned.jsonl')
+  write_jsonl(filename, sets)
   clean(sets)
-  write_csv('owned.csv', sets, key_header)
+  filename = os.path.join('lists', 'owned.csv')
+  write_csv(filename, sets, key_header)
 
 except Exception as e:
   sys.exit(e)

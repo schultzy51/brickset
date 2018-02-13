@@ -10,37 +10,60 @@
 # https://www.lego.com//service/biservice/searchbytheme?fromIndex=20&onlyAlternatives=false&theme=10000-20002
 
 import os
-import sys
-from urllib.parse import urlparse
+import wget
 from brickset import read_jsonl, write_jsonl, search
-from IPython import embed
 from time import sleep
+import urllib
 
-filename = os.path.join('lists', 'owned.jsonl')
-sets = read_jsonl(filename)
+# from urllib.parse import urlparse
+from IPython import embed
 
-set_ids = [s['number'] for s in sets]
-set_ids.sort()
+SEARCH_DELAY = 0.5
+DOWNLOAD_DELAY = 0.5
 
-data = []
+filename = os.path.join('instructions', 'search.json')
 
-for id in set_ids:
-  sleep(0.5)
-  result = search(id)
-  if result:
-    data.append({'prefixText': id, 'response': result})
-  else:
-    print("Error searching for set '{}'".format(id))
+if not os.path.isfile(filename):
+  filename = os.path.join('lists', 'owned.jsonl')
+  sets = read_jsonl(filename)
 
-filename = os.path.join('instructions', 'search.json'.format(id))
-write_jsonl(filename, data)
+  set_ids = [s['number'] for s in sets]
+  set_ids.sort()
 
-# searches = read_jsonl(filename)
+  data = []
 
-# for search in searches:
-#   # os.makedirs(search['prefixText'], exist_ok=True)
-#   embed()
+  for id in set_ids:
+    sleep(SEARCH_DELAY)
+    result = search(id)
+    if result:
+      data.append({'prefixText': id, 'response': result})
+    else:
+      print("Error searching for set '{}'".format(id))
 
+  write_jsonl(filename, data)
 
-# with open('/Users/scott/Downloads/cat3.jpg', 'wb') as f:
-#     f.write(r.content)
+searches = read_jsonl(filename)
+# searches = [searches[0]]
+total_searches = len(searches)
+
+for i, search in enumerate(searches):
+  set_id = search['prefixText']
+  print('Set {} ({} / {})'.format(set_id, i + 1, total_searches))
+  products = search['response']['products']
+  for product in products:
+    for instruction in product['buildingInstructions']:
+      url = instruction['pdfLocation']
+
+      directory = os.path.join('instructions', 'set_{}'.format(set_id))
+      os.makedirs(directory, exist_ok=True)
+
+      detected_filename = wget.filename_from_url(url)
+      if not os.path.isfile(os.path.join(directory, detected_filename)):
+        sleep(DOWNLOAD_DELAY)
+        try:
+          # TODO: replace wget with requests
+          filename = wget.download(url, out=directory)
+          # TODO: track failed downloads
+          print('\nDownloaded {}'.format(filename))
+        except urllib.error.HTTPError as e:
+          print('\nFailed To Download {}'.format(url))

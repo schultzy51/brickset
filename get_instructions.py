@@ -10,7 +10,8 @@
 # https://www.lego.com//service/biservice/searchbytheme?fromIndex=20&onlyAlternatives=false&theme=10000-20002
 
 import os
-import wget
+import requests
+from wget import filename_from_url
 from brickset import read_jsonl, write_jsonl, search
 from time import sleep
 import urllib
@@ -57,13 +58,16 @@ for i, search in enumerate(searches):
       directory = os.path.join('instructions', 'set_{}'.format(set_id))
       os.makedirs(directory, exist_ok=True)
 
-      detected_filename = wget.filename_from_url(url)
-      if not os.path.isfile(os.path.join(directory, detected_filename)):
+      detected_filename = filename_from_url(url)
+      filename = os.path.join(directory, detected_filename)
+      if not os.path.isfile(filename):
         sleep(DOWNLOAD_DELAY)
-        try:
-          # TODO: replace wget with requests
-          filename = wget.download(url, out=directory)
+
+        r = requests.get(url)
+        if r.status_code == 200:
+          with open(filename, 'wb') as f:
+            f.write(r.content)
           # TODO: track failed downloads
           print('\nDownloaded {}'.format(filename))
-        except urllib.error.HTTPError as e:
+        else:
           print('\nFailed To Download {}'.format(url))

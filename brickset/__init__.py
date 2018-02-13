@@ -4,6 +4,7 @@ import jsonlines
 import os
 import simplejson as json
 import re
+import requests
 import unicodedata
 
 
@@ -49,3 +50,17 @@ def parameterize(string_to_clean, sep='-'):
     parameterized_string = re.sub('^#{re_sep}|#{re_sep}$', sep, parameterized_string, re.I)
 
   return parameterized_string.lower()
+
+
+def search(set_id, options={}):
+  payload = {
+    'fromIndex': '0',
+    'locale': 'en-US',
+    'onlyAlternatives': 'false',
+    'prefixText': set_id
+  }
+  payload.update(options)
+  r = requests.get('https://www.lego.com/service/biservice/search', params=payload)
+
+  if r.status_code == 200:
+    return json.loads(r.content)

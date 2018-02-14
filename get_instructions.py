@@ -44,7 +44,6 @@ if not os.path.isfile(filename):
   write_jsonl(filename, data)
 
 searches = read_jsonl(filename)
-# searches = [searches[0]]
 total_searches = len(searches)
 
 for i, search in enumerate(searches):
@@ -63,11 +62,12 @@ for i, search in enumerate(searches):
       if not os.path.isfile(filename):
         sleep(DOWNLOAD_DELAY)
 
+        # TODO: set user agent
         r = requests.get(url)
         if r.status_code == 200:
           with open(filename, 'wb') as f:
             f.write(r.content)
           # TODO: track failed downloads
-          print('\nDownloaded {}'.format(filename))
+          print('  Downloaded {}'.format(filename))
         else:
-          print('\nFailed To Download {}'.format(url))
+          print('  Failed To Download {}'.format(url))

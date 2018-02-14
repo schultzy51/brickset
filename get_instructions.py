@@ -14,19 +14,14 @@ import requests
 from wget import filename_from_url
 from brickset import read_jsonl, write_jsonl, search
 from time import sleep
-import urllib
-
-# from urllib.parse import urlparse
-from IPython import embed
 
 SEARCH_DELAY = 0.5
 DOWNLOAD_DELAY = 0.5
 
-filename = os.path.join('instructions', 'search.json')
+search_filename = os.path.join('instructions', 'search.json')
 
-if not os.path.isfile(filename):
-  filename = os.path.join('lists', 'owned.jsonl')
-  sets = read_jsonl(filename)
+if not os.path.isfile(search_filename):
+  sets = read_jsonl(os.path.join('lists', 'owned.jsonl'))
 
   set_ids = [s['number'] for s in sets]
   set_ids.sort()
@@ -34,6 +29,7 @@ if not os.path.isfile(filename):
   data = []
 
   for id in set_ids:
+    print('.', end = '', flush = True)
     sleep(SEARCH_DELAY)
     result = search(id)
     if result:
@@ -41,10 +37,12 @@ if not os.path.isfile(filename):
     else:
       print("Error searching for set '{}'".format(id))
 
-  write_jsonl(filename, data)
+  write_jsonl(search_filename, data)
 
-searches = read_jsonl(filename)
+searches = read_jsonl(search_filename)
 total_searches = len(searches)
+
+print('')
 
 for i, search in enumerate(searches):
   set_id = search['prefixText']
@@ -58,16 +56,16 @@ for i, search in enumerate(searches):
       os.makedirs(directory, exist_ok=True)
 
       detected_filename = filename_from_url(url)
-      filename = os.path.join(directory, detected_filename)
-      if not os.path.isfile(filename):
+      instruction_filename = os.path.join(directory, detected_filename)
+      if not os.path.isfile(instruction_filename):
         sleep(DOWNLOAD_DELAY)
 
         # TODO: set user agent
         r = requests.get(url)
         if r.status_code == 200:
-          with open(filename, 'wb') as f:
+          with open(instruction_filename, 'wb') as f:
             f.write(r.content)
           # TODO: track failed downloads
-          print('  Downloaded {}'.format(filename))
+          print('  Downloaded {}'.format(instruction_filename))
         else:
           print('  Failed To Download {}'.format(url))

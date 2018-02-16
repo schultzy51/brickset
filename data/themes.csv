@@ -7,7 +7,7 @@ Agents,13,0,2008,2009
 Alpha Team,32,3,2001,2005
 Aqua Raiders,7,0,2007,2007
 Aquazone,28,6,1995,1999
-Architecture,43,4,2008,2018
+Architecture,45,4,2008,2018
 Assorted,8,1,1990,1995
 Atlantis,24,1,2010,2011
 Avatar The Last Airbender,2,0,2006,2006
@@ -18,21 +18,21 @@ Belville,82,3,1994,2008
 Ben 10: Alien Force,6,0,2010,2010
 Bionicle,389,38,2001,2016
 Boats,12,0,1982,1996
-Books,242,32,1968,2018
+Books,249,36,1968,2018
 Boost,1,0,2017,2017
-BrickHeadz,51,6,2016,2018
+BrickHeadz,57,6,2016,2018
 Bricks and More,67,3,2006,2014
 Building Set with People,29,0,1974,1978
 Bulk Bricks,141,5,2000,2006
 Cars,28,3,2011,2012
 Castle,281,23,1978,2016
-City,542,26,2005,2018
-Classic,479,12,1949,2018
+City,547,26,2005,2018
+Classic,483,12,1949,2018
 Clikits,85,2,2003,2006
-Collectable Minifigures,506,27,2010,2018
+Collectable Minifigures,508,27,2010,2018
 Creator,391,7,1995,2018
 Dacta,161,10,1960,2003
-DC Comics Super Heroes,86,12,2011,2018
+DC Comics Super Heroes,89,12,2011,2018
 DC Super Hero Girls,12,1,2016,2017
 Dimensions,68,6,2015,2017
 Dino,7,0,2012,2012
@@ -40,22 +40,22 @@ Dino 2010,5,0,2005,2005
 Dino Attack,6,0,2005,2006
 Dinosaurs,12,0,2001,2001
 Discovery,6,0,2003,2003
-Disney,40,9,2014,2018
-Duplo,1159,45,1969,2018
+Disney,42,9,2014,2018
+Duplo,1165,45,1969,2018
 Education,200,10,1998,2017
-Elves,39,1,2015,2018
+Elves,41,1,2015,2018
 Exo-Force,44,4,2006,2008
 Explore,127,8,2002,2004
 Fabuland,107,0,1979,1989
 Factory,7,3,2005,2008
 Freestyle,75,0,1995,1999
-Friends,276,21,2012,2018
+Friends,286,21,2012,2018
 Fusion,4,0,2014,2014
 Galidor,20,0,2002,2002
 Games,49,2,2009,2013
 Gear,1982,133,1971,2018
 Ghostbusters,2,0,2016,2016
-Harry Potter,70,10,2001,2018
+Harry Potter,64,10,2001,2011
 HERO Factory,106,1,2010,2014
 Hobby Set,9,0,1975,2003
 Homemaker,32,0,1971,1982
@@ -63,7 +63,7 @@ Ideas,22,2,2010,2018
 Indiana Jones,18,4,2008,2009
 Island Xtreme Stunts,13,0,2002,2003
 Jack Stone,25,0,2001,2002
-Juniors,62,13,2014,2018
+Juniors,66,13,2014,2018
 Jurassic World,14,1,2015,2018
 Legends of Chima,142,11,2013,2015
 LEGOLAND,165,6,1969,1978
@@ -79,8 +79,8 @@ Miscellaneous,137,11,1989,2018
 Mixels,90,9,2014,2016
 Model Team,16,0,1986,2004
 Monster Fighters,13,1,2012,2012
-Nexo Knights,98,12,2016,2018
-Ninjago,248,20,2011,2018
+Nexo Knights,99,12,2016,2018
+Ninjago,249,20,2011,2018
 Pharaoh's Quest,9,0,2011,2011
 Pirates,84,8,1989,2015
 Pirates of the Caribbean,15,4,2011,2017
@@ -89,25 +89,25 @@ Power Miners,22,2,2009,2010
 PreSchool,14,0,1975,1978
 Primo,52,0,1995,1999
 Prince of Persia,6,0,2010,2010
-Promotional,385,15,1977,2018
+Promotional,398,15,1977,2018
 Quatro,10,0,2004,2006
 Racers,248,11,1998,2013
 Rock Raiders,16,1,1999,2000
-Samsonite,266,7,1961,1979
+Samsonite,268,7,1961,1979
 Scala,75,1,1979,2001
 Scooby-Doo,7,0,2015,2016
-Seasonal,138,10,1999,2018
+Seasonal,139,10,1999,2019
 Serious Play,31,0,2007,2015
-Service Packs,373,16,1977,1999
+Service Packs,376,16,1977,1999
 Space,322,22,1978,2015
 Speed Champions,28,8,2015,2018
 Spider-Man,11,1,2003,2004
 SpongeBob SquarePants,14,0,2006,2012
 Sports,130,5,2000,2007
 Spybotics,4,0,2002,2002
-Star Wars,642,28,1999,2018
+Star Wars,643,28,1999,2018
 Studios,55,2,2000,2002
-Technic,397,10,1977,2018
+Technic,402,9,1977,2018
 Teenage Mutant Ninja Turtles,20,3,2012,2014
 The Angry Birds Movie,6,0,2016,2016
 The Hobbit,24,4,2012,2014
@@ -127,6 +127,7 @@ Unikitty!,6,0,2018,2018
 Universal Building Set,43,3,1969,1987
 Vikings,7,0,2005,2006
 Western,20,2,1996,2002
+Wizarding World,6,2,2018,2018
 World City,38,4,2003,2004
 World Racers,9,0,2010,2010
 Znap,20,0,1998,1999

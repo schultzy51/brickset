@@ -1,10 +1,10 @@
-{"theme": "Books", "subtheme": "{None}", "setCount": 3, "yearFrom": 2016, "yearTo": 2018}
 {"theme": "Books", "subtheme": "Arvo Brothers", "setCount": 2, "yearFrom": 2014, "yearTo": 2015}
 {"theme": "Books", "subtheme": "Barron's Educational Series", "setCount": 9, "yearFrom": 2013, "yearTo": 2017}
 {"theme": "Books", "subtheme": "Conway", "setCount": 1, "yearFrom": 2010, "yearTo": 2010}
 {"theme": "Books", "subtheme": "CreateSpace", "setCount": 7, "yearFrom": 2012, "yearTo": 2017}
 {"theme": "Books", "subtheme": "CreateSpace/Bartneck", "setCount": 18, "yearFrom": 2011, "yearTo": 2016}
-{"theme": "Books", "subtheme": "Dorling Kindersley", "setCount": 60, "yearFrom": 1999, "yearTo": 2017}
+{"theme": "Books", "subtheme": "CreateSspace", "setCount": 1, "yearFrom": 2018, "yearTo": 2018}
+{"theme": "Books", "subtheme": "Dorling Kindersley", "setCount": 64, "yearFrom": 1999, "yearTo": 2018}
 {"theme": "Books", "subtheme": "Fantasia Verlag GmbH", "setCount": 3, "yearFrom": 2008, "yearTo": 2011}
 {"theme": "Books", "subtheme": "Glenat", "setCount": 1, "yearFrom": 2017, "yearTo": 2017}
 {"theme": "Books", "subtheme": "Graphic Arts Books", "setCount": 9, "yearFrom": 2016, "yearTo": 2017}
@@ -20,14 +20,17 @@
 {"theme": "Books", "subtheme": "McGraw Hill", "setCount": 1, "yearFrom": 2016, "yearTo": 2016}
 {"theme": "Books", "subtheme": "Mitchell Beazley", "setCount": 4, "yearFrom": 2013, "yearTo": 2015}
 {"theme": "Books", "subtheme": "Motorbooks", "setCount": 1, "yearFrom": 2017, "yearTo": 2017}
-{"theme": "Books", "subtheme": "No Starch Press", "setCount": 53, "yearFrom": 2001, "yearTo": 2018}
+{"theme": "Books", "subtheme": "No Starch Press", "setCount": 54, "yearFrom": 2001, "yearTo": 2018}
 {"theme": "Books", "subtheme": "Page Street Publishing", "setCount": 2, "yearFrom": 2016, "yearTo": 2017}
 {"theme": "Books", "subtheme": "Quarry", "setCount": 2, "yearFrom": 2016, "yearTo": 2017}
 {"theme": "Books", "subtheme": "Random House", "setCount": 1, "yearFrom": 2013, "yearTo": 2013}
 {"theme": "Books", "subtheme": "Remember When", "setCount": 1, "yearFrom": 2012, "yearTo": 2012}
-{"theme": "Books", "subtheme": "Scholastic", "setCount": 1, "yearFrom": 2017, "yearTo": 2017}
+{"theme": "Books", "subtheme": "Scholastic", "setCount": 2, "yearFrom": 2017, "yearTo": 2018}
 {"theme": "Books", "subtheme": "Skyhorse Publishing", "setCount": 5, "yearFrom": 2013, "yearTo": 2015}
 {"theme": "Books", "subtheme": "Spiderwize", "setCount": 1, "yearFrom": 2017, "yearTo": 2017}
 {"theme": "Books", "subtheme": "Square Fish", "setCount": 1, "yearFrom": 2013, "yearTo": 2013}
 {"theme": "Books", "subtheme": "The History Press", "setCount": 1, "yearFrom": 2016, "yearTo": 2016}
 {"theme": "Books", "subtheme": "Thunder Bay Press", "setCount": 2, "yearFrom": 2016, "yearTo": 2017}
+{"theme": "Books", "subtheme": "TwoMorrows", "setCount": 1, "yearFrom": 2018, "yearTo": 2018}
+{"theme": "Books", "subtheme": "Welcon Owen", "setCount": 1, "yearFrom": 2016, "yearTo": 2016}
+{"theme": "Books", "subtheme": "Weldon Owen", "setCount": 1, "yearFrom": 2018, "yearTo": 2018}

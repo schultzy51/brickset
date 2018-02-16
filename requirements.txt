@@ -1,4 +1,7 @@
 jsonlines
 pyyaml
+requests
 simplejson
+slacker
+wget
 zeep

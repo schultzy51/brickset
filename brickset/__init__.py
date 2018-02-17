@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from datetime import datetime
 import csv
 import jsonlines
@@ -33,12 +34,15 @@ def read_jsonl(filename):
   return items
 
 
-def write_csv(filename, items, header_hash):
+def write_csv(filename, items, header_dict):
   with open(filename, 'w') as f:
-    dict_writer = csv.DictWriter(f, fieldnames=header_hash.keys(), extrasaction='ignore', lineterminator=os.linesep)
-    dict_writer.writerow(header_hash)
+    dict_writer = csv.DictWriter(f, fieldnames=header_dict.keys(), extrasaction='ignore', lineterminator=os.linesep)
+    dict_writer.writerow(header_dict)
     dict_writer.writerows(items)
 
+
+def header_dict(item_dict):
+  return OrderedDict([(item, item) for item in item_dict.keys()])
 
 # https://coderwall.com/p/nmu4bg/python-parameterize-equivalent-to-rails-parameterize
 def parameterize(string_to_clean, sep='-'):

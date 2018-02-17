@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-from brickset import read_jsonl, write_csv
-from collections import OrderedDict
+from brickset import read_jsonl, write_csv, header_dict
 import os
 
 # check for data directory
@@ -16,21 +15,27 @@ if not os.path.exists(themes_file):
 themes = read_jsonl(themes_file)
 
 filename = os.path.join('data', 'themes.csv')
-header_hash = OrderedDict([(item, item) for item in themes[0].keys()])
-write_csv(filename, themes, header_hash)
+write_csv(filename, themes, header_dict(themes[0]))
 
 themes_directories = [name for name in os.listdir('data') if os.path.isdir(os.path.join('data', name))]
 
 global_sets = []
+csv_types = []
 
 # check each theme
 for theme_directory in themes_directories:
-  # load sets
-  sets_file = os.path.join('data', theme_directory, '{}_sets.jsonl'.format(theme_directory))
-  sets = read_jsonl(sets_file)
+  for type in ['sets']:  # 'subthemes', 'years'
+    # load
+    items_file = os.path.join('data', theme_directory, '{}_{}.jsonl'.format(theme_directory, type))
+    items = read_jsonl(items_file)
 
-  global_sets.extend(sets)
+    # write csv
+    if type in csv_types:
+      filename = os.path.join('data', theme_directory, '{}_{}.csv'.format(theme_directory, type))
+      write_csv(filename, items, header_dict(items[0]))
+
+    if type == 'sets':
+      global_sets.extend(items)
 
 filename = os.path.join('data', 'sets.csv')
-header_hash = OrderedDict([(item, item) for item in global_sets[0].keys()])
-write_csv(filename, global_sets, header_hash)
+write_csv(filename, global_sets, header_dict(global_sets[0]))

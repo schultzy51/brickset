@@ -4,7 +4,7 @@ from datetime import datetime
 from time import sleep
 import os
 
-from brickset import write_jsonl, write_csv, parameterize
+from brickset import write_jsonl, parameterize
 from brickset.service import Brickset
 from brickset.config import get_config
 

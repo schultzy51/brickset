@@ -42,9 +42,13 @@ try:
   sets.reverse()
 
   if args.open_web:
-    for rset in sets:
+    total_sets = len(sets)
+    for i, rset in enumerate(sets):
       webbrowser.open_new_tab(rset['bricksetURL'])
-      sleep(1)
+      if (i+1) % 10 == 0:
+        input("Press Enter to continue...({}/{})".format(i + 1, total_sets))
+      else:
+        sleep(0.5)
 
   if args.slack:
     slack = Slack(config['slack_api_token'], config['slack_channel'], config['slack_username'])

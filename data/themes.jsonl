@@ -17,7 +17,7 @@
 {"theme": "Ben 10: Alien Force", "setCount": 6, "subthemeCount": 0, "yearFrom": 2010, "yearTo": 2010}
 {"theme": "Bionicle", "setCount": 389, "subthemeCount": 38, "yearFrom": 2001, "yearTo": 2016}
 {"theme": "Boats", "setCount": 12, "subthemeCount": 0, "yearFrom": 1982, "yearTo": 1996}
-{"theme": "Books", "setCount": 249, "subthemeCount": 36, "yearFrom": 1968, "yearTo": 2018}
+{"theme": "Books", "setCount": 252, "subthemeCount": 36, "yearFrom": 1968, "yearTo": 2018}
 {"theme": "Boost", "setCount": 1, "subthemeCount": 0, "yearFrom": 2017, "yearTo": 2017}
 {"theme": "BrickHeadz", "setCount": 57, "subthemeCount": 6, "yearFrom": 2016, "yearTo": 2018}
 {"theme": "Bricks and More", "setCount": 67, "subthemeCount": 3, "yearFrom": 2006, "yearTo": 2014}
@@ -26,9 +26,9 @@
 {"theme": "Cars", "setCount": 28, "subthemeCount": 3, "yearFrom": 2011, "yearTo": 2012}
 {"theme": "Castle", "setCount": 281, "subthemeCount": 23, "yearFrom": 1978, "yearTo": 2016}
 {"theme": "City", "setCount": 547, "subthemeCount": 26, "yearFrom": 2005, "yearTo": 2018}
-{"theme": "Classic", "setCount": 483, "subthemeCount": 12, "yearFrom": 1949, "yearTo": 2018}
+{"theme": "Classic", "setCount": 50, "subthemeCount": 3, "yearFrom": 1998, "yearTo": 2018}
 {"theme": "Clikits", "setCount": 85, "subthemeCount": 2, "yearFrom": 2003, "yearTo": 2006}
-{"theme": "Collectable Minifigures", "setCount": 508, "subthemeCount": 27, "yearFrom": 2010, "yearTo": 2018}
+{"theme": "Collectable Minifigures", "setCount": 526, "subthemeCount": 28, "yearFrom": 2010, "yearTo": 2018}
 {"theme": "Creator", "setCount": 391, "subthemeCount": 7, "yearFrom": 1995, "yearTo": 2018}
 {"theme": "Dacta", "setCount": 161, "subthemeCount": 10, "yearFrom": 1960, "yearTo": 2003}
 {"theme": "DC Comics Super Heroes", "setCount": 89, "subthemeCount": 12, "yearFrom": 2011, "yearTo": 2018}
@@ -41,21 +41,21 @@
 {"theme": "Discovery", "setCount": 6, "subthemeCount": 0, "yearFrom": 2003, "yearTo": 2003}
 {"theme": "Disney", "setCount": 42, "subthemeCount": 9, "yearFrom": 2014, "yearTo": 2018}
 {"theme": "Duplo", "setCount": 1165, "subthemeCount": 45, "yearFrom": 1969, "yearTo": 2018}
-{"theme": "Education", "setCount": 200, "subthemeCount": 10, "yearFrom": 1998, "yearTo": 2017}
+{"theme": "Education", "setCount": 201, "subthemeCount": 10, "yearFrom": 1998, "yearTo": 2017}
 {"theme": "Elves", "setCount": 41, "subthemeCount": 1, "yearFrom": 2015, "yearTo": 2018}
 {"theme": "Exo-Force", "setCount": 44, "subthemeCount": 4, "yearFrom": 2006, "yearTo": 2008}
 {"theme": "Explore", "setCount": 127, "subthemeCount": 8, "yearFrom": 2002, "yearTo": 2004}
 {"theme": "Fabuland", "setCount": 107, "subthemeCount": 0, "yearFrom": 1979, "yearTo": 1989}
 {"theme": "Factory", "setCount": 7, "subthemeCount": 3, "yearFrom": 2005, "yearTo": 2008}
 {"theme": "Freestyle", "setCount": 75, "subthemeCount": 0, "yearFrom": 1995, "yearTo": 1999}
-{"theme": "Friends", "setCount": 286, "subthemeCount": 21, "yearFrom": 2012, "yearTo": 2018}
+{"theme": "Friends", "setCount": 292, "subthemeCount": 21, "yearFrom": 2012, "yearTo": 2018}
 {"theme": "Fusion", "setCount": 4, "subthemeCount": 0, "yearFrom": 2014, "yearTo": 2014}
 {"theme": "Galidor", "setCount": 20, "subthemeCount": 0, "yearFrom": 2002, "yearTo": 2002}
 {"theme": "Games", "setCount": 49, "subthemeCount": 2, "yearFrom": 2009, "yearTo": 2013}
-{"theme": "Gear", "setCount": 1982, "subthemeCount": 133, "yearFrom": 1971, "yearTo": 2018}
+{"theme": "Gear", "setCount": 1993, "subthemeCount": 133, "yearFrom": 1971, "yearTo": 2018}
 {"theme": "Ghostbusters", "setCount": 2, "subthemeCount": 0, "yearFrom": 2016, "yearTo": 2016}
 {"theme": "Harry Potter", "setCount": 64, "subthemeCount": 10, "yearFrom": 2001, "yearTo": 2011}
-{"theme": "HERO Factory", "setCount": 106, "subthemeCount": 1, "yearFrom": 2010, "yearTo": 2014}
+{"theme": "HERO Factory", "setCount": 106, "subthemeCount": 2, "yearFrom": 2010, "yearTo": 2014}
 {"theme": "Hobby Set", "setCount": 9, "subthemeCount": 0, "yearFrom": 1975, "yearTo": 2003}
 {"theme": "Homemaker", "setCount": 32, "subthemeCount": 0, "yearFrom": 1971, "yearTo": 1982}
 {"theme": "Ideas", "setCount": 22, "subthemeCount": 2, "yearFrom": 2010, "yearTo": 2018}
@@ -68,7 +68,7 @@
 {"theme": "LEGOLAND", "setCount": 165, "subthemeCount": 6, "yearFrom": 1969, "yearTo": 1978}
 {"theme": "Life of George", "setCount": 2, "subthemeCount": 0, "yearFrom": 2011, "yearTo": 2012}
 {"theme": "Make and Create", "setCount": 44, "subthemeCount": 1, "yearFrom": 2005, "yearTo": 2012}
-{"theme": "Marvel Super Heroes", "setCount": 101, "subthemeCount": 17, "yearFrom": 2012, "yearTo": 2018}
+{"theme": "Marvel Super Heroes", "setCount": 102, "subthemeCount": 17, "yearFrom": 2012, "yearTo": 2018}
 {"theme": "Master Builder Academy", "setCount": 17, "subthemeCount": 0, "yearFrom": 2011, "yearTo": 2013}
 {"theme": "Mickey Mouse", "setCount": 5, "subthemeCount": 0, "yearFrom": 2000, "yearTo": 2000}
 {"theme": "Mindstorms", "setCount": 67, "subthemeCount": 7, "yearFrom": 1998, "yearTo": 2015}
@@ -79,7 +79,7 @@
 {"theme": "Model Team", "setCount": 16, "subthemeCount": 0, "yearFrom": 1986, "yearTo": 2004}
 {"theme": "Monster Fighters", "setCount": 13, "subthemeCount": 1, "yearFrom": 2012, "yearTo": 2012}
 {"theme": "Nexo Knights", "setCount": 99, "subthemeCount": 12, "yearFrom": 2016, "yearTo": 2018}
-{"theme": "Ninjago", "setCount": 249, "subthemeCount": 20, "yearFrom": 2011, "yearTo": 2018}
+{"theme": "Ninjago", "setCount": 250, "subthemeCount": 20, "yearFrom": 2011, "yearTo": 2018}
 {"theme": "Pharaoh's Quest", "setCount": 9, "subthemeCount": 0, "yearFrom": 2011, "yearTo": 2011}
 {"theme": "Pirates", "setCount": 84, "subthemeCount": 8, "yearFrom": 1989, "yearTo": 2015}
 {"theme": "Pirates of the Caribbean", "setCount": 15, "subthemeCount": 4, "yearFrom": 2011, "yearTo": 2017}
@@ -88,7 +88,7 @@
 {"theme": "PreSchool", "setCount": 14, "subthemeCount": 0, "yearFrom": 1975, "yearTo": 1978}
 {"theme": "Primo", "setCount": 52, "subthemeCount": 0, "yearFrom": 1995, "yearTo": 1999}
 {"theme": "Prince of Persia", "setCount": 6, "subthemeCount": 0, "yearFrom": 2010, "yearTo": 2010}
-{"theme": "Promotional", "setCount": 398, "subthemeCount": 15, "yearFrom": 1977, "yearTo": 2018}
+{"theme": "Promotional", "setCount": 400, "subthemeCount": 15, "yearFrom": 1977, "yearTo": 2018}
 {"theme": "Quatro", "setCount": 10, "subthemeCount": 0, "yearFrom": 2004, "yearTo": 2006}
 {"theme": "Racers", "setCount": 248, "subthemeCount": 11, "yearFrom": 1998, "yearTo": 2013}
 {"theme": "Rock Raiders", "setCount": 16, "subthemeCount": 1, "yearFrom": 1999, "yearTo": 2000}
@@ -96,7 +96,7 @@
 {"theme": "Scala", "setCount": 75, "subthemeCount": 1, "yearFrom": 1979, "yearTo": 2001}
 {"theme": "Scooby-Doo", "setCount": 7, "subthemeCount": 0, "yearFrom": 2015, "yearTo": 2016}
 {"theme": "Seasonal", "setCount": 139, "subthemeCount": 10, "yearFrom": 1999, "yearTo": 2019}
-{"theme": "Serious Play", "setCount": 31, "subthemeCount": 0, "yearFrom": 2007, "yearTo": 2015}
+{"theme": "Serious Play", "setCount": 30, "subthemeCount": 0, "yearFrom": 2007, "yearTo": 2015}
 {"theme": "Service Packs", "setCount": 376, "subthemeCount": 16, "yearFrom": 1977, "yearTo": 1999}
 {"theme": "Space", "setCount": 322, "subthemeCount": 22, "yearFrom": 1978, "yearTo": 2015}
 {"theme": "Speed Champions", "setCount": 28, "subthemeCount": 8, "yearFrom": 2015, "yearTo": 2018}
@@ -106,6 +106,7 @@
 {"theme": "Spybotics", "setCount": 4, "subthemeCount": 0, "yearFrom": 2002, "yearTo": 2002}
 {"theme": "Star Wars", "setCount": 643, "subthemeCount": 28, "yearFrom": 1999, "yearTo": 2018}
 {"theme": "Studios", "setCount": 55, "subthemeCount": 2, "yearFrom": 2000, "yearTo": 2002}
+{"theme": "System", "setCount": 433, "subthemeCount": 10, "yearFrom": 1949, "yearTo": 1970}
 {"theme": "Technic", "setCount": 402, "subthemeCount": 9, "yearFrom": 1977, "yearTo": 2018}
 {"theme": "Teenage Mutant Ninja Turtles", "setCount": 20, "subthemeCount": 3, "yearFrom": 2012, "yearTo": 2014}
 {"theme": "The Angry Birds Movie", "setCount": 6, "subthemeCount": 0, "yearFrom": 2016, "yearTo": 2016}

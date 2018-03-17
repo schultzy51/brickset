@@ -1,39 +1,37 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date,Last Updated
-75182,Republic Fighter Tank,2017,Star Wars,305,4,24.99,24.99,true,2017-06-02,,2017-05-20 15:34:14
-75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,124.98,true,2017-06-02,,2017-05-26 02:34:10
-75532,Scout Trooper & Speeder Bike,2017,Star Wars,452,,54.99,179.97,true,2017-06-02,,2017-05-16 14:53:51
-10258,London Bus,2017,Advanced Models,1686,,139.99,319.96,true,2017-08-01,,2018-02-23 02:29:51
-42065,RC Tracked Racer,2017,Technic,370,,99.99,419.95,true,2017-08-01,,2016-11-09 02:28:40
-70618,Destiny's Bounty,2017,The LEGO Ninjago Movie,2295,7,159.99,579.94,true,2017-08-01,,2017-07-08 21:44:29
-70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,879.93,true,2017-09-01,,2017-08-22 01:13:23
-10259,Winter Village Station,2017,Advanced Models,902,5,79.99,959.92,true,2017-10-01,,2017-12-03 04:42:14
-70922,The Joker Manor,2017,The LEGO Batman Movie,3444,10,269.99,1229.91,true,2017-11-25,,2017-11-24 19:12:23
-10260,Downtown Diner,2018,Advanced Models,2480,6,169.99,1399.90,true,2018-01-01,,2018-01-21 02:41:22
-10401,Rainbow Fun,2018,Classic,85,,4.99,1404.89,true,2018-01-01,,2017-12-30 12:47:49
-10402,Fun Future,2018,Classic,186,1,9.99,1414.88,true,2018-01-01,,2018-01-02 11:56:48
-10403,World Fun,2018,Classic,295,2,19.99,1434.87,true,2018-01-01,,2018-01-02 11:57:17
-10404,Ocean's Bottom,2018,Classic,579,2,29.99,1464.86,true,2018-01-01,,2018-01-02 11:58:04
-10714,Blue Baseplate,2018,Classic,1,,7.99,1472.85,true,2018-01-01,,2018-01-02 12:00:13
-40270,Valentine's Bee,2018,BrickHeadz,140,,9.99,1482.84,true,2018-01-01,,2018-01-22 02:04:48
-41598,The Flash,2018,BrickHeadz,122,,9.99,1492.83,true,2018-01-01,,2018-01-02 12:20:55
-41599,Wonder Woman,2018,BrickHeadz,143,,9.99,1502.82,true,2018-01-01,,2018-01-02 12:21:15
-41600,Aquaman,2018,BrickHeadz,135,,9.99,1512.81,true,2018-01-01,,2018-01-02 12:21:34
-41601,Cyborg,2018,BrickHeadz,108,,9.99,1522.80,true,2018-01-01,,2018-01-02 12:22:00
-41602,Rey,2018,BrickHeadz,119,,9.99,1532.79,true,2018-01-01,,2018-01-02 12:22:18
-41603,Kylo Ren,2018,BrickHeadz,130,,9.99,1542.78,true,2018-01-01,,2018-01-02 12:22:33
-42078,Mack Anthem,2018,Technic,2595,,179.99,1722.77,true,2018-01-01,,2018-01-02 12:24:05
-70919,The Justice League Anniversary Party,2018,The LEGO Batman Movie,267,4,29.99,1752.76,true,2018-01-01,,2017-12-17 18:57:40
-70920,Egghead Mech Food Fight,2018,The LEGO Batman Movie,293,3,29.99,1782.75,true,2018-01-01,,2017-12-17 18:57:38
-70921,Harley Quinn Cannonball Attack,2018,The LEGO Batman Movie,425,4,49.99,1832.74,true,2018-01-01,,2017-11-25 17:41:21
-70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,6,79.99,1912.73,true,2018-01-01,,2017-11-25 17:43:25
-75205,Mos Eisley Cantina,2018,Star Wars,378,4,39.99,1952.72,true,2018-01-01,,2017-12-26 10:51:44
-75533,Boba Fett,2018,Star Wars,144,,29.99,1982.71,true,2018-01-01,,2017-12-24 20:05:34
-21313,Ship in a Bottle,2018,Ideas,962,,69.99,2052.70,true,2018-02-02,,2018-02-01 00:51:57
-40271,Easter Bunny,2018,BrickHeadz,126,,9.99,2062.69,true,2018-02-02,,2018-03-13 05:44:26
-10405,Mission to Mars,2018,Classic,871,,59.99,2122.68,true,2018-03-02,,2018-01-02 11:58:34
-75884,1968 Ford Mustang Fastback,2018,Speed Champions,,,14.99,2137.67,true,2018-03-02,,2018-01-28 00:08:18
-75888,Porsche 911 RSR and 911 Turbo 3.0,2018,Speed Champions,,,29.99,2167.66,true,2018-03-02,,2018-01-28 00:14:35
-76105,The Hulkbuster: Ultron Edition,2018,Marvel Super Heroes,1363,,119.99,2287.65,true,2018-03-04,,2018-03-16 19:35:02
+75191,Jedi Starfighter with Hyperdrive,2017,Star Wars,825,4,99.99,99.99,true,2017-06-02,,2017-05-26 02:34:10
+10258,London Bus,2017,Advanced Models,1686,,139.99,239.98,true,2017-08-01,,2018-02-23 02:29:51
+42065,RC Tracked Racer,2017,Technic,370,,99.99,339.97,true,2017-08-01,,2016-11-09 02:28:40
+70618,Destiny's Bounty,2017,The LEGO Ninjago Movie,2295,7,159.99,499.96,true,2017-08-01,,2017-07-08 21:44:29
+70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,799.95,true,2017-09-01,,2017-08-22 01:13:23
+10259,Winter Village Station,2017,Advanced Models,902,5,79.99,879.94,true,2017-10-01,,2017-12-03 04:42:14
+70922,The Joker Manor,2017,The LEGO Batman Movie,3444,10,269.99,1149.93,true,2017-11-25,,2017-11-24 19:12:23
+10260,Downtown Diner,2018,Advanced Models,2480,6,169.99,1319.92,true,2018-01-01,,2018-01-21 02:41:22
+10401,Rainbow Fun,2018,Classic,85,,4.99,1324.91,true,2018-01-01,,2017-12-30 12:47:49
+10402,Fun Future,2018,Classic,186,1,9.99,1334.90,true,2018-01-01,,2018-01-02 11:56:48
+10403,World Fun,2018,Classic,295,2,19.99,1354.89,true,2018-01-01,,2018-01-02 11:57:17
+10404,Ocean's Bottom,2018,Classic,579,2,29.99,1384.88,true,2018-01-01,,2018-01-02 11:58:04
+10714,Blue Baseplate,2018,Classic,1,,7.99,1392.87,true,2018-01-01,,2018-01-02 12:00:13
+40270,Valentine's Bee,2018,BrickHeadz,140,,9.99,1402.86,true,2018-01-01,,2018-01-22 02:04:48
+41598,The Flash,2018,BrickHeadz,122,,9.99,1412.85,true,2018-01-01,,2018-01-02 12:20:55
+41599,Wonder Woman,2018,BrickHeadz,143,,9.99,1422.84,true,2018-01-01,,2018-01-02 12:21:15
+41600,Aquaman,2018,BrickHeadz,135,,9.99,1432.83,true,2018-01-01,,2018-01-02 12:21:34
+41601,Cyborg,2018,BrickHeadz,108,,9.99,1442.82,true,2018-01-01,,2018-01-02 12:22:00
+41602,Rey,2018,BrickHeadz,119,,9.99,1452.81,true,2018-01-01,,2018-01-02 12:22:18
+41603,Kylo Ren,2018,BrickHeadz,130,,9.99,1462.80,true,2018-01-01,,2018-01-02 12:22:33
+42078,Mack Anthem,2018,Technic,2595,,179.99,1642.79,true,2018-01-01,,2018-01-02 12:24:05
+70919,The Justice League Anniversary Party,2018,The LEGO Batman Movie,267,4,29.99,1672.78,true,2018-01-01,,2017-12-17 18:57:40
+70920,Egghead Mech Food Fight,2018,The LEGO Batman Movie,293,3,29.99,1702.77,true,2018-01-01,,2017-12-17 18:57:38
+70921,Harley Quinn Cannonball Attack,2018,The LEGO Batman Movie,425,4,49.99,1752.76,true,2018-01-01,,2017-11-25 17:41:21
+70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,6,79.99,1832.75,true,2018-01-01,,2017-11-25 17:43:25
+75205,Mos Eisley Cantina,2018,Star Wars,378,4,39.99,1872.74,true,2018-01-01,,2017-12-26 10:51:44
+75533,Boba Fett,2018,Star Wars,144,,29.99,1902.73,true,2018-01-01,,2017-12-24 20:05:34
+21313,Ship in a Bottle,2018,Ideas,962,,69.99,1972.72,true,2018-02-02,,2018-02-01 00:51:57
+40271,Easter Bunny,2018,BrickHeadz,126,,9.99,1982.71,true,2018-02-02,,2018-03-13 05:44:26
+10405,Mission to Mars,2018,Classic,871,,59.99,2042.70,true,2018-03-02,,2018-01-02 11:58:34
+75884,1968 Ford Mustang Fastback,2018,Speed Champions,,,14.99,2057.69,true,2018-03-02,,2018-01-28 00:08:18
+75888,Porsche 911 RSR and 911 Turbo 3.0,2018,Speed Champions,,,29.99,2087.68,true,2018-03-02,,2018-01-28 00:14:35
+76105,The Hulkbuster: Ultron Edition,2018,Marvel Super Heroes,1363,,119.99,2207.67,true,2018-03-04,,2018-03-16 19:35:02
 4000028,House,2018,Classic,64,,,,true,,,2018-01-26 08:37:24
 4000029,Windmill,2018,Classic,45,,,,true,,,2018-01-26 08:36:43
 40197,Wedding Favor Set 2018,2018,Miscellaneous,132,2,9.99,,true,,,2018-01-22 02:11:23

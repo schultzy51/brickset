@@ -25,32 +25,32 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 70923,The Bat-Space Shuttle,2018,The LEGO Batman Movie,643,6,79.99,1732.76,true,2018-01-01,,2017-11-25 17:43:25
 75205,Mos Eisley Cantina,2018,Star Wars,378,4,39.99,1772.75,true,2018-01-01,,2017-12-26 10:51:44
 75533,Boba Fett,2018,Star Wars,144,,29.99,1802.74,true,2018-01-01,,2017-12-24 20:05:34
-21313,Ship in a Bottle,2018,Ideas,962,,69.99,1872.73,true,2018-02-02,,2018-02-01 00:51:57
-40271,Easter Bunny,2018,BrickHeadz,126,,9.99,1882.72,true,2018-02-02,,2018-03-13 05:44:26
-10405,Mission to Mars,2018,Classic,871,,59.99,1942.71,true,2018-03-02,,2018-01-02 11:58:34
-75884,1968 Ford Mustang Fastback,2018,Speed Champions,,,14.99,1957.70,true,2018-03-02,,2018-01-28 00:08:18
+21313,Ship in a Bottle,2018,Ideas,962,,69.99,1872.73,true,2018-02-02,2018-03-28,2018-02-01 00:51:57
+40271,Easter Bunny,2018,BrickHeadz,126,,9.99,1882.72,true,2018-02-02,2018-03-17,2018-03-13 05:44:26
+10405,Mission to Mars,2018,Classic,871,3,59.99,1942.71,true,2018-03-02,,2018-01-02 11:58:34
+75884,1968 Ford Mustang Fastback,2018,Speed Champions,183,1,14.99,1957.70,true,2018-03-02,,2018-03-19 09:55:49
 75888,Porsche 911 RSR and 911 Turbo 3.0,2018,Speed Champions,,,29.99,1987.69,true,2018-03-02,,2018-01-28 00:14:35
 76105,The Hulkbuster: Ultron Edition,2018,Marvel Super Heroes,1363,,119.99,2107.68,true,2018-03-04,,2018-03-16 19:35:02
 4000028,House,2018,Classic,64,,,,true,,,2018-01-26 08:37:24
 4000029,Windmill,2018,Classic,45,,,,true,,,2018-01-26 08:36:43
 40197,Wedding Favor Set 2018,2018,Miscellaneous,132,2,9.99,,true,,,2018-01-22 02:11:23
 41489,Rey & Kylo Ren,2017,BrickHeadz,249,,19.99,,true,,,2017-12-01 05:14:19
+41597,Go Brick Me,2018,BrickHeadz,708,,29.99,,true,,,2018-03-28 15:04:55
+41604,Iron Man MK50,2018,BrickHeadz,101,,9.99,,true,,,2018-03-28 17:24:20
+41605,Thanos,2018,BrickHeadz,105,,9.99,,true,,,2018-03-28 17:24:18
+41606,Star-Lord,2018,BrickHeadz,113,,9.99,,true,,,2018-03-28 17:24:17
+41607,Gamora,2018,BrickHeadz,136,,9.99,,true,,,2018-03-28 17:24:15
+41608,Han Solo,2018,BrickHeadz,141,,9.99,,true,,,2018-03-28 17:24:13
+41609,Chewbacca,2018,BrickHeadz,149,,9.99,,true,,,2018-03-28 17:24:13
+41614,Owen & Blue,2018,BrickHeadz,,,,,true,,,2018-03-29 09:33:43
 5005233,Hamleys Royal Guard,2018,Promotional,5,,,,true,,,2017-12-22 11:41:25
-5005249,Iconic Easter 2018,2018,Seasonal,6,,,,true,,,2018-03-14 22:13:53
+5005249,LEGO® Easter Bunny Hut,2018,Seasonal,6,,,,true,,,2018-03-25 17:53:27
 21311,{?},2018,Ideas,,,,,false,,,2018-01-04 00:19:18
-21314,TRON: Legacy Lightcycle,2018,Ideas,,,,,false,,,2018-01-04 00:18:58
+21314,TRON: Legacy,2018,Ideas,230,,34.99,,false,,,2018-03-24 21:19:47
 40272,Witch,2018,BrickHeadz,,,9.99,,false,,,2018-01-10 13:53:13
 40273,Turkey,2018,BrickHeadz,,,9.99,,false,,,2018-01-10 13:53:24
 40274,Mr. Claus,2018,BrickHeadz,,,9.99,,false,,,2018-01-10 13:53:34
 40275,Mrs. Claus,2018,BrickHeadz,,,9.99,,false,,,2018-01-10 13:53:45
-41597,Go Brick Me,2018,BrickHeadz,708,,29.99,,false,,,2018-02-17 17:21:05
-41604,Iron Man MK50,2018,BrickHeadz,101,,9.99,,false,,,2018-01-10 22:26:13
-41605,Thanos,2018,BrickHeadz,105,,9.99,,false,,,2017-12-29 02:51:16
-41606,Star-Lord,2018,BrickHeadz,113,,9.99,,false,,,2017-12-29 02:51:44
-41607,Gamora,2018,BrickHeadz,136,,9.99,,false,,,2017-12-29 02:52:10
-41608,Han Solo,2018,BrickHeadz,141,,9.99,,false,,,2018-01-07 04:40:21
-41609,Chewbacca,2018,BrickHeadz,149,,9.99,,false,,,2018-01-07 04:40:29
-41614,Owen & Blue,2018,BrickHeadz,,,,,false,,,2018-03-17 01:45:20
 41615,{?},2018,BrickHeadz,,,19.99,,false,,,2018-02-13 18:51:10
 41616,(?),2018,BrickHeadz,,,,,false,,,2018-02-13 18:52:00
 41617,Elsa,2018,BrickHeadz,,,9.99,,false,,,2018-02-14 18:54:50
@@ -64,7 +64,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 41628,(?),2018,BrickHeadz,,,,,false,,,2018-02-13 18:56:10
 41629,Boba Fett,2018,BrickHeadz,,,9.99,,false,,,2018-02-14 18:54:11
 42083,Bugatti Chiron,2018,Technic,3599,,,,false,,,2018-01-30 13:21:47
-5005358,Minifigure Factory,2018,Promotional,,,,,false,,,2018-03-01 16:58:52
+5005358,Minifigure Factory,2018,Promotional,86,,,,false,,,2018-03-22 14:18:37
 5005376,Star Wars Anniversary Pod,2018,Star Wars,,,,,false,,,2018-03-01 17:00:20
 60197,Passenger Train,2018,City,,,,,false,,,2018-02-13 19:02:16
 60198,Freight Train,2018,City,,,,,false,,,2018-02-20 03:08:09

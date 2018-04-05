@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import math
 import simplejson as json
 import sys
 import webbrowser
@@ -18,6 +19,7 @@ parser.add_argument('-ms', '--minutes-ago-stop', action='store', dest='minutes_a
 parser.add_argument('-s', '--section', action='store', dest='section', default='default', help='Section')
 parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', help='Open a web tab for each set found')
 parser.add_argument('-c', '--slack', action='store_true', dest='slack', help='Slack')
+parser.add_argument('-e', '--epoch', action='store', dest='epoch', type=int, help='Last checked epoch')
 
 args = parser.parse_args()
 
@@ -26,6 +28,10 @@ items = []
 try:
   config = get_config(section=args.section)
   brickset = Brickset(config['api_key'], config['username'], config['password'])
+
+  if args.epoch:
+    diff = datetime.utcnow() - datetime.utcfromtimestamp(args.epoch)
+    args.minutes_ago = diff.days * 1440 + math.ceil(diff.seconds / 60)
 
   sets = brickset.recent(args.minutes_ago) or []
 
@@ -43,9 +49,10 @@ try:
 
   if args.open_web:
     total_sets = len(sets)
+    print("Found {} sets".format(total_sets))
     for i, rset in enumerate(sets):
       webbrowser.open_new_tab(rset['bricksetURL'])
-      if (i+1) % 10 == 0:
+      if (i + 1) % 10 == 0 and i + 1 < total_sets:
         input("Press Enter to continue...({}/{})".format(i + 1, total_sets))
       else:
         sleep(0.5)
@@ -61,4 +68,5 @@ try:
 except Exception as e:
   sys.exit(e)
 else:
-  print(json.dumps(items, default=json_serial))
+  if not args.open_web:
+    print(json.dumps(items, default=json_serial))

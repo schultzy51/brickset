@@ -21,8 +21,7 @@ WANTED_KEY_HEADER = OrderedDict([
   ('total', 'Running Total'),
   ('released', 'Released'),
   ('USDateAddedToSAH', 'US Start Date'),
-  ('USDateRemovedFromSAH', 'US End Date'),
-  ('lastUpdated', 'Last Updated')
+  ('USDateRemovedFromSAH', 'US End Date')
 ])
 
 # TODO: load key_header from config
@@ -45,10 +44,6 @@ def clean(sets):
     for k in wset.keys():
       if isinstance(wset[k], str):
         wset[k] = wset[k].strip()
-
-    # shorten the datetime
-    if wset['lastUpdated']:
-      wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
 
 
 def running_total(sets):

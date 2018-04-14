@@ -37,6 +37,7 @@ OWNED_KEY_HEADER = OrderedDict([
   ('USDateAddedToSAH', 'US Start Date'),
 ])
 
+
 def clean(sets):
   # clean up the data
   for wset in sets:
@@ -49,9 +50,6 @@ def clean(sets):
     if wset['lastUpdated']:
       wset['lastUpdated'] = wset['lastUpdated'].strftime("%Y-%m-%d %H:%M:%S")
 
-    # use true/false rather than True/False
-    wset['released'] = 'true' if wset['released'] else 'false'
-
 
 def running_total(sets):
   total = 0
@@ -63,7 +61,39 @@ def running_total(sets):
       wset['total'] = total
 
 
-items = []
+def save_wanted(sets):
+  # sort
+  sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['released'] is None, k['released']), reverse=True)
+
+  # save as jsonl
+  write_jsonl(os.path.join('lists', 'wanted.jsonl'), sets)
+
+  # prepare data for csv
+  clean(sets)
+  running_total(sets)
+
+  # save to csv
+  write_csv(os.path.join('lists', 'wanted.csv'), sets, WANTED_KEY_HEADER)
+  write_csv(os.path.join('lists', 'wanted_released.csv'), filter(lambda k: k['released'], sets), WANTED_KEY_HEADER)
+
+
+def save_owned(sets):
+  # sort
+  sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
+  sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
+
+  # save as jsonl
+  write_jsonl(os.path.join('lists', 'owned.jsonl'), sets)
+
+  # prepare data for csv
+  clean(sets)
+
+  # save to csv
+  write_csv(os.path.join('lists', 'owned.csv'), sets, OWNED_KEY_HEADER)
+
 
 try:
   # setup
@@ -71,44 +101,11 @@ try:
   brickset = Brickset(config['api_key'], config['username'], config['password'])
   os.makedirs('lists', exist_ok=True)
 
-  # get wanted sets
-  sets = brickset.wanted(page_size=100, delay=1)
+  # get and save wanted sets
+  save_wanted(brickset.wanted(page_size=100, delay=1))
 
-  # sort the wanted sets
-  sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
-  sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
-  sets = sorted(sets, key=lambda k: (k['released'] is None, k['released']), reverse=True)
-
-  # save the wanted sets as jsonl
-  filename = os.path.join('lists', 'wanted.jsonl')
-  write_jsonl(filename, sets)
-
-  # prepare data for csv
-  clean(sets)
-  running_total(sets)
-
-  # save the wanted sets to csv
-  filename = os.path.join('lists', 'wanted.csv')
-  write_csv(filename, sets, WANTED_KEY_HEADER)
-
-  # get the owned sets
-  sets = brickset.owned(page_size=100, delay=1)
-
-  # sort the owned sets
-  sets = sorted(sets, key=lambda k: (k['number'] is None, k['number']), reverse=False)
-  sets = sorted(sets, key=lambda k: (k['USDateAddedToSAH'] is None, k['USDateAddedToSAH']), reverse=False)
-  sets = sorted(sets, key=lambda k: (k['year'] is None, k['year']), reverse=False)
-
-  # save the owned sets as jsonl
-  filename = os.path.join('lists', 'owned.jsonl')
-  write_jsonl(filename, sets)
-
-  # prepare data for csv
-  clean(sets)
-
-  # save the owned sets to csv
-  filename = os.path.join('lists', 'owned.csv')
-  write_csv(filename, sets, OWNED_KEY_HEADER)
+  # get and save owned sets
+  save_owned(brickset.owned(page_size=100, delay=1))
 
 except Exception as e:
   sys.exit(e)

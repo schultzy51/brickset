@@ -76,7 +76,7 @@ def save_wanted(sets):
 
   # save to csv
   write_csv(os.path.join('lists', 'wanted.csv'), sets, WANTED_KEY_HEADER)
-  write_csv(os.path.join('lists', 'wanted_released.csv'), filter(lambda k: k['released'], sets), WANTED_KEY_HEADER)
+  write_csv(os.path.join('lists', 'wanted_released.csv'), filter(lambda k: k['USDateAddedToSAH'], sets), WANTED_KEY_HEADER)
 
 
 def save_owned(sets):

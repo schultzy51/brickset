@@ -22,7 +22,8 @@ For simple bricket api calls
 
 View recently updated sets
 ```
-./recent.py -m 10000 -ms 0 -o | jq -c '.[]'
+./recent.py -m 10000 -ms 0 -o'
+./recent.py -e `cat last_recent_check.txt` -o'
 ```
 
 Dump the sets for statistical analysis

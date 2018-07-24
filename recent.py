@@ -51,7 +51,7 @@ try:
     total_sets = len(sets)
     print("Found {} sets".format(total_sets))
     for i, rset in enumerate(sets):
-      webbrowser.open_new_tab(rset['bricksetURL'])
+      webbrowser.open(rset['bricksetURL'], new=1, autoraise=False)
       if (i + 1) % 10 == 0 and i + 1 < total_sets:
         input("Press Enter to continue...({}/{})".format(i + 1, total_sets))
       else:

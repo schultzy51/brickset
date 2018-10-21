@@ -5,10 +5,10 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 41621,Ron Weasley & Albus Dumbledore,2018,BrickHeadz,245,,19.99,159.96,True,2018-07-02,
 41623,Ariel & Ursula,2018,BrickHeadz,361,,19.99,179.95,True,2018-07-06,
 41618,Anna & Olaf,2018,BrickHeadz,201,,14.99,194.94,True,2018-07-11,
-10262,James Bond Aston Martin DB5,2018,Advanced Models,1290,,149.99,344.93,True,2018-08-01,
+10262,James Bond Aston Martin DB5,2018,Advanced Models,1290,,149.99,344.93,True,2018-08-01,2018-10-19
 21311,Voltron,2018,Ideas,2321,,179.99,524.92,True,2018-08-01,
-41612,Steve & Creeper,2018,BrickHeadz,160,,19.99,544.91,True,2018-08-01,2018-10-13
-60197,Passenger Train,2018,City,677,4,159.99,704.90,True,2018-08-01,
+41612,Steve & Creeper,2018,BrickHeadz,160,,19.99,544.91,True,2018-08-01,2018-10-16
+60197,Passenger Train,2018,City,677,4,159.99,704.90,True,2018-08-01,2018-10-20
 60198,Cargo Train,2018,City,1226,6,229.99,934.89,True,2018-08-01,
 70657,NINJAGO City Docks,2018,The LEGO Ninjago Movie,3553,14,229.99,1164.88,True,2018-08-01,
 41622,Peter Venkman & Slimer,2018,BrickHeadz,228,,19.99,1184.87,True,2018-08-07,
@@ -17,22 +17,24 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 40272,Witch,2018,BrickHeadz,,,9.99,1214.84,True,2018-09-02,
 71043,Hogwarts Castle,2018,Wizarding World,6020,28,399.99,1614.83,True,2018-09-02,
 75213,Star Wars Advent Calendar,2018,Star Wars,307,7,39.99,1654.82,True,2018-09-02,
-75955,Hogwarts Express,2018,Wizarding World,801,6,79.99,1734.81,True,2018-09-05,
+75955,Hogwarts Express,2018,Wizarding World,801,6,79.99,1734.81,True,2018-09-05,2018-10-16
 40273,Turkey,2018,BrickHeadz,114,,9.99,1744.80,True,2018-10-02,
 40274,Mr. & Mrs. Claus,2018,BrickHeadz,,,19.99,1764.79,True,2018-10-02,
 41626,Groot & Rocket,2018,BrickHeadz,189,,14.99,1779.78,True,2018-10-02,
-41627,Luke & Yoda,2018,BrickHeadz,215,,14.99,1794.77,True,2018-10-02,
-41628,Princess Leia,2018,BrickHeadz,124,,9.99,1804.76,True,2018-10-02,
+41627,Luke Skywalker & Yoda,2018,BrickHeadz,215,,14.99,1794.77,True,2018-10-02,2018-10-18
+41628,Princess Leia,2018,BrickHeadz,124,,9.99,1804.76,True,2018-10-02,2018-10-17
 41629,Boba Fett,2018,BrickHeadz,161,,9.99,1814.75,True,2018-10-02,
-41630,Jack Skellington & Sally,2018,BrickHeadz,,,19.99,1834.74,True,2018-10-02,
+41630,Jack Skellington & Sally,2018,BrickHeadz,,,19.99,1834.74,True,2018-10-02,2018-10-18
 41631,Newt Scamander & Gellert Grindelwald,2018,BrickHeadz,,,19.99,1854.73,True,2018-10-02,
 41632,Homer Simpson & Krusty the Clown,2018,BrickHeadz,,,19.99,1874.72,True,2018-10-02,
+21315,Pop-Up Book,2018,Ideas,859,,69.99,,True,,
 40305,LEGO Brand Store,2018,Promotional,362,2,,,True,,
 5005254,Harry Potter Minifigure Collection,2018,Wizarding World,25,,,,True,,
 5005255,Jurassic World Minifigure Collection,2018,Jurassic World,18,3,,,True,,
 5005256,Marvel Super Heroes Minifigure Collection,2018,Marvel Super Heroes,22,,,,True,,
-5005257,NINJAGO Minifigure Collection,2018,Ninjago,25,,,,True,,
+5005257,NINJAGO Minifigure Collection,2018,Ninjago,25,4,,,True,,
 10268,Vestas Wind Turbine,2018,Advanced Models,826,,199.99,,False,,
+40292,Christmas Gift Box,2018,Seasonal,,,,,False,,
 40293,Christmas Carousel,2018,Seasonal,,,,,False,,
 40316,Geoffrey,2018,BrickHeadz,,,,,False,,
 5005251,Penguin Suit Girl,2018,Promotional,6,,,,False,,

@@ -1,9 +1,9 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
 10262,James Bond Aston Martin DB5,2018,Advanced Models,1290,,149.99,149.99,True,2018-08-01,
 21311,Voltron,2018,Ideas,2321,,179.99,329.98,True,2018-08-01,
-60197,Passenger Train,2018,City,677,4,159.99,489.97,True,2018-08-01,2018-10-20
+60197,Passenger Train,2018,City,677,4,159.99,489.97,True,2018-08-01,2018-10-31
 60198,Cargo Train,2018,City,1226,6,229.99,719.96,True,2018-08-01,
-70657,NINJAGO City Docks,2018,The LEGO Ninjago Movie,3553,14,229.99,949.95,True,2018-08-01,
+70657,NINJAGO City Docks,2018,The LEGO Ninjago Movie,3553,14,229.99,949.95,True,2018-08-01,2018-10-31
 41624,Mickey Mouse,2018,BrickHeadz,109,,9.99,959.94,True,2018-08-21,2018-10-25
 41625,Minnie Mouse,2018,BrickHeadz,129,,9.99,969.93,True,2018-08-21,2018-10-09
 40272,Witch,2018,BrickHeadz,,,9.99,979.92,True,2018-09-02,
@@ -20,13 +20,13 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 41632,Homer Simpson & Krusty the Clown,2018,BrickHeadz,,,19.99,1599.81,True,2018-10-02,
 21315,Pop-Up Book,2018,Ideas,859,,69.99,,True,,
 40305,LEGO Brand Store,2018,Promotional,362,2,,,True,,
-5005251,Penguin Suit Girl,2018,Promotional,6,,,,True,,
+5005251,Penguin Winter Hut,2018,Promotional,6,,,,True,,
 5005254,Harry Potter Minifigure Collection,2018,Wizarding World,25,4,,,True,,
 5005255,Jurassic World Minifigure Collection,2018,Jurassic World,18,3,,,True,,
 5005256,Marvel Super Heroes Minifigure Collection,2018,Marvel Super Heroes,22,,,,True,,
 5005257,NINJAGO Minifigure Collection,2018,Ninjago,25,4,,,True,,
 10268,Vestas Wind Turbine,2018,Advanced Models,826,,199.99,,False,,
 40292,Christmas Gift Box,2018,Seasonal,,,,,False,,
-40293,Christmas Carousel,2018,Seasonal,,,,,False,,
+40293,Christmas Carousel,2018,Seasonal,251,,,,False,,
 40316,Geoffrey,2018,BrickHeadz,,,,,False,,
 75143,{?},2016,Star Wars,,,,,False,,

@@ -80,7 +80,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 60084,Racing Bike Transporter,2015,City,178,2,19.99,2015-01-01
 70817,Batman & Super Angry Kitty Attack,2015,The LEGO Movie,115,3,9.99,2015-01-01
 70818,Double-Decker Couch,2015,The LEGO Movie,197,5,14.99,2015-01-01
-75060,Slave I,2015,Star Wars,1996,4,199.99,2015-01-01
+75060,Slave I,2015,Star Wars,1996,5,199.99,2015-01-01
 75082,TIE Advanced Prototype,2015,Star Wars,355,3,39.99,2015-01-01
 75087,Anakin's Custom Jedi Starfighter,2015,Star Wars,370,3,39.99,2015-01-01
 10699,32x32 Sand Baseplate,2015,Classic,1,,7.99,2015-01-02
@@ -131,7 +131,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,349.99,2016-01-02
 40165,Minifigure Wedding Favour Set,2016,Miscellaneous,89,2,9.99,2016-03-01
 75136,Droid Escape Pod,2016,Star Wars,197,4,24.99,2016-03-01
-75137,Carbon-Freezing Chamber,2016,Star Wars,231,3,24.99,2016-03-01
+75137,Carbon-Freezing Chamber,2016,Star Wars,231,4,24.99,2016-03-01
 75871,Ford Mustang GT,2016,Speed Champions,185,1,14.99,2016-03-01
 75872,Audi R18 e-tron quattro,2016,Speed Champions,166,1,14.99,2016-03-01
 75873,Audi R8 LMS ultra,2016,Speed Champions,175,1,14.99,2016-03-01
@@ -408,6 +408,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 41618,Anna & Olaf,2018,BrickHeadz,201,,14.99,2018-07-11
 41619,Darth Vader,2018,BrickHeadz,104,,9.99,2018-07-11
 41620,Stormtrooper,2018,BrickHeadz,124,,9.99,2018-07-11
+10262,James Bond Aston Martin DB5,2018,Advanced Models,1290,,149.99,2018-08-01
+21311,Voltron,2018,Ideas,2321,,179.99,2018-08-01
 41612,Steve & Creeper,2018,BrickHeadz,160,,19.99,2018-08-01
 42082,Rough Terrain Crane,2018,Technic,4057,,299.99,2018-08-01
 71022,Harry Potter,2018,Collectable Minifigures,8,1,3.99,2018-08-01
@@ -416,8 +418,10 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 60201,City Advent Calendar,2018,City,313,6,29.99,2018-09-02
 75213,Star Wars Advent Calendar,2018,Star Wars,307,7,39.99,2018-09-02
 40197,Wedding Favor Set 2018,2018,Miscellaneous,132,2,9.99,
+40289,Diagon Alley,2018,Wizarding World,374,1,,
 40290,60 Years of the LEGO Brick,2018,Promotional,421,,,
 40291,Creative Personalities,2018,Promotional,307,2,,
+40292,Christmas Gift Box,2018,Seasonal,,,,
 40305,LEGO Brand Store,2018,Promotional,362,2,,
 5005230,Zane's Kendo Training Pod,2018,Ninjago,25,1,,
 5005233,Hamleys Royal Guard,2018,Promotional,5,1,,

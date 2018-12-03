@@ -14,7 +14,7 @@ urls = [
   'https://www.barnesandnoble.com/s/lego+{}',
   'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=lego+{}',
   'https://www.ebay.com/sch/i.html?_from=R40&_nkw=lego+{}&_sacat=0&LH_BIN=1',
-  'https://shop.lego.com/en-US/search/{}'
+  'https://shop.lego.com/en-US/search?q={}'
 ]
 
 for url in urls:

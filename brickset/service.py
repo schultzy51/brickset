@@ -7,8 +7,8 @@ logging.getLogger('zeep').setLevel(logging.ERROR)
 
 
 class Brickset:
-  def __init__(self, api_key, username, password):
-    self._client = zeep.Client('https://brickset.com/api/v2.asmx?WSDL')
+  def __init__(self, api_key, username, password, wsdl_url='https://brickset.com/api/v2.asmx?WSDL'):
+    self._client = zeep.Client(wsdl_url)
     self._api_key = api_key
     self._username = username
     self._password = password

@@ -3,7 +3,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75936,Jurassic Park: T. rex Rampage,2019,Jurassic World,3120,,249.99,449.98,True,2019-07-01,
 10269,Harley-Davidson Fat Boy,2019,Creator Expert,1023,,99.99,549.97,True,2019-08-02,
 21318,Tree House,2019,Ideas,3036,4,199.99,749.96,True,2019-08-02,
-31097,Townhouse Pet Shop & Café,2019,Creator,969,3,79.99,829.95,True,2019-08-02,
+31097,Townhouse Pet Shop & Café,2019,Creator,969,3,79.99,829.95,True,2019-08-02,2019-11-24
 42099,4x4 X-Treme Off-Roader,2019,Technic,958,,249.99,1079.94,True,2019-08-02,
 21319,Central Perk,2019,Ideas,1070,7,59.99,1139.93,True,2019-09-01,2019-11-20
 40351,Halloween Ghost,2019,BrickHeadz,136,,9.99,1149.92,True,2019-09-01,2019-10-18
@@ -11,7 +11,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75895,1974 Porsche 911 Turbo 3.0,2019,Speed Champions,180,1,14.99,1494.90,True,2019-09-12,
 75252,Imperial Star Destroyer,2019,Star Wars,4784,2,699.99,2194.89,True,2019-10-01,
 40353,"Reindeer, Elf and Elfie",2019,BrickHeadz,281,,19.99,2214.88,True,2019-10-02,
-42100,Liebherr R 9800,2019,Technic,4108,,449.99,2664.87,True,2019-10-02,
+42100,Liebherr R 9800,2019,Technic,4108,,449.99,2664.87,True,2019-10-02,2019-11-24
 42110,Land Rover Defender,2019,Technic,2573,,199.99,2864.86,True,2019-10-02,2019-11-05
 75232,Kylo Ren & Sith Trooper,2019,BrickHeadz,240,,19.99,2884.85,True,2019-10-04,
 21320,Dinosaur Fossils,2019,Ideas,910,2,59.99,2944.84,True,2019-11-01,
@@ -28,7 +28,9 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 76139,1989 Batmobile,2019,DC Comics Super Heroes,3306,,249.99,,True,,
 853967,Wooden Minifigure,2019,LEGO Originals,30,,,,True,,
 31104,Burger Monster Truck,2020,Creator,499,,,,False,,
+40382,{Birthday Set},2020,BrickHeadz,,,,,False,,
 5006085,Buildable 2x4 Red Brick,2019,Miscellaneous,,,,,False,,
 76895,Ferrari F8 Tributo,2020,Speed Champions,275,,19.99,,False,,
+76896,Nissan GT-R Nismo,2020,Speed Champions,,,,,False,,
 76897,1985 Audi Sport Quattro S1,2020,Speed Champions,250,,19.99,,False,,
 76898,Formula E Panasonic Jaguar Racing GEN2 Car & Jaguar I-PACE eTROPHY,2020,Speed Champions,565,,,,False,,

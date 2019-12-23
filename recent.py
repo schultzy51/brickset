@@ -20,6 +20,7 @@ parser.add_argument('-s', '--section', action='store', dest='section', default='
 parser.add_argument('-o', '--open-web', action='store_true', dest='open_web', help='Open a web tab for each set found')
 parser.add_argument('-c', '--slack', action='store_true', dest='slack', help='Slack')
 parser.add_argument('-e', '--epoch', action='store', dest='epoch', type=int, help='Last checked epoch')
+parser.add_argument('-i', '--image-only', action='store_true', dest='image', help='Only sets with an image')
 
 args = parser.parse_args()
 
@@ -38,6 +39,9 @@ try:
   unwanted_themes = config['unwanted_themes']
   if unwanted_themes is None:
     unwanted_themes = []
+
+  if args.image:
+    sets = list(filter(lambda d: d['image'] == True, sets))
 
   datetime_stop = datetime.utcnow() - timedelta(minutes=args.minutes_ago_stop)
 

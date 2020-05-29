@@ -17,10 +17,10 @@ class Brickset:
     zeep_sets = self._client.service.getRecentlyUpdatedSets(apiKey=self._api_key, minutesAgo=minutes_ago)
     return zeep.helpers.serialize_object(zeep_sets)
 
-  def wanted(self, page_size=50, delay=2):
+  def wanted(self, page_size=250, delay=2):
     return self.sets(page_size=page_size, action='wanted', delay=delay)
 
-  def owned(self, page_size=50, delay=2):
+  def owned(self, page_size=250, delay=2):
     return self.sets(page_size=page_size, action='owned', delay=delay)
 
   def themes(self):
@@ -35,7 +35,7 @@ class Brickset:
     zeep_years = self._client.service.getYears(apiKey=self._api_key, theme=theme)
     return zeep.helpers.serialize_object(zeep_years)
 
-  def sets_page(self, page_size=50, page_number=1, theme=None, order_by=None, action=None):
+  def sets_page(self, page_size=250, page_number=1, theme=None, order_by=None, action=None):
     params = {'apiKey': self._api_key, 'pageSize': page_size, 'pageNumber': page_number}
 
     if action:
@@ -58,7 +58,7 @@ class Brickset:
     zeep_sets = self._client.service.getSets(**self.sets_params(params))
     return zeep.helpers.serialize_object(zeep_sets) or []
 
-  def sets(self, page_size=50, theme=None, order_by=None, action=None, delay=2):
+  def sets(self, page_size=250, theme=None, order_by=None, action=None, delay=2):
     items = []
     page_number = 1
 
@@ -87,7 +87,7 @@ class Brickset:
       'owned': '',
       'wanted': '',
       'orderBy': 'Number',
-      'pageSize': 50,
+      'pageSize': 250,
       'pageNumber': 1,
       'userName': ''
     }

@@ -34,6 +34,9 @@ try:
     diff = datetime.utcnow() - datetime.utcfromtimestamp(args.epoch)
     args.minutes_ago = diff.days * 1440 + math.ceil(diff.seconds / 60)
 
+  if not brickset.check_key():
+    sys.exit('Invalid Key')
+
   sets = brickset.recent(args.minutes_ago) or []
 
   unwanted_themes = config['unwanted_themes']

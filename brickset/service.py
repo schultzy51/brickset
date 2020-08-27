@@ -13,6 +13,14 @@ class Brickset:
     self._username = username
     self._password = password
 
+  def check_key(self):
+    result = self._client.service.checkKey(apiKey=self._api_key)
+    # 'OK' / 'INVALIDKEY'
+    if result == 'OK':
+      return True
+
+    return False
+
   def recent(self, minutes_ago):
     zeep_sets = self._client.service.getRecentlyUpdatedSets(apiKey=self._api_key, minutesAgo=minutes_ago)
     return zeep.helpers.serialize_object(zeep_sets)

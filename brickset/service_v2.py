@@ -1,8 +1,6 @@
 import json
 import requests
-import sys
 from time import sleep
-from config import get_config
 
 class Brickset:
   def  __init__(self, api_key, username, password, base_url='https://brickset.com/api/v3.asmx'):
@@ -65,16 +63,63 @@ class Brickset:
 
     return response
 
-  def get_sets(self, page_size=250, theme=None, order_by=None, action=None, delay=2):
+  def recent(self, updated_since):
+    return self.sets(updated_since=updated_since)
+
+  def wanted(self, page_size=250, delay=2):
+    return self.sets(page_size=page_size, action='wanted', delay=delay)
+
+  def owned(self, page_size=250, delay=2):
+    return self.sets(page_size=page_size, action='owned', delay=delay)
+
+  def themes(self):
+    r = requests.get(
+      self._base_url + '/getThemes',
+      params={
+        'apiKey': self._api_key
+      }
+    )
+
+    response = self.get_response(r)
+
+    return response
+
+  def subthemes(self, theme):
+    r = requests.get(
+      self._base_url + '/getSubthemes',
+      params={
+        'apiKey': self._api_key,
+        'Theme': theme
+      }
+    )
+
+    response = self.get_response(r)
+
+    return response
+
+  def years(self, theme):
+    r = requests.get(
+      self._base_url + '/getYears',
+      params={
+        'apiKey': self._api_key,
+        'Theme': theme
+      }
+    )
+
+    response = self.get_response(r)
+
+    return response
+
+  def sets(self, page_size=250, theme=None, order_by=None, action=None, delay=2, updated_since=None):
     items = []
     page_number = 1
-    token = None
+    token = ''
 
     if action is not None:
       token = self.login()
 
     while True:
-      sets = self.get_sets_page(page_size=page_size, page_number=page_number, theme=theme, order_by=order_by, action=action, token=token)
+      sets = self.sets_page(page_size=page_size, page_number=page_number, theme=theme, order_by=order_by, action=action, token=token, updated_since=updated_since)
       items.extend(sets)
 
       if len(sets) != page_size:
@@ -85,7 +130,7 @@ class Brickset:
 
     return items
 
-  def get_sets_page(self, page_size=250, page_number=1, theme=None, order_by=None, action=None, token=''):
+  def sets_page(self, page_size=250, page_number=1, theme=None, order_by=None, action=None, token='', updated_since=None):
     params = {'pageSize': page_size, 'pageNumber': page_number}
 
     if action:
@@ -102,6 +147,9 @@ class Brickset:
 
     if order_by:
       params.update({'orderBy': order_by})
+
+    if updated_since:
+      params.update({'updatedSince': updated_since})
 
     r = requests.get(
       self._base_url + '/getSets',
@@ -135,58 +183,9 @@ class Brickset:
     params.update(overrides)
     return params
 
-  def get_themes(self):
-    r = requests.get(
-      self._base_url + '/getThemes',
-      params={
-        'apiKey': self._api_key
-      }
-    )
-
-    response = self.get_response(r)
-
-    return response
-
-  def get_subthemes(self, theme):
-    r = requests.get(
-      self._base_url + '/getSubthemes',
-      params={
-        'apiKey': self._api_key,
-        'Theme': theme
-      }
-    )
-
-    response = self.get_response(r)
-
-    return response
-
-  def get_years(self, theme):
-    r = requests.get(
-      self._base_url + '/getYears',
-      params={
-        'apiKey': self._api_key,
-        'Theme': theme
-      }
-    )
-
-    response = self.get_response(r)
-
-    return response
-
   @staticmethod
   def get_response(response):
     if response.status_code == 200 and response.json()['status'] == 'success':
       return response.json()
     else:
       raise RuntimeError(response.json()['message'])
-
-
-try:
-  # setup
-  config = get_config(section='wanted_api3')
-  brickset = Brickset(config['api_key'], config['username'], config['password'])
-
-  import code; code.interact(local=dict(globals(), **locals()))
-
-except Exception as e:
-  sys.exit(e)

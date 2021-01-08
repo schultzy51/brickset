@@ -178,7 +178,8 @@ class Brickset:
       'updatedSince': '',
       'orderBy': 'Number',
       'pageSize': 250,
-      'pageNumber': 1
+      'pageNumber': 1,
+      'extendedData': ''
     }
     params.update(overrides)
     return params

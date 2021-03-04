@@ -1,10 +1,10 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
 10270,Bookshop,2020,Creator Expert,2504,5,179.99,179.99,True,2020-01-02,2021-02-15
-21323,Grand Piano,2020,Ideas,3662,,349.99,529.98,True,2020-08-02,2021-01-16
+21323,Grand Piano,2020,Ideas,3662,,349.99,529.98,True,2020-08-02,
 31109,Pirate Ship,2020,Creator,1264,4,99.99,629.97,True,2020-08-24,
 75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1029.96,True,2020-09-01,2021-01-20
 75290,Mos Eisley Cantina,2020,Star Wars,3187,21,349.99,1379.95,True,2020-09-17,2021-01-13
-40425,Nutcracker,2020,BrickHeadz,180,,9.99,1389.94,True,2020-10-01,
+40425,Nutcracker,2020,BrickHeadz,180,,9.99,1389.94,True,2020-10-01,2021-03-02
 854037,Christmas Ornament Santa,2020,Seasonal,44,,7.99,1397.93,True,2020-10-01,2020-12-21
 854038,Christmas Ornament Reindeer,2020,Seasonal,34,,7.99,1405.92,True,2020-10-01,2020-12-17
 854050,Snowman & Reindeer Duo,2020,Seasonal,126,,9.99,1415.91,True,2020-10-08,2020-12-08
@@ -12,5 +12,6 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 21324,123 Sesame Street,2020,Ideas,1368,6,119.99,1735.89,True,2020-11-01,
 10274,Ghostbusters ECTO-1,2020,Creator Expert,2352,,199.99,1935.88,True,2020-11-16,
 10278,Police Station,2021,Creator Expert,2923,5,199.99,2135.87,True,2021-01-02,2021-01-15
-21325,Medieval Blacksmith,2021,Ideas,2164,4,149.99,2285.86,True,2021-02-02,2021-02-02
+21325,Medieval Blacksmith,2021,Ideas,2164,4,149.99,2285.86,True,2021-02-02,
 10295,Porsche 911,2021,Creator Expert,1458,,149.99,2435.85,True,2021-02-17,
+75302,Imperial Shuttle,2021,Star Wars,660,,69.99,2505.84,True,2021-03-01,

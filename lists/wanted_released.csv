@@ -1,29 +1,32 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
-75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,399.99,True,2020-09-01,2021-06-20
-40425,Nutcracker,2020,BrickHeadz,180,,9.99,409.98,True,2020-10-01,2021-03-02
-76161,1989 Batwing,2020,DC Comics Super Heroes,2363,3,199.99,609.97,True,2020-10-22,
-21324,123 Sesame Street,2020,Ideas,1368,6,119.99,729.96,True,2020-11-01,
-10274,Ghostbusters ECTO-1,2020,Creator Expert,2352,,199.99,929.95,True,2020-11-16,
-10278,Police Station,2021,Creator Expert,2923,5,199.99,1129.94,True,2021-01-02,
-10281,Bonsai Tree,2021,Creator Expert,878,,49.99,1179.93,True,2021-01-02,
-71741,NINJAGO City Gardens,2021,Ninjago,5685,22,299.99,1479.92,True,2021-01-16,2021-03-09
-21325,Medieval Blacksmith,2021,Ideas,2164,4,149.99,1629.91,True,2021-02-02,2021-04-19
-10295,Porsche 911,2021,Creator Expert,1458,,149.99,1779.90,True,2021-02-17,
-21326,Winnie the Pooh,2021,Ideas,1265,5,99.99,1879.89,True,2021-04-02,
-10283,NASA Space Shuttle Discovery,2021,Creator Expert,2354,,199.99,2079.88,True,2021-04-07,
-76392,Hogwarts Wizard's Chess,2021,Harry Potter,876,4,59.99,2139.87,True,2021-04-18,
-76393,Harry Potter & Hermione Granger,2021,Harry Potter,1673,,119.99,2259.86,True,2021-04-18,
-76394,"Fawkes, Dumbledore's Phoenix",2021,Harry Potter,597,1,39.99,2299.85,True,2021-04-18,
-40420,"Gru, Stuart and Otto",2021,BrickHeadz,244,,19.99,2319.84,True,2021-04-26,
-40421,"Belle Bottom, Kevin and Bob",2021,BrickHeadz,309,,19.99,2339.83,True,2021-04-26,
-76188,Batman Classic TV Series Batmobile,2021,DC Comics Super Heroes,345,2,29.99,2369.82,True,2021-04-26,
-10292,The Friends Apartments,2021,Creator Expert,2048,7,149.99,2519.81,True,2021-06-05,
-40476,Daisy Duck,2021,BrickHeadz,110,,9.99,2529.80,True,2021-06-05,
-40477,"Scrooge McDuck, Huey, Dewey & Louie",2021,BrickHeadz,340,,24.99,2554.79,True,2021-06-05,
-40495,"Harry, Hermione, Ron & Hagrid",2021,BrickHeadz,466,,24.99,2579.78,True,2021-06-05,
-40496,"Voldemort, Nagini & Bellatrix",2021,BrickHeadz,344,,24.99,2604.77,True,2021-06-05,
-40516,Everyone is Awesome,2021,Miscellaneous,346,11,34.99,2639.76,True,2021-06-05,
-76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,299.99,2939.75,True,2021-06-05,2021-06-14
-76901,Toyota GR Supra,2021,Speed Champions,299,,19.99,2959.74,True,2021-06-05,
-76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,,49.99,3009.73,True,2021-06-10,
-21327,Typewriter,2021,Ideas,2079,,199.99,3209.72,True,2021-06-17,2021-06-17
+31097,Townhouse Pet Shop & Café,2019,Creator,969,3,79.99,79.99,True,2019-08-02,
+75252,Imperial Star Destroyer,2019,Star Wars,4784,2,699.99,779.98,True,2019-10-01,
+75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1179.97,True,2020-09-01,2021-06-20
+40425,Nutcracker,2020,BrickHeadz,180,,9.99,1189.96,True,2020-10-01,2021-03-02
+76161,1989 Batwing,2020,DC Comics Super Heroes,2363,3,199.99,1389.95,True,2020-10-22,
+21324,123 Sesame Street,2020,Ideas,1368,6,119.99,1509.94,True,2020-11-01,
+10274,Ghostbusters ECTO-1,2020,Creator Expert,2352,,199.99,1709.93,True,2020-11-16,
+10276,Colosseum,2020,Creator Expert,9036,,549.99,2259.92,True,2020-11-28,
+10278,Police Station,2021,Creator Expert,2923,5,199.99,2459.91,True,2021-01-02,
+10281,Bonsai Tree,2021,Creator Expert,878,,49.99,2509.90,True,2021-01-02,
+71741,NINJAGO City Gardens,2021,Ninjago,5685,22,299.99,2809.89,True,2021-01-16,2021-03-09
+21325,Medieval Blacksmith,2021,Ideas,2164,4,149.99,2959.88,True,2021-02-02,2021-04-19
+10295,Porsche 911,2021,Creator Expert,1458,,149.99,3109.87,True,2021-02-17,
+21326,Winnie the Pooh,2021,Ideas,1265,5,99.99,3209.86,True,2021-04-02,
+10283,NASA Space Shuttle Discovery,2021,Creator Expert,2354,,199.99,3409.85,True,2021-04-07,
+76392,Hogwarts Wizard's Chess,2021,Harry Potter,876,4,59.99,3469.84,True,2021-04-18,
+76393,Harry Potter & Hermione Granger,2021,Harry Potter,1673,,119.99,3589.83,True,2021-04-18,
+76394,"Fawkes, Dumbledore's Phoenix",2021,Harry Potter,597,1,39.99,3629.82,True,2021-04-18,
+40420,"Gru, Stuart and Otto",2021,BrickHeadz,244,,19.99,3649.81,True,2021-04-26,
+40421,"Belle Bottom, Kevin and Bob",2021,BrickHeadz,309,,19.99,3669.80,True,2021-04-26,
+76188,Batman Classic TV Series Batmobile,2021,DC Comics Super Heroes,345,2,29.99,3699.79,True,2021-04-26,
+10292,The Friends Apartments,2021,Creator Expert,2048,7,149.99,3849.78,True,2021-06-05,
+40476,Daisy Duck,2021,BrickHeadz,110,,9.99,3859.77,True,2021-06-05,
+40477,"Scrooge McDuck, Huey, Dewey & Louie",2021,BrickHeadz,340,,24.99,3884.76,True,2021-06-05,
+40495,"Harry, Hermione, Ron & Hagrid",2021,BrickHeadz,466,,24.99,3909.75,True,2021-06-05,
+40496,"Voldemort, Nagini & Bellatrix",2021,BrickHeadz,344,,24.99,3934.74,True,2021-06-05,
+40516,Everyone is Awesome,2021,Miscellaneous,346,11,34.99,3969.73,True,2021-06-05,
+76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,299.99,4269.72,True,2021-06-05,2021-06-14
+76901,Toyota GR Supra,2021,Speed Champions,299,,19.99,4289.71,True,2021-06-05,
+76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,,49.99,4339.70,True,2021-06-10,
+21327,Typewriter,2021,Ideas,2079,,199.99,4539.69,True,2021-06-17,2021-06-17

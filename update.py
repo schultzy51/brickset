@@ -139,6 +139,8 @@ def save_owned(sets):
 
 
 def merge_legocom_us(sets):
+  today = datetime.today().strftime('%Y-%m-%d')
+
   for set in sets:
     if 'LEGOCom' in set and 'US' in set['LEGOCom']:
       tmp = set['LEGOCom']['US']
@@ -146,6 +148,10 @@ def merge_legocom_us(sets):
         tmp['dateFirstAvailable'] = format_date(tmp['dateFirstAvailable'])
       if 'dateLastAvailable' in tmp:
         tmp['dateLastAvailable'] = format_date(tmp['dateLastAvailable'])
+
+        if tmp['dateLastAvailable'] == today:
+          del tmp['dateLastAvailable']
+
       set.update(tmp)
 
   return sets

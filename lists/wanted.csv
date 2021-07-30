@@ -1,6 +1,6 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
 75252,Imperial Star Destroyer,2019,Star Wars,4784,2,699.99,699.99,True,2019-10-01,
-75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1099.98,True,2020-09-01,2021-06-20
+75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1099.98,True,2020-09-01,
 10276,Colosseum,2020,Creator Expert,9036,,549.99,1649.97,True,2020-11-28,
 10278,Police Station,2021,Creator Expert,2923,5,199.99,1849.96,True,2021-01-02,
 71741,NINJAGO City Gardens,2021,Ninjago,5685,22,299.99,2149.95,True,2021-01-16,
@@ -20,13 +20,14 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,,49.99,3419.81,True,2021-06-10,
 21327,Typewriter,2021,Ideas,2079,,199.99,3619.80,True,2021-06-17,2021-07-04
 10290,Pickup Truck,2021,Creator Expert,1677,,129.99,3749.79,True,2021-07-03,
-76200,Bro Thor's New Asgard,2021,Marvel Super Heroes,265,,29.99,3779.78,True,2021-07-07,
-21328,Seinfeld,2021,Ideas,1326,,79.99,,True,,
+76200,Bro Thor's New Asgard,2021,Marvel Super Heroes,265,,29.99,3779.78,True,2021-07-07,2021-07-22
+21328,Seinfeld,2021,Ideas,1326,,79.99,3859.77,True,2021-07-22,
+75308,R2-D2,2021,Star Wars,2314,1,199.99,4059.76,True,2021-07-29,
 30569,LEGO Stand,2021,City,47,1,,,True,,
 31120,Medieval Castle,2021,Creator,1426,4,99.99,,True,,
-75308,R2-D2,2021,Star Wars,2314,1,199.99,,True,,
-76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,,149.99,,True,,
+76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,149.99,,True,,
 10279,Volkswagen T2 Camper Van,2021,Creator Expert,2207,,179.99,,False,,
+40487,Sailboat Adventure,2021,Ideas,330,,,,False,,
 75307,Star Wars Advent Calendar,2021,Star Wars,335,,39.99,,False,,
 75309,Republic Gunship,2021,Star Wars,3292,,349.99,,False,,
 76240,{?},2021,DC Comics Super Heroes,,,,,False,,

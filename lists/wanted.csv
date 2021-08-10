@@ -14,10 +14,10 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 40516,Everyone is Awesome,2021,Miscellaneous,346,11,34.99,2399.87,True,2021-06-05,
 76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,299.99,2699.86,True,2021-06-05,
 76901,Toyota GR Supra,2021,Speed Champions,299,1,19.99,2719.85,True,2021-06-05,
-76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,,49.99,2769.84,True,2021-06-10,
+76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,2,49.99,2769.84,True,2021-06-10,
 21327,Typewriter,2021,Ideas,2079,,199.99,2969.83,True,2021-06-17,2021-07-04
 10290,Pickup Truck,2021,Creator Expert,1677,,129.99,3099.82,True,2021-07-03,
-76200,Bro Thor's New Asgard,2021,Marvel Super Heroes,265,,29.99,3129.81,True,2021-07-07,
+76200,Bro Thor's New Asgard,2021,Marvel Super Heroes,265,,29.99,3129.81,True,2021-07-07,2021-08-05
 21328,Seinfeld,2021,Ideas,1326,5,79.99,3209.80,True,2021-07-22,
 75308,R2-D2,2021,Star Wars,2314,1,199.99,3409.79,True,2021-07-29,
 10279,Volkswagen T2 Camper Van,2021,Creator Expert,2207,,179.99,3589.78,True,2021-08-02,
@@ -25,8 +25,9 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 75309,Republic Gunship,2021,Star Wars,3292,,349.99,4039.76,True,2021-08-02,
 76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,149.99,4189.75,True,2021-08-02,2021-08-03
 30569,LEGO Stand,2021,City,47,1,,,True,,
-40487,Sailboat Adventure,2021,Ideas,330,,,,True,,
+40487,Sailboat Adventure,2021,Ideas,330,2,,,True,,
 60303,City Advent Calendar,2021,City,349,,29.99,,False,,
 75307,Star Wars Advent Calendar,2021,Star Wars,335,,39.99,,False,,
 76240,{?},2021,DC Comics Super Heroes,,,,,False,,
 76390,Harry Potter Advent Calendar,2021,Harry Potter,274,,39.99,,False,,
+76391,Hogwarts Icons Collectors' Edition,2021,Harry Potter,3010,,249.99,,False,,

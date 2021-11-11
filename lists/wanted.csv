@@ -1,19 +1,17 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
 75252,Imperial Star Destroyer,2019,Star Wars,4784,2,699.99,699.99,True,2019-10-01,
-31108,Caravan Family Holiday,2020,Creator,766,3,69.99,769.98,True,2020-08-24,2021-09-10
-75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1169.97,True,2020-09-01,2021-11-05
-10276,Colosseum,2020,Creator Expert,9036,,549.99,1719.96,True,2020-11-28,
-60283,Holiday Camper Van,2021,City,190,3,19.99,1739.95,True,2021-01-02,
-21328,Seinfeld,2021,Ideas,1326,5,79.99,1819.94,True,2021-07-22,
-75308,R2-D2,2021,Star Wars,2314,1,199.99,2019.93,True,2021-07-29,
-10279,Volkswagen T2 Camper Van,2021,Creator Expert,2207,,179.99,2199.92,True,2021-08-02,
-31120,Medieval Castle,2021,Creator,1426,4,99.99,2299.91,True,2021-08-02,
-75309,Republic Gunship,2021,Star Wars,3292,2,349.99,2649.90,True,2021-08-02,
-76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,149.99,2799.89,True,2021-08-02,
-76240,Batmobile Tumbler,2021,DC Comics Super Heroes,2049,,229.99,3029.88,True,2021-09-03,2021-11-09
-42131,Cat D11 Bulldozer,2021,Technic,3854,,449.99,3479.87,True,2021-10-02,2021-11-02
-71395,Super Mario 64 Question Mark Block,2021,Super Mario,2064,,169.99,3649.86,True,2021-10-02,
-21330,Home Alone,2021,Ideas,3955,5,249.99,3899.85,True,2021-11-02,2021-11-04
+75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,1099.98,True,2020-09-01,2021-11-05
+10276,Colosseum,2020,Creator Expert,9036,,549.99,1649.97,True,2020-11-28,
+21328,Seinfeld,2021,Ideas,1326,5,79.99,1729.96,True,2021-07-22,
+75308,R2-D2,2021,Star Wars,2314,1,199.99,1929.95,True,2021-07-29,
+10279,Volkswagen T2 Camper Van,2021,Creator Expert,2207,,179.99,2109.94,True,2021-08-02,
+31120,Medieval Castle,2021,Creator,1426,4,99.99,2209.93,True,2021-08-02,
+75309,Republic Gunship,2021,Star Wars,3292,2,349.99,2559.92,True,2021-08-02,
+76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,149.99,2709.91,True,2021-08-02,
+76240,Batmobile Tumbler,2021,DC Comics Super Heroes,2049,,229.99,2939.90,True,2021-09-03,2021-11-09
+42131,Cat D11 Bulldozer,2021,Technic,3854,,449.99,3389.89,True,2021-10-02,2021-11-02
+71395,Super Mario 64 Question Mark Block,2021,Super Mario,2064,,169.99,3559.88,True,2021-10-02,
+21330,Home Alone,2021,Ideas,3955,5,249.99,3809.87,True,2021-11-02,2021-11-04
 10294,Titanic,2021,Creator Expert,9090,,629.99,,True,,
 30625,Luke Skywalker with Blue Milk,2022,Star Wars,6,,,,False,,
 75313,AT-AT,2021,Star Wars,6785,,799.99,,False,,

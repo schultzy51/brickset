@@ -49,7 +49,7 @@ def parameterize(string_to_clean, sep='-'):
   parameterized_string = unicodedata.normalize('NFKD', string_to_clean).encode('ASCII', 'ignore').decode()
   parameterized_string = re.sub("[^a-zA-Z0-9\-_]+", sep, parameterized_string)
 
-  if sep is not None and sep is not '':
+  if sep is not None and sep != '':
     parameterized_string = re.sub('/#{re_sep}{2,}', sep, parameterized_string)
     parameterized_string = re.sub('^#{re_sep}|#{re_sep}$', sep, parameterized_string, re.I)
 

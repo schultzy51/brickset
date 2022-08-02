@@ -223,7 +223,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 70905,The Batmobile,2017,The LEGO Batman Movie,581,5,59.99,2016-11-27
 70906,The Joker Notorious Lowrider,2017,The LEGO Batman Movie,433,3,49.99,2016-11-27
 70909,Batcave Break-In,2017,The LEGO Batman Movie,1047,7,99.99,2016-11-27
-10255,Assembly Square,2017,Creator Expert,4002,9,279.99,2017-01-02
+10255,Assembly Square,2017,Creator Expert,4002,9,299.99,2017-01-02
 21033,Chicago,2017,Architecture,444,,39.99,2017-01-02
 21034,London,2017,Architecture,468,,39.99,2017-01-02
 31062,Robo Explorer,2017,Creator,205,,19.99,2017-01-02
@@ -291,7 +291,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 41485,Finn,2017,BrickHeadz,91,,9.99,2017-11-01
 41486,Captain Phasma,2017,BrickHeadz,127,,9.99,2017-11-01
 70922,The Joker Manor,2017,The LEGO Batman Movie,3444,10,269.99,2017-11-25
-75192,Millennium Falcon,2017,Star Wars,7541,8,799.99,2018-01-10
+75192,Millennium Falcon,2017,Star Wars,7541,8,849.99,2018-01-10
 30607,Disco Batman - Tears of Batman,2017,The LEGO Batman Movie,13,2,3.99,2020-06-02
 30449,The Milano,2017,Marvel Super Heroes,64,,,
 30524,The Mini Batwing,2017,The LEGO Batman Movie,80,,,
@@ -425,7 +425,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75954,Hogwarts Great Hall,2018,Harry Potter,878,10,99.99,2018-08-24
 40272,Halloween Witch,2018,BrickHeadz,151,,9.99,2018-09-02
 60201,City Advent Calendar,2018,City,313,6,29.99,2018-09-02
-71043,Hogwarts Castle,2018,Harry Potter,6020,28,399.99,2018-09-02
+71043,Hogwarts Castle,2018,Harry Potter,6020,28,469.99,2018-09-02
 75213,Star Wars Advent Calendar,2018,Star Wars,307,8,39.99,2018-09-02
 75955,Hogwarts Express,2018,Harry Potter,801,6,79.99,2018-09-05
 40273,Thanksgiving Turkey,2018,BrickHeadz,114,,9.99,2018-10-02
@@ -501,7 +501,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75894,1967 Mini Cooper S Rally and 2018 MINI John Cooper Works Buggy,2019,Speed Champions,481,4,49.99,2019-01-02
 40350,Easter Chick,2019,BrickHeadz,120,,9.99,2019-02-02
 70840,Welcome to Apocalypseburg!,2019,The LEGO Movie 2,3178,13,299.99,2019-02-02
-10265,Ford Mustang,2019,Creator Expert,1471,,149.99,2019-03-01
+10265,Ford Mustang,2019,Creator Expert,1471,,169.99,2019-03-01
 21316,The Flintstones,2019,Ideas,748,4,59.99,2019-03-02
 21317,Steamboat Willie,2019,Ideas,751,2,89.99,2019-04-01
 75259,Snowspeeder – 20th Anniversary Edition,2019,Star Wars,309,4,39.99,2019-04-01
@@ -510,7 +510,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40367,Lady Liberty,2019,BrickHeadz,153,,9.99,2019-06-12
 75810,The Upside Down,2019,Stranger Things,2287,8,199.99,2019-06-12
 75936,Jurassic Park: T. rex Rampage,2019,Jurassic World,3120,6,249.99,2019-07-01
-21318,Tree House,2019,Ideas,3036,4,199.99,2019-08-02
+21318,Tree House,2019,Ideas,3036,4,249.99,2019-08-02
 21319,Central Perk,2019,Ideas,1070,7,59.99,2019-09-01
 60235,City Advent Calendar,2019,City,234,8,29.99,2019-09-01
 75245,Star Wars Advent Calendar,2019,Star Wars,280,9,39.99,2019-09-01
@@ -524,7 +524,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40335,Space Rocket Ride,2019,Ideas,154,1,,
 5005822,Ford Mustang / LEGO Key Chain,2019,Gear,,,,
 6313291,Buildable 2x4 Red Brick,2019,Promotional,72,,,
-10270,Bookshop,2020,Creator Expert,2504,5,179.99,2020-01-02
+10270,Bookshop,2020,Creator Expert,2504,5,199.99,2020-01-02
 75267,Mandalorian Battle Pack,2020,Star Wars,102,4,14.99,2020-01-02
 21321,International Space Station,2020,Ideas,864,,69.99,2020-02-02
 40377,Donald Duck,2020,BrickHeadz,90,,9.99,2020-02-02
@@ -533,57 +533,57 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 21322,Pirates of Barracuda Bay,2020,Ideas,2545,10,199.99,2020-04-01
 75275,A-wing Starfighter,2020,Star Wars,1673,1,199.99,2020-05-02
 10277,Crocodile Locomotive,2020,Icons,1271,2,99.99,2020-07-03
-21323,Grand Piano,2020,Ideas,3662,,349.99,2020-08-02
-71374,Nintendo Entertainment System,2020,Super Mario,2646,1,229.99,2020-08-02
+21323,Grand Piano,2020,Ideas,3662,,399.99,2020-08-02
+71374,Nintendo Entertainment System,2020,Super Mario,2646,1,269.99,2020-08-02
 31108,Caravan Family Holiday,2020,Creator,766,3,69.99,2020-08-24
-31109,Pirate Ship,2020,Creator,1264,4,99.99,2020-08-24
+31109,Pirate Ship,2020,Creator,1264,4,119.99,2020-08-24
 60268,City Advent Calendar,2020,City,342,6,29.99,2020-09-01
 75279,Star Wars Advent Calendar,2020,Star Wars,311,10,39.99,2020-09-01
-75978,Diagon Alley,2020,Harry Potter,5544,17,399.99,2020-09-01
+75978,Diagon Alley,2020,Harry Potter,5544,17,449.99,2020-09-01
 75981,Harry Potter Advent Calendar,2020,Harry Potter,335,6,39.99,2020-09-01
 76161,1989 Batwing,2020,DC Comics Super Heroes,2363,3,199.99,2020-10-22
 40409,Hot Rod,2020,Promotional,142,2,12.99,2020-10-28
 21324,123 Sesame Street,2020,Ideas,1367,6,119.99,2020-11-01
-10274,Ghostbusters ECTO-1,2020,Icons,2352,,199.99,2020-11-16
+10274,Ghostbusters ECTO-1,2020,Icons,2352,,239.99,2020-11-16
 10276,Colosseum,2020,Icons,9036,,549.99,2020-11-28
 40370,LEGO® Trains 40th Anniversary Set,2020,Promotional,188,1,19.99,2020-12-02
 40410,Charles Dickens Tribute,2020,Seasonal,333,3,,
 6346101,Buildable 2x4 Teal Brick,2020,Promotional,110,,,
 10278,Police Station,2021,Icons,2923,5,199.99,2021-01-02
 60283,Holiday Camper Van,2021,City,190,3,19.99,2021-01-02
-71741,NINJAGO City Gardens,2021,Ninjago,5685,22,299.99,2021-01-16
-21325,Medieval Blacksmith,2021,Ideas,2164,4,149.99,2021-02-02
-10295,Porsche 911,2021,Icons,1458,,149.99,2021-02-17
+71741,NINJAGO City Gardens,2021,Ninjago,5685,22,349.99,2021-01-16
+21325,Medieval Blacksmith,2021,Ideas,2164,4,179.99,2021-02-02
+10295,Porsche 911,2021,Icons,1458,,169.99,2021-02-17
 21326,Winnie the Pooh,2021,Ideas,1265,5,99.99,2021-04-02
 10283,NASA Space Shuttle Discovery,2021,Icons,2354,,199.99,2021-04-07
-10292,The Friends Apartments,2021,Icons,2048,7,149.99,2021-06-05
+10292,The Friends Apartments,2021,Icons,2048,7,179.99,2021-06-05
 40476,Daisy Duck,2021,BrickHeadz,110,,9.99,2021-06-05
 40477,"Scrooge McDuck, Huey, Dewey & Louie",2021,BrickHeadz,340,,24.99,2021-06-05
 40495,"Harry, Hermione, Ron & Hagrid",2021,BrickHeadz,466,,24.99,2021-06-05
 40496,"Voldemort, Nagini & Bellatrix",2021,BrickHeadz,344,,24.99,2021-06-05
 40516,Everyone is Awesome,2021,Icons,346,11,34.99,2021-06-05
-76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,299.99,2021-06-05
+76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,349.99,2021-06-05
 76901,Toyota GR Supra,2021,Speed Champions,299,1,19.99,2021-06-05
 76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,2,49.99,2021-06-10
 76200,Bro Thor's New Asgard,2021,Marvel Super Heroes,265,3,29.99,2021-07-07
 21328,Seinfeld,2021,Ideas,1326,5,79.99,2021-07-22
 10279,Volkswagen T2 Camper Van,2021,Icons,2207,,179.99,2021-08-02
 31120,Medieval Castle,2021,Creator,1426,4,99.99,2021-08-02
-75309,Republic Gunship,2021,Star Wars,3292,2,349.99,2021-08-02
-76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,149.99,2021-08-02
+75309,Republic Gunship,2021,Star Wars,3292,2,399.99,2021-08-02
+76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,159.99,2021-08-02
 60303,City Advent Calendar,2021,City,349,7,29.99,2021-09-03
 75307,Star Wars Advent Calendar,2021,Star Wars,335,7,39.99,2021-09-03
 76196,The Avengers Advent Calendar,2021,Marvel Super Heroes,298,8,39.99,2021-09-03
 76390,Harry Potter Advent Calendar,2021,Harry Potter,274,6,39.99,2021-09-03
-71395,Super Mario 64 Question Mark Block,2021,Super Mario,2064,,169.99,2021-10-02
-21330,Home Alone,2021,Ideas,3955,5,249.99,2021-11-02
-75313,AT-AT,2021,Star Wars,6785,9,799.99,2021-12-05
+71395,Super Mario 64 Question Mark Block,2021,Super Mario,2064,,199.99,2021-10-02
+21330,Home Alone,2021,Ideas,3955,5,299.99,2021-11-02
+75313,AT-AT,2021,Star Wars,6785,9,849.99,2021-12-05
 40449,Easter Bunny's Carrot House,2021,Seasonal,232,,,
 40484,Santa's Front Yard,2021,Seasonal,317,1,,
 40486,Mini Adidas Originals Superstar,2021,Icons,92,1,,
 40487,Sailboat Adventure,2021,Ideas,330,2,,
-10297,Boutique Hotel,2022,Icons,3066,7,199.99,2022-01-02
-21331,Sonic the Hedgehog - Green Hill Zone,2022,Ideas,1125,1,69.99,2022-01-02
+10297,Boutique Hotel,2022,Icons,3066,7,229.99,2022-01-02
+21331,Sonic the Hedgehog - Green Hill Zone,2022,Ideas,1125,1,79.99,2022-01-02
 75320,Snowtrooper Battle Pack,2022,Star Wars,105,4,19.99,2022-01-02
 40539,Ahsoka Tano,2022,BrickHeadz,164,,9.99,2022-01-19
 40549,Demogorgon & Eleven,2022,BrickHeadz,192,,19.99,2022-02-02
@@ -595,14 +595,14 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75325,The Mandalorian's N-1 Starfighter,2022,Star Wars,412,4,59.99,2022-02-16
 40550,Chip & Dale,2022,BrickHeadz,226,,19.99,2022-03-01
 76908,Lamborghini Countach,2022,Speed Champions,262,1,19.99,2022-03-01
-75329,Death Star Trench Run Diorama,2022,Star Wars,665,,59.99,2022-03-25
-75330,Dagobah Jedi Training Diorama,2022,Star Wars,1000,3,79.99,2022-03-25
+75329,Death Star Trench Run Diorama,2022,Star Wars,665,,69.99,2022-03-25
+75330,Dagobah Jedi Training Diorama,2022,Star Wars,1000,3,89.99,2022-03-25
 75339,Death Star Trash Compactor Diorama,2022,Star Wars,802,6,89.99,2022-03-25
 76832,XL-15 Spaceship,2022,Disney,497,3,49.99,2022-04-25
-75341,Luke Skywalker's Landspeeder,2022,Star Wars,1890,2,199.99,2022-05-07
-76208,The Goat Boat,2022,Marvel Super Heroes,564,5,49.99,2022-05-07
+75341,Luke Skywalker's Landspeeder,2022,Star Wars,1890,2,239.99,2022-05-07
+76208,The Goat Boat,2022,Marvel Super Heroes,564,5,59.99,2022-05-07
 21333,Vincent van Gogh - The Starry Night,2022,Ideas,2316,1,169.99,2022-05-28
-10302,Optimus Prime,2022,Icons,1508,,169.99,2022-06-02
+10302,Optimus Prime,2022,Icons,1508,,179.99,2022-06-02
 76216,Iron Man Armory,2022,Marvel Super Heroes,496,8,89.99,2022-06-02
 40530,Jane Goodall Tribute,2022,Promotional,275,1,,
 40531,Lars Family Homestead Kitchen,2022,Star Wars,195,1,,

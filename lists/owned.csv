@@ -33,7 +33,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 42000,Grand Prix Racer,2013,Technic,1141,,129.99,2013-03-01
 10240,Red Five X-wing Starfighter,2013,Star Wars,1559,1,199.99,2013-05-05
 31011,Aviation Adventures,2013,Creator,618,,59.99,2013-05-29
-21050,Architecture Studio,2013,Architecture,1210,,159.99,2013-08-01
+21050,Studio,2013,Architecture,1210,,159.99,2013-08-01
 21103,The DeLorean Time Machine,2013,Ideas,401,2,34.99,2013-08-01
 42009,Mobile Crane MK II,2013,Technic,2606,,219.99,2013-08-01
 75019,AT-TE,2013,Star Wars,794,5,89.99,2013-08-01
@@ -616,10 +616,10 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 31132,Viking Ship and the Midgard Serpent,2022,Creator,1192,4,119.99,2022-07-26
 60333,Bathtub Stunt Bike,2022,City,14,1,7.99,2022-07-26
 76911,007 Aston Martin DB5,2022,Speed Champions,298,1,19.99,2022-07-26
-75340,Star Wars Advent Calendar,2022,Star Wars,329,,44.99,2022-08-02
-76404,Harry Potter Advent Calendar,2022,Harry Potter,334,,44.99,2022-08-02
-60352,City Advent Calendar,2022,City,287,,34.99,2022-08-03
-76231,Guardians of the Galaxy Advent Calendar,2022,Marvel Super Heroes,268,,44.99,2022-08-19
+75340,Star Wars Advent Calendar,2022,Star Wars,329,8,44.99,2022-08-02
+76404,Harry Potter Advent Calendar,2022,Harry Potter,334,8,44.99,2022-08-02
+60352,City Advent Calendar,2022,City,287,6,34.99,2022-08-03
+76231,Guardians of the Galaxy Advent Calendar,2022,Marvel Super Heroes,268,6,44.99,2022-08-19
 40515,Pirates and Treasure VIP Add On Pack,2022,Miscellaneous,103,2,,
 40530,Jane Goodall Tribute,2022,Promotional,275,1,,
 40531,Lars Family Homestead Kitchen,2022,Star Wars,195,1,,
@@ -627,5 +627,5 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40566,Ray the Castaway,2022,Ideas,239,1,,
 40567,Forest Hideout,2022,Icons,258,2,,
 71033,LEGO Minifigures - The Muppets Series - Complete,2022,Collectable Minifigures,74,12,,
-910002,Studgate Train Station,2022,Bricklink,4062,,,
-910008,Modular Construction Site,2022,Bricklink,3371,,,
+910002,Studgate Train Station,2023,Bricklink,4062,,,
+910008,Modular Construction Site,2023,Bricklink,3371,,,

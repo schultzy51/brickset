@@ -80,7 +80,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 60084,Racing Bike Transporter,2015,City,178,2,19.99,2015-01-01
 70817,Batman & Super Angry Kitty Attack,2015,The LEGO Movie,115,3,9.99,2015-01-01
 70818,Double-Decker Couch,2015,The LEGO Movie,197,5,14.99,2015-01-01
-75060,Slave I,2015,Star Wars,1996,5,199.99,2015-01-01
+75060,Slave I,2015,Star Wars,1996,4,199.99,2015-01-01
 75082,TIE Advanced Prototype,2015,Star Wars,355,3,39.99,2015-01-01
 75087,Anakin's Custom Jedi Starfighter,2015,Star Wars,370,3,39.99,2015-01-01
 10699,32x32 Sand Baseplate,2015,Classic,1,,7.99,2015-01-02
@@ -131,7 +131,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75827,Firehouse Headquarters,2016,Ghostbusters,4634,10,349.99,2016-01-02
 40165,Minifigure Wedding Favour Set,2016,Miscellaneous,89,2,9.99,2016-03-01
 75136,Droid Escape Pod,2016,Star Wars,197,4,24.99,2016-03-01
-75137,Carbon-Freezing Chamber,2016,Star Wars,231,4,24.99,2016-03-01
+75137,Carbon-Freezing Chamber,2016,Star Wars,231,3,24.99,2016-03-01
 75871,Ford Mustang GT,2016,Speed Champions,185,1,14.99,2016-03-01
 75872,Audi R18 e-tron quattro,2016,Speed Champions,166,1,14.99,2016-03-01
 75873,Audi R8 LMS ultra,2016,Speed Champions,175,1,14.99,2016-03-01
@@ -654,7 +654,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40625,Llama,2023,BrickHeadz,100,,9.99,2023-03-14
 40626,Zombie,2023,BrickHeadz,81,,9.99,2023-03-14
 75352,Emperor's Throne Room Diorama,2023,Star Wars,807,,99.99,2023-04-07
-75353,Endor Speeder Chase Diorama,2023,Star Wars,608,,79.99,2023-04-07
+75353,Endor Speeder Chase Diorama,2023,Star Wars,608,3,79.99,2023-04-07
 30654,X-wing Starfighter,2023,Star Wars,87,,,
 40582,4x4 Off-Road Ambulance Rescue,2023,City,162,3,,
 40586,Moving Truck,2023,Icons,301,2,,

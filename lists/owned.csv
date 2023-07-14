@@ -157,7 +157,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 60104,Airport Passenger Terminal,2016,City,694,6,99.99,2016-08-01
 75158,Rebel Combat Frigate,2016,Star Wars,936,5,109.99,2016-08-01
 60133,City Advent Calendar,2016,City,290,7,29.99,2016-09-17
-75146,Star Wars Advent Calendar,2016,Star Wars,282,11,39.99,2016-09-17
+75146,LEGO Star Wars Advent Calendar,2016,Star Wars,282,11,39.99,2016-09-17
 75152,Imperial Assault Hovertank,2016,Star Wars,385,3,29.99,2016-10-01
 75153,AT-ST Walker,2016,Star Wars,449,3,39.99,2016-10-01
 75154,TIE Striker,2016,Star Wars,543,4,69.99,2016-10-01
@@ -283,7 +283,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 70620,NINJAGO City,2017,The LEGO Ninjago Movie,4867,19,299.99,2017-09-01
 21310,Old Fishing Store,2017,Ideas,2049,4,149.99,2017-09-02
 60155,City Advent Calendar,2017,City,248,6,29.99,2017-09-02
-75184,Star Wars Advent Calendar,2017,Star Wars,309,8,39.99,2017-09-02
+75184,LEGO Star Wars Advent Calendar,2017,Star Wars,309,8,39.99,2017-09-02
 71349,Beetlejuice Fun Pack,2017,Dimensions,56,1,14.99,2017-09-13
 41487,Lloyd,2017,BrickHeadz,102,,9.99,2017-09-24
 41488,Master Wu,2017,BrickHeadz,89,,9.99,2017-09-24
@@ -426,7 +426,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40272,Halloween Witch,2018,BrickHeadz,151,,9.99,2018-09-02
 60201,City Advent Calendar,2018,City,313,6,29.99,2018-09-02
 71043,Hogwarts Castle,2018,Harry Potter,6020,28,469.99,2018-09-02
-75213,Star Wars Advent Calendar,2018,Star Wars,307,8,39.99,2018-09-02
+75213,LEGO Star Wars Advent Calendar,2018,Star Wars,307,8,39.99,2018-09-02
 75955,Hogwarts Express,2018,Harry Potter,801,6,79.99,2018-09-05
 40273,Thanksgiving Turkey,2018,BrickHeadz,114,,9.99,2018-10-02
 40274,Mr. & Mrs. Claus,2018,BrickHeadz,341,,19.99,2018-10-02
@@ -513,8 +513,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 21318,Tree House,2019,Ideas,3036,4,249.99,2019-08-02
 21319,Central Perk,2019,Ideas,1070,7,59.99,2019-09-01
 60235,City Advent Calendar,2019,City,234,8,29.99,2019-09-01
-75245,Star Wars Advent Calendar,2019,Star Wars,280,9,39.99,2019-09-01
-75964,Harry Potter Advent Calendar,2019,Harry Potter,305,8,39.99,2019-09-01
+75245,LEGO Star Wars Advent Calendar,2019,Star Wars,280,9,39.99,2019-09-01
+75964,LEGO Harry Potter Advent Calendar,2019,Harry Potter,305,8,39.99,2019-09-01
 71044,Disney Train and Station,2019,Disney,2925,5,329.99,2019-09-07
 75895,1974 Porsche 911 Turbo 3.0,2019,Speed Champions,180,1,14.99,2019-09-12
 75252,Imperial Star Destroyer,2019,Star Wars,4784,2,699.99,2019-10-01
@@ -540,9 +540,9 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 31109,Pirate Ship,2020,Creator,1264,4,119.99,2020-08-24
 75280,501st Legion Clone Troopers,2020,Star Wars,285,6,29.99,2020-08-24
 60268,City Advent Calendar,2020,City,342,6,29.99,2020-09-01
-75279,Star Wars Advent Calendar,2020,Star Wars,311,10,39.99,2020-09-01
+75279,LEGO Star Wars Advent Calendar,2020,Star Wars,311,10,39.99,2020-09-01
 75978,Diagon Alley,2020,Harry Potter,5544,17,449.99,2020-09-01
-75981,Harry Potter Advent Calendar,2020,Harry Potter,335,6,39.99,2020-09-01
+75981,LEGO Harry Potter Advent Calendar,2020,Harry Potter,335,6,39.99,2020-09-01
 76161,1989 Batwing,2020,DC Comics Super Heroes,2363,3,199.99,2020-10-22
 40409,Hot Rod,2020,Promotional,142,2,12.99,2020-10-28
 21324,123 Sesame Street,2020,Ideas,1367,6,119.99,2020-11-01
@@ -574,9 +574,9 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 75309,Republic Gunship,2021,Star Wars,3292,2,399.99,2021-08-02
 76193,The Guardians' Ship,2021,Marvel Super Heroes,1901,6,159.99,2021-08-02
 60303,City Advent Calendar,2021,City,349,7,29.99,2021-09-03
-75307,Star Wars Advent Calendar,2021,Star Wars,335,7,39.99,2021-09-03
+75307,LEGO Star Wars Advent Calendar,2021,Star Wars,335,7,39.99,2021-09-03
 76196,The Avengers Advent Calendar,2021,Marvel Super Heroes,298,8,39.99,2021-09-03
-76390,Harry Potter Advent Calendar,2021,Harry Potter,274,6,39.99,2021-09-03
+76390,LEGO Harry Potter Advent Calendar,2021,Harry Potter,274,6,39.99,2021-09-03
 71395,Super Mario 64 Question Mark Block,2021,Super Mario,2064,,199.99,2021-10-02
 21330,Home Alone,2021,Ideas,3955,5,299.99,2021-11-02
 60310,Chicken Stunt Bike,2021,City,10,1,7.99,2021-11-23
@@ -626,8 +626,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 60337,Express Passenger Train,2022,City,764,6,189.99,2022-07-26
 76218,Sanctum Sanctorum,2022,Marvel Super Heroes,2708,9,249.99,2022-07-26
 76911,007 Aston Martin DB5,2022,Speed Champions,298,1,19.99,2022-07-26
-75340,Star Wars Advent Calendar,2022,Star Wars,329,8,44.99,2022-08-02
-76404,Harry Potter Advent Calendar,2022,Harry Potter,334,8,44.99,2022-08-02
+75340,LEGO Star Wars Advent Calendar,2022,Star Wars,329,8,44.99,2022-08-02
+76404,LEGO Harry Potter Advent Calendar,2022,Harry Potter,334,8,44.99,2022-08-02
 60352,City Advent Calendar,2022,City,287,6,34.99,2022-08-03
 40569,London Postcard,2022,Creator,277,,14.99,2022-08-10
 76405,Hogwarts Express - Collectors' Edition,2022,Harry Potter,5129,20,499.99,2022-08-11

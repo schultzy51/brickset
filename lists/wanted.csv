@@ -1,24 +1,28 @@
 Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
-75355,X-wing Starfighter,2023,Star Wars,1949,2,239.99,239.99,True,2023-04-06,
-71799,NINJAGO City Markets,2023,Ninjago,6163,21,369.99,609.98,True,2023-05-11,2023-12-09
-60368,Arctic Explorer Ship,2023,City,815,7,159.99,769.97,True,2023-05-19,2023-11-25
+75355,X-wing Starfighter,2023,Star Wars,1949,2,239.99,239.99,True,2023-04-06,2023-12-16
+71799,NINJAGO City Markets,2023,Ninjago,6163,21,369.99,609.98,True,2023-05-11,
+60368,Arctic Explorer Ship,2023,City,815,7,159.99,769.97,True,2023-05-19,
 21341,Disney Hocus Pocus: The Sanderson Sisters' Cottage,2023,Ideas,2316,9,229.99,999.96,True,2023-06-13,
-10320,Eldorado Fortress,2023,Icons,2509,9,214.99,1214.95,True,2023-06-15,2023-12-02
+10320,Eldorado Fortress,2023,Icons,2509,9,214.99,1214.95,True,2023-06-15,
 40627,Sonic the Hedgehog,2023,BrickHeadz,139,,9.99,1224.94,True,2023-08-22,
 40628,Miles 'Tails' Prower,2023,BrickHeadz,131,,9.99,1234.93,True,2023-08-22,
 75357,Ghost & Phantom II,2023,Star Wars,1394,5,159.99,1394.92,True,2023-08-22,
 76417,Gringotts Wizarding Bank - Collectors' Edition,2023,Harry Potter,4803,13,429.99,1824.91,True,2023-08-22,
-21343,Viking Village,2023,Ideas,2103,4,129.99,1954.90,True,2023-09-01,2023-12-10
+21343,Viking Village,2023,Ideas,2103,4,129.99,1954.90,True,2023-09-01,
 75367,Venator-class Republic Attack Cruiser,2023,Star Wars,5374,2,649.99,2604.89,True,2023-09-13,
 10326,Natural History Museum,2024,Icons,4014,9,299.99,2904.88,True,2023-10-31,
-76269,Avengers Tower,2023,Marvel Super Heroes,5201,27,499.99,3404.87,True,2023-11-09,
+76269,Avengers Tower,2023,Marvel Super Heroes,5201,32,499.99,3404.87,True,2023-11-09,
 21344,The Orient Express Train,2023,Ideas,2540,,299.99,3704.86,True,2023-11-17,
 76920,Ford Mustang Dark Horse,2024,Speed Champions,344,,26.99,3731.85,True,2023-12-02,
 76921,Audi S1 e-tron quattro,2024,Speed Champions,274,,26.99,3758.84,True,2023-12-02,
-75372,Clone Trooper & Battle Droid Battle Pack,2024,Star Wars,215,,29.99,3788.83,True,2023-12-06,
+75372,Clone Trooper & Battle Droid Battle Pack,2024,Star Wars,215,,29.99,3788.83,True,2023-12-06,2024-01-05
 60400,Go-Karts and Race Drivers,2024,City,99,,9.99,3798.82,True,2023-12-09,
 60402,Monster Truck,2024,City,148,,15.99,3814.81,True,2023-12-09,
 60404,Burger Truck,2024,City,194,,19.99,3834.80,True,2023-12-09,
 60438,Sailboat,2024,City,102,,19.99,3854.79,True,2023-12-09,
-42181,VTOL Heavy Cargo Spaceship LT81,2024,Technic,1365,,,,False,,
-76281,X-Men Jet,2024,Marvel Super Heroes,359,,,,False,,
+76281,X-Men Jet,2024,Marvel Super Heroes,359,,84.99,3939.78,True,2023-12-13,
+40670,Iron Spider-Man,2024,BrickHeadz,91,,9.99,3949.77,True,2024-01-03,
+40671,Potted Groot,2024,BrickHeadz,113,,9.99,3959.76,True,2024-01-03,
+40672,Knuckles & Shadow,2024,BrickHeadz,298,,19.99,3979.75,True,2024-01-03,
+40674,Stitch,2024,BrickHeadz,152,,9.99,3989.74,True,2024-01-03,
+40681,Retro Food Truck,2024,Icons,310,,,,True,,

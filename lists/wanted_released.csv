@@ -5,7 +5,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 10320,Eldorado Fortress,2023,Icons,2509,9,214.99,974.96,True,2023-06-15,
 40627,Sonic the Hedgehog,2023,BrickHeadz,139,,9.99,984.95,True,2023-08-22,
 40628,Miles 'Tails' Prower,2023,BrickHeadz,131,,9.99,994.94,True,2023-08-22,
-75357,Ghost & Phantom II,2023,Star Wars,1394,5,159.99,1154.93,True,2023-08-22,2024-05-02
+75357,Ghost & Phantom II,2023,Star Wars,1394,5,159.99,1154.93,True,2023-08-22,
 76417,Gringotts Wizarding Bank - Collectors' Edition,2023,Harry Potter,4803,13,429.99,1584.92,True,2023-08-22,
 21343,Viking Village,2023,Ideas,2103,4,129.99,1714.91,True,2023-09-01,
 75367,Venator-class Republic Attack Cruiser,2023,Star Wars,5374,2,649.99,2364.90,True,2023-09-13,
@@ -26,7 +26,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 40677,Prisoner of Azkaban Figures,2024,BrickHeadz,697,,49.99,3769.75,True,2024-02-01,
 10332,Medieval Town Square,2024,Icons,3304,8,229.99,3999.74,True,2024-02-09,
 43242,Snow White and the Seven Dwarfs' Cottage,2024,Disney,2208,10,219.99,4219.73,True,2024-02-16,
-21348,Dungeons & Dragons: Red Dragon's Tale,2024,Ideas,3745,3,359.99,4579.72,True,2024-03-20,
+21348,Dungeons & Dragons: Red Dragon's Tale,2024,Ideas,3745,11,359.99,4579.72,True,2024-03-20,
 40675,Clone Commander Cody,2024,BrickHeadz,147,,9.99,4589.71,True,2024-04-16,
 40676,The Phantom Menace,2024,BrickHeadz,732,,54.99,4644.70,True,2024-04-16,
 75382,TIE Interceptor,2024,Star Wars,1931,,229.99,4874.69,True,2024-04-16,
@@ -38,3 +38,5 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US
 71814,Tournament Temple City,2024,Ninjago,3489,,249.99,5252.63,True,2024-05-03,
 75395,Star Wars Advent Calendar 2024,2024,Star Wars,368,,44.99,5297.62,True,2024-05-03,
 76293,Spider-Man 2024 Advent Calendar,2024,Marvel Super Heroes,246,,44.99,5342.61,True,2024-05-03,
+76286,The Milano Spaceship,2024,Marvel Super Heroes,2090,,179.99,5522.60,True,2024-05-09,
+60440,LEGO Delivery Truck,2024,City,1061,,99.99,5622.59,True,2024-05-21,

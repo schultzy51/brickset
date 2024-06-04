@@ -1,3 +1,5 @@
+pandas
+numpy
 jsonlines
 pyyaml
 requests

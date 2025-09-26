@@ -174,7 +174,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 30602,First Order Stormtrooper,2016,Star Wars,7,1,,
 40221,Fountain,2016,Creator,105,2,,
 40222,Christmas Build-Up,2016,Seasonal,250,,,
-40223,Snowglobe,2016,Seasonal,215,1,,
+40223,LEGO Snowglobe,2016,Seasonal,215,1,,
 5004419,Classic Knights Minifigure,2016,Castle,47,1,,
 5004420,Toy Soldier,2016,Seasonal,34,,,
 5004468,Iconic Easter Minifigure,2016,Seasonal,4,1,,
@@ -409,7 +409,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 41618,Anna & Olaf,2018,BrickHeadz,201,,14.99,2018-07-11
 41619,Darth Vader,2018,BrickHeadz,104,,9.99,2018-07-11
 41620,Stormtrooper,2018,BrickHeadz,124,,9.99,2018-07-11
-10262,James Bond Aston Martin DB5,2018,Creator Expert,1290,,149.99,2018-08-01
+10262,James Bond Aston Martin DB5,2018,Creator Expert,1295,,149.99,2018-08-01
 21311,Voltron,2018,Ideas,2321,,179.99,2018-08-01
 41612,Steve & Creeper,2018,BrickHeadz,160,,19.99,2018-08-01
 42082,Rough Terrain Crane,2018,Technic,4057,,299.99,2018-08-01
@@ -564,7 +564,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40477,"Scrooge McDuck, Huey, Dewey & Louie",2021,BrickHeadz,340,,24.99,2021-06-05
 40495,"Harry, Hermione, Ron & Hagrid",2021,BrickHeadz,466,,24.99,2021-06-05
 40496,"Voldemort, Nagini & Bellatrix",2021,BrickHeadz,344,,24.99,2021-06-05
-40516,Everyone is Awesome,2021,Icons,346,11,34.99,2021-06-05
+40516,Everyone Is Awesome,2021,Icons,346,11,34.99,2021-06-05
 76178,Daily Bugle,2021,Marvel Super Heroes,3772,25,349.99,2021-06-05
 76901,Toyota GR Supra,2021,Speed Champions,299,1,19.99,2021-06-05
 76905,Ford GT Heritage Edition and Bronco R,2021,Speed Champions,660,2,49.99,2021-06-10
@@ -644,7 +644,7 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 6432430,Pirate Adventure Ride,2022,Promotional,168,,,
 6432434,Dragon Adventure Ride,2022,Promotional,168,,,
 71033,LEGO Minifigures - The Muppets Series - Complete,2022,Collectable Minifigures,86,12,,
-910009,Modular LEGO Store,2022,Bricklink,2149,6,,
+910009,Modular LEGO Store,2022,BrickLink,2149,6,,
 40615,Tusken Raider,2023,BrickHeadz,152,,9.99,2022-12-03
 60384,Penguin Slushy Van,2023,City,194,2,19.99,2022-12-03
 60394,ATV and Otter Habitat,2023,City,90,1,9.99,2022-12-03
@@ -713,8 +713,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40659,Mini Steamboat Willie,2023,Disney,424,1,,
 5007840,Return of the Jedi 40th Collectible,2023,Gear,,,,
 6435202,Space Adventure Ride,2023,Promotional,168,1,,
-910002,Studgate Train Station,2023,Bricklink,4076,11,,
-910008,Modular Construction Site,2023,Bricklink,3371,6,,
+910002,Studgate Train Station,2023,BrickLink,4076,11,,
+910008,Modular Construction Site,2023,BrickLink,3371,6,,
 10326,Natural History Museum,2024,Icons,4014,9,299.99,2023-10-31
 76920,Ford Mustang Dark Horse,2024,Speed Champions,344,1,26.99,2023-12-02
 76921,Audi S1 e-tron quattro,2024,Speed Champions,274,1,26.99,2023-12-02
@@ -746,6 +746,8 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 21265,The Crafting Table,2024,Minecraft,1195,6,89.99,2024-06-02
 10337,Lamborghini Countach 5000 Quattrovalvole,2024,Icons,1506,,179.99,2024-06-07
 75389,The Dark Falcon,2024,Star Wars,1579,6,179.99,2024-06-26
+75396,Desert Skiff & Sarlacc Pit,2024,Star Wars,558,6,79.99,2024-07-02
+75388,Jedi Bob's Starfighter,2024,Star Wars,305,3,39.99,2024-07-26
 30677,Draco in the Forbidden Forest,2024,Harry Potter,33,1,,
 30680,AAT,2024,Star Wars,75,,,
 40686,Trade Federation Troop Carrier,2024,Star Wars,262,8,,
@@ -756,8 +758,13 @@ Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,US Start Date
 40700,Winter Holiday Train,2024,Creator,294,,,
 5008818,Battle of Yavin Collectable Coin,2024,Gear,,,,
 5008918,Summer Beach Bag,2024,Gear,,,,
-910040,Harbourmaster's Office,2025,Bricklink,2418,6,199.99,2024-10-09
-910041,Camping Adventure,2025,Bricklink,669,2,54.99,2024-10-09
+910040,Harbourmaster's Office,2025,BrickLink,2418,6,199.99,2024-10-09
+910041,Camping Adventure,2025,BrickLink,669,2,54.99,2024-10-09
+910044,Wild West Train,2025,BrickLink,3192,12,279.99,2025-02-05
+21280,LEGO Minecraft Advent Calendar 2025,2025,Minecraft,300,,44.99,2025-05-02
+75418,LEGO Star Wars Advent Calendar 2025,2025,Star Wars,263,,44.99,2025-05-02
+76456,LEGO Harry Potter Advent Calendar 2025,2025,Harry Potter,278,,44.99,2025-05-02
+60475,LEGO City Advent Calendar 2025,2025,City,186,,34.99,2025-07-11
 30708,Millennium Falcon,2025,Star Wars,74,,,
 40765,Kamino Training Facility,2025,Star Wars,190,3,,
 40767,Up-Scaled Baby Astronaut,2025,Promotional,250,,,

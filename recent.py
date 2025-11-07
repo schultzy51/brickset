@@ -56,7 +56,7 @@ try:
       if (i + 1) % 10 == 0 and i + 1 < total_sets:
         input("Press Enter to continue...({}/{})".format(i + 1, total_sets))
       else:
-        sleep(0.5)
+        sleep(5)
 
   if args.slack:
     slack = Slack(config['slack_api_token'], config['slack_channel'], config['slack_username'])

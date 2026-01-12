@@ -4,7 +4,7 @@ import argparse
 import simplejson as json
 import sys
 import webbrowser
-from datetime import datetime
+from datetime import datetime, UTC
 from time import sleep
 
 from brickset import filter_keys, json_serial
@@ -44,7 +44,7 @@ try:
     sets = list(filter(lambda d: d['image'], sets))
 
   sets = list(filter(lambda d: d['theme'] not in unwanted_themes, sets))
-  sets = list(filter(lambda d: d['year'] > (datetime.utcnow().year - 1), sets))
+  sets = list(filter(lambda d: d['year'] > (datetime.now(UTC).year - 1), sets))
 
   sets.reverse()
 
@@ -52,7 +52,7 @@ try:
     total_sets = len(sets)
     print("Found {} sets".format(total_sets))
     for i, rset in enumerate(sets):
-      webbrowser.open(rset['bricksetURL'], new=1, autoraise=False)
+      webbrowser.open(rset['bricksetURL'], new=0, autoraise=False)
       if (i + 1) % 10 == 0 and i + 1 < total_sets:
         input("Press Enter to continue...({}/{})".format(i + 1, total_sets))
       else:

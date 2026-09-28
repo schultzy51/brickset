@@ -1,23 +1,23 @@
-Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date
-75397,Jabba's Sail Barge,2024,Star Wars,3942,11,499.99,499.99,True,2024-09-18,
-76294,X-Men: The X-Mansion,2024,Marvel Super Heroes,3093,10,329.99,829.98,True,2024-10-18,2026-08-26
-21353,The Botanical Garden,2024,Ideas,3792,12,329.99,1159.97,True,2024-10-23,
-10350,Tudor Corner,2025,Icons,3266,8,229.99,1389.96,True,2024-12-04,
-43263,Beauty and the Beast Castle,2025,Disney,2916,12,279.99,1669.95,True,2025-03-05,
-31168,Medieval Horse Knight Castle,2025,Creator,1371,6,129.99,1799.94,True,2025-05-02,
-40805,Arcade Machine,2025,Miscellaneous,468,1,39.99,1839.93,True,2025-07-03,
-10365,Captain Jack Sparrow's Pirate Ship,2025,Icons,2862,9,379.99,2219.92,True,2025-08-27,
-77256,Time Machine from Back to the Future,2026,Speed Champions,357,2,27.99,2247.91,True,2025-10-15,
-21363,The Goonies,2025,Ideas,2912,13,329.99,2577.90,True,2025-10-25,
-10356,Star Trek: U.S.S. Enterprise NCC-1701-D,2025,Icons,3600,9,399.99,2977.89,True,2025-11-07,
-71858,Four Weapons Blacksmith,2026,Ninjago,1259,6,99.99,3077.88,True,2025-11-07,
-60500,The LEGO Van,2026,City,276,2,29.99,3107.87,True,2025-12-03,
-11371,Shopping Street,2026,Icons,3456,7,249.99,3357.86,True,2025-12-05,
-60510,LEGO City Advent Calendar 2026,2026,City,252,,34.99,3392.85,True,2026-05-02,
-75456,LEGO Star Wars Advent Calendar 2026,2026,Star Wars,293,,44.99,3437.84,True,2026-05-02,
-77260,Fast & Furious Toyota Supra MK4,2026,Speed Champions,292,1,29.99,3467.83,True,2026-05-03,
-75459,Imperial Lambda-class Shuttle,2026,Star Wars,961,5,139.99,3607.82,True,2026-05-05,
-77263,BMW M3 (E30),2026,Speed Champions,358,1,29.99,3637.81,True,2026-05-23,
-21369,The X-Files,2026,Ideas,1478,8,199.99,3837.80,True,2026-07-22,
-11385,Star Trek: U.S.S. Enterprise NCC-1701 Bridge,2026,Icons,1701,8,199.99,4037.79,True,2026-07-24,
-11379,Bookshop: Book Nook,2026,Icons,1690,,149.99,4187.78,True,2026-09-07,
+Number,Name,Year,Theme,Pieces,Minifigs,US Retail Price,Running Total,Released,US Start Date,US End Date,Exit Date
+75397,Jabba's Sail Barge,2024,Star Wars,3942,11,499.99,499.99,True,2024-09-18,,2026-12-31
+76294,X-Men: The X-Mansion,2024,Marvel Super Heroes,3093,10,329.99,829.98,True,2024-10-18,2026-08-26,2026-12-31
+21353,The Botanical Garden,2024,Ideas,3792,12,329.99,1159.97,True,2024-10-23,,2026-12-31
+10350,Tudor Corner,2025,Icons,3266,8,229.99,1389.96,True,2024-12-04,,
+43263,Beauty and the Beast Castle,2025,Disney,2916,12,279.99,1669.95,True,2025-03-05,,2026-12-31
+31168,Medieval Horse Knight Castle,2025,Creator,1371,6,129.99,1799.94,True,2025-05-02,,
+40805,Arcade Machine,2025,Miscellaneous,468,1,39.99,1839.93,True,2025-07-03,,2026-12-31
+10365,Captain Jack Sparrow's Pirate Ship,2025,Icons,2862,9,379.99,2219.92,True,2025-08-27,,
+77256,Time Machine from Back to the Future,2026,Speed Champions,357,2,27.99,2247.91,True,2025-10-15,,
+21363,The Goonies,2025,Ideas,2912,13,329.99,2577.90,True,2025-10-25,,
+10356,Star Trek: U.S.S. Enterprise NCC-1701-D,2025,Icons,3600,9,399.99,2977.89,True,2025-11-07,,
+71858,Four Weapons Blacksmith,2026,Ninjago,1259,6,99.99,3077.88,True,2025-11-07,,
+60500,The LEGO Van,2026,City,276,2,29.99,3107.87,True,2025-12-03,,
+11371,Shopping Street,2026,Icons,3456,7,249.99,3357.86,True,2025-12-05,,
+60510,LEGO City Advent Calendar 2026,2026,City,252,,34.99,3392.85,True,2026-05-02,,
+75456,LEGO Star Wars Advent Calendar 2026,2026,Star Wars,293,,44.99,3437.84,True,2026-05-02,,
+77260,Fast & Furious Toyota Supra MK4,2026,Speed Champions,292,1,29.99,3467.83,True,2026-05-03,,
+75459,Imperial Lambda-class Shuttle,2026,Star Wars,961,5,139.99,3607.82,True,2026-05-05,,
+77263,BMW M3 (E30),2026,Speed Champions,358,1,29.99,3637.81,True,2026-05-23,,
+21369,The X-Files,2026,Ideas,1478,8,199.99,3837.80,True,2026-07-22,,
+11385,Star Trek: U.S.S. Enterprise NCC-1701 Bridge,2026,Icons,1701,8,199.99,4037.79,True,2026-07-24,,
+11379,Bookshop: Book Nook,2026,Icons,1690,,149.99,4187.78,True,2026-09-07,,

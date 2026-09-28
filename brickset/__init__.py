@@ -47,7 +47,7 @@ def header_dict(item_dict):
 # https://coderwall.com/p/nmu4bg/python-parameterize-equivalent-to-rails-parameterize
 def parameterize(string_to_clean, sep='-'):
   parameterized_string = unicodedata.normalize('NFKD', string_to_clean).encode('ASCII', 'ignore').decode()
-  parameterized_string = re.sub("[^a-zA-Z0-9\-_]+", sep, parameterized_string)
+  parameterized_string = re.sub("[^a-zA-Z0-9-_]+", sep, parameterized_string)
 
   if sep is not None and sep != '':
     parameterized_string = re.sub('/#{re_sep}{2,}', sep, parameterized_string)

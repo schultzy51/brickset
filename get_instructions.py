@@ -44,10 +44,10 @@ total_searches = len(searches)
 
 print('')
 
-for i, search in enumerate(searches):
-  set_id = search['prefixText']
+for i, search_result in enumerate(searches):
+  set_id = search_result['prefixText']
   print('Set {} ({} / {})'.format(set_id, i + 1, total_searches))
-  products = search['response']['products']
+  products = search_result['response']['products']
   for product in products:
     for instruction in product['buildingInstructions']:
       url = instruction['pdfLocation']
@@ -61,7 +61,7 @@ for i, search in enumerate(searches):
         sleep(DOWNLOAD_DELAY)
 
         # TODO: set user agent
-        r = requests.get(url)
+        r = requests.get(url, timeout=60)
         if r.status_code == 200:
           with open(instruction_filename, 'wb') as f:
             f.write(r.content)

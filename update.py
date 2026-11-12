@@ -23,6 +23,7 @@ WANTED_KEY_HEADER = OrderedDict([
   ('released', 'Released'),
   ('dateFirstAvailable', 'US Start Date'), # missing
   ('dateLastAvailable', 'US End Date'), # mising
+  ('launchDate', 'Launch Date'),
   ('exitDate', 'Exit Date')
 ])
 
@@ -114,7 +115,7 @@ def running_total(sets):
   for wset in sets:
     # running total
     if wset['released'] and 'dateFirstAvailable' in wset and 'retailPrice' in wset:
-      total = total + Decimal(wset['retailPrice'])
+      total = total + Decimal(str(wset['retailPrice']))
       wset['total'] = round(total, 2)
 
 
@@ -163,6 +164,9 @@ def merge_legocom_us(sets):
   today_string = today.strftime('%Y-%m-%d')
 
   for set in sets:
+    if 'launchDate' in set:
+      set['launchDate'] = format_date(set['launchDate'])
+
     if 'exitDate' in set:
       exit_date = datetime.fromisoformat(set['exitDate'].replace('Z', '+00:00'))
 
@@ -211,5 +215,6 @@ try:
   save_owned(brickset.owned(page_size=250, delay=1))
 
 except Exception as e:
-  import code; code.interact(local=dict(globals(), **locals()))
+  if os.environ.get('BRICKSET_DEBUG'):
+    import code; code.interact(local=dict(globals(), **locals()))
   sys.exit(e)

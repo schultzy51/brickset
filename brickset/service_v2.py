@@ -3,6 +3,8 @@ import requests
 from time import sleep
 
 class Brickset:
+  TIMEOUT = 30
+
   def  __init__(self, api_key, username, password, base_url='https://brickset.com/api/v3.asmx'):
     self._client = None
     self._api_key = api_key
@@ -15,7 +17,8 @@ class Brickset:
       self._base_url + '/checkKey',
       params={
         'apiKey': self._api_key
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     # Only the status matters and this will throw an exception if it fails
@@ -30,7 +33,8 @@ class Brickset:
         'apiKey': self._api_key,
         'username': self._username,
         'password': self._password
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -43,7 +47,8 @@ class Brickset:
       params={
         'apiKey': self._api_key,
         'userHash': user_hash
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     self.get_response(r)
@@ -55,7 +60,8 @@ class Brickset:
       self._base_url + '/getKeyUsageStats',
       params={
         'apiKey': self._api_key
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -77,7 +83,8 @@ class Brickset:
       self._base_url + '/getThemes',
       params={
         'apiKey': self._api_key
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -90,7 +97,8 @@ class Brickset:
       params={
         'apiKey': self._api_key,
         'Theme': theme
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -103,7 +111,8 @@ class Brickset:
       params={
         'apiKey': self._api_key,
         'Theme': theme
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -137,7 +146,7 @@ class Brickset:
       if action not in ['wanted', 'owned']:
         raise RuntimeError('ERROR: invalid action')
 
-      if token is None:
+      if not token:
         raise RuntimeError('ERROR: missing token')
 
       params.update({action: '1'})
@@ -157,7 +166,8 @@ class Brickset:
         'apiKey': self._api_key,
         'userHash': token,
         'params': json.dumps(self.sets_params(params))
-      }
+      },
+      timeout=self.TIMEOUT
     )
 
     response = self.get_response(r)
@@ -186,7 +196,12 @@ class Brickset:
 
   @staticmethod
   def get_response(response):
-    if response.status_code == 200 and response.json()['status'] == 'success':
-      return response.json()
-    else:
-      raise RuntimeError(response.json()['message'])
+    try:
+      body = response.json()
+    except ValueError:
+      raise RuntimeError('HTTP {}: {}'.format(response.status_code, response.text[:200]))
+
+    if response.status_code == 200 and body.get('status') == 'success':
+      return body
+
+    raise RuntimeError(body.get('message', 'HTTP {}'.format(response.status_code)))

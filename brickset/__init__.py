@@ -35,7 +35,7 @@ def read_jsonl(filename):
 
 
 def write_csv(filename, items, header_dict):
-  with open(filename, 'w') as f:
+  with open(filename, 'w', newline='') as f:
     dict_writer = csv.DictWriter(f, fieldnames=header_dict.keys(), extrasaction='ignore', lineterminator=os.linesep)
     dict_writer.writerow(header_dict)
     dict_writer.writerows(items)
@@ -50,8 +50,9 @@ def parameterize(string_to_clean, sep='-'):
   parameterized_string = re.sub("[^a-zA-Z0-9-_]+", sep, parameterized_string)
 
   if sep is not None and sep != '':
-    parameterized_string = re.sub('/#{re_sep}{2,}', sep, parameterized_string)
-    parameterized_string = re.sub('^#{re_sep}|#{re_sep}$', sep, parameterized_string, re.I)
+    re_sep = re.escape(sep)
+    parameterized_string = re.sub('{}{{2,}}'.format(re_sep), sep, parameterized_string)
+    parameterized_string = re.sub('^{0}|{0}$'.format(re_sep), '', parameterized_string)
 
   return parameterized_string.lower()
 
@@ -64,7 +65,7 @@ def search(set_id, options={}):
     'prefixText': set_id
   }
   payload.update(options)
-  r = requests.get('https://www.lego.com/service/biservice/search', params=payload)
+  r = requests.get('https://www.lego.com/service/biservice/search', params=payload, timeout=30)
 
   if r.status_code == 200:
     return json.loads(r.content)

@@ -4,6 +4,7 @@ jsonlines
 pyyaml
 requests
 simplejson
+slackbot
 slacker
 wget
 zeep

@@ -89,7 +89,7 @@ class Brickset:
 
     response = self.get_response(r)
 
-    return response
+    return response['themes']
 
   def subthemes(self, theme):
     r = requests.get(
@@ -103,7 +103,7 @@ class Brickset:
 
     response = self.get_response(r)
 
-    return response
+    return response['subthemes']
 
   def years(self, theme):
     r = requests.get(
@@ -117,7 +117,7 @@ class Brickset:
 
     response = self.get_response(r)
 
-    return response
+    return response['years']
 
   def sets(self, page_size=250, theme=None, order_by=None, action=None, delay=2, updated_since=None):
     items = []

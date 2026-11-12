@@ -1,7 +1,8 @@
 from slackbot.bot import respond_to
 from brickset import filter_keys
-from brickset.service import Brickset
+from brickset.service_v2 import Brickset
 from brickset.config import get_config
+from datetime import datetime, timedelta, timezone
 import re
 
 config = get_config(section='wanted')
@@ -10,7 +11,8 @@ config = get_config(section='wanted')
 def recent(message):
   brickset = Brickset(config['api_key'], config['username'], config['password'])
 
-  sets = brickset.recent(1440)
+  yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime('%Y-%m-%d')
+  sets = brickset.recent(yesterday)
   sets.reverse()
   sets = filter_keys(sets, config['output']['recent'])
 

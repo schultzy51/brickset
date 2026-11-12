@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from slacker import Slacker
 
 
@@ -13,41 +15,35 @@ class Slack:
 
     title = '{}'.format(set['theme'])
 
-    if set['subtheme']:
+    if set.get('subtheme'):
       title += ' > {}'.format(set['subtheme'])
 
     title += ' > {}-{}'.format(set['number'], set['numberVariant'])
 
-    if set['name']:
+    if set.get('name'):
       title += ': {}'.format(set['name'])
 
     fields = []
 
-    if set['year']:
+    if set.get('year'):
       fields.append({
         "title": "Year",
         "value": set['year'],
         "short": True
       })
 
-    if set['USRetailPrice']:
+    retail_price = set.get('LEGOCom', {}).get('US', {}).get('retailPrice')
+    if retail_price:
       fields.append({
         "title": "RRP",
-        "value": set['USRetailPrice'],
+        "value": retail_price,
         "short": True
       })
 
-    if set['pieces']:
+    if set.get('pieces'):
       fields.append({
         "title": "Pieces",
         "value": set['pieces'],
-        "short": True
-      })
-
-    if False:
-      fields.append({
-        "title": "Last Updated",
-        "value": '{}'.format(set['lastUpdated']),
         "short": True
       })
 
@@ -59,10 +55,13 @@ class Slack:
         "title": title,
         "title_link": set['bricksetURL'],
         "fields": fields,
-        "image_url": set['imageURL'],
-        "ts": set['lastUpdated'].timestamp()
+        "image_url": set.get('image', {}).get('imageURL'),
       }
     ]
+
+    if set.get('lastUpdated'):
+      last_updated = datetime.fromisoformat(set['lastUpdated'].replace('Z', '+00:00'))
+      attachments[0]['ts'] = last_updated.timestamp()
 
     self._client.chat.post_message(
       channel=self._channel,

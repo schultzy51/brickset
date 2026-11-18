@@ -1,6 +1,7 @@
-pandas
-numpy
 jsonlines
+numpy
+pandas
+playwright
 pyyaml
 requests
 simplejson

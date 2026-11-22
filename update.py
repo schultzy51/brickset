@@ -202,7 +202,7 @@ def format_date(date):
 
 try:
   # setup
-  config = get_config(section='wanted_api3')
+  config = get_config(section='wanted')
   brickset = Brickset(config['api_key'], config['username'], config['password'])
   os.makedirs('lists', exist_ok=True)
 

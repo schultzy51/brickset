@@ -4,6 +4,7 @@
 
 ```
 pip3 install -r requirements.txt
+playwright install chromium   # only needed if Google Chrome isn't installed (used by compare.py)
 ```
 
 ## Scripts
@@ -44,6 +45,15 @@ Slackbot for recent sets
 ```
 SLACKBOT_API_TOKEN=#### ./slackbot_run.py
 ```
+
+Find the best current price for one set (LEGO.com, Walmart, Best Buy, Target, eBay new Buy It Now)
+```
+./compare.py 43263            # table of offers sorted by total, vs. list price
+./compare.py 43263 --show     # visible browser window, if a store shows a bot check
+./compare.py 43263 -s lego,ebay -o   # only some stores; open the best in-stock offer
+```
+Stores change their pages often; a store that breaks is reported as failed/blocked and the rest still run.
+Amazon isn't scraped (its terms prohibit automated access), so it's printed as a link.
 
 Back up instruction manuals for owned sets
 ```

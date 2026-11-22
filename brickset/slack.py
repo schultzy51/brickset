@@ -1,11 +1,11 @@
 from datetime import datetime
 
-from slacker import Slacker
+from slack_sdk import WebClient
 
 
 class Slack:
   def __init__(self, api_key, channel, username):
-    self._client = Slacker(api_key)
+    self._client = WebClient(token=api_key)
     self._channel = channel
     self._username = username
 
@@ -64,10 +64,15 @@ class Slack:
       last_updated = datetime.fromisoformat(set['lastUpdated'].replace('Z', '+00:00'))
       attachments[0]['ts'] = last_updated.timestamp()
 
-    self._client.chat.post_message(
+    kwargs = {}
+    if self._username:
+      # needs the chat:write.customize scope
+      kwargs['username'] = self._username
+
+    self._client.chat_postMessage(
       channel=self._channel,
-      username=self._username,
-      as_user=True,
+      text=title,
       unfurl_links=False,
-      attachments=attachments
+      attachments=attachments,
+      **kwargs
     )

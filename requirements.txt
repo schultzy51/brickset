@@ -6,5 +6,5 @@ pyyaml
 requests
 simplejson
 slackbot
-slacker
+slack_sdk
 wget

@@ -126,7 +126,7 @@ try:
         sleep(5)
 
   if args.slack:
-    slack = Slack(config['slack_api_token'], config['slack_channel'], config['slack_username'])
+    slack = Slack(config['slack_api_token'], config['slack_channel'], config.get('slack_username'))
     for rset in sets:
       slack.post_set(rset, highlight=rset['setID'] in highlighted)
 

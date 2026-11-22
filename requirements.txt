@@ -7,4 +7,3 @@ simplejson
 slackbot
 slacker
 wget
-zeep

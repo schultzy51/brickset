@@ -3,15 +3,15 @@
 import argparse
 import simplejson as json
 import sys
+from datetime import datetime, timedelta, timezone
 
 from brickset import filter_keys, json_serial
-from brickset.service import Brickset
+from brickset.service_v2 import Brickset
 from brickset.config import get_config
 
 parser = argparse.ArgumentParser(description='Brickset Tooling', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('command', help='Command to execute')
-parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', type=int, default=10080, help='Recent minutes ago')
-parser.add_argument('-ms', '--minutes-ago-stop', action='store', dest='minutes_ago_stop', type=int, default=0, help='Recent minutes ago stop')
+parser.add_argument('-m', '--minutes-ago', action='store', dest='minutes_ago', type=int, default=10080, help='Recent minutes ago (rounded down to the day)')
 parser.add_argument('-d', '--delay', action='store', dest='delay', type=int, default=2, help='Delay between api calls in seconds')
 parser.add_argument('-t', '--theme', action='store', dest='theme', help='Theme')
 parser.add_argument('-s', '--section', action='store', dest='section', default='default', help='Section')
@@ -25,7 +25,8 @@ try:
   brickset = Brickset(config['api_key'], config['username'], config['password'])
 
   if args.command == 'recent':
-    sets = brickset.recent(args.minutes_ago)
+    updated_since = (datetime.now(timezone.utc) - timedelta(minutes=args.minutes_ago)).strftime('%Y-%m-%d')
+    sets = brickset.recent(updated_since)
 
     sets.reverse()
     sets = filter_keys(sets, config['output']['recent'])

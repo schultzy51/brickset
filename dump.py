@@ -5,19 +5,20 @@ from time import sleep
 import os
 
 from brickset import write_jsonl, parameterize
-from brickset.service import Brickset
+from brickset.service_v2 import Brickset
 from brickset.config import get_config
 
 DELAY = 1
-PAGE_SIZE = 100
+PAGE_SIZE = 500
 
 config = get_config()
 brickset = Brickset(config['api_key'], config['username'], config['password'])
 
-errors = []
 start = datetime.now()
 
 themes = brickset.themes()
+
+os.makedirs('data', exist_ok=True)
 
 filename = os.path.join('data', 'themes.jsonl')
 write_jsonl(filename, themes)
@@ -52,6 +53,3 @@ for theme in themes:
 
 filename = os.path.join('data', '0000_timestamp.jsonl')
 write_jsonl(filename, [{'start': start, 'end': datetime.now()}])
-
-filename = os.path.join('data', 'errors.jsonl')
-write_jsonl(filename, errors)

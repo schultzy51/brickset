@@ -9,11 +9,13 @@ class Slack:
     self._channel = channel
     self._username = username
 
-  def post_set(self, set):
+  def post_set(self, set, highlight=False):
     # TODO: build title (subtheme optional)
     # title = '{} > {} > {}-{}: {}'.format(set['theme'], set['subtheme'], set['number'], set['numberVariant'], set['name'])
 
     title = '{}'.format(set['theme'])
+    if highlight:
+      title = ':star: ' + title
 
     if set.get('subtheme'):
       title += ' > {}'.format(set['subtheme'])
@@ -50,8 +52,7 @@ class Slack:
     attachments = [
       {
         "fallback": title,
-        # TODO: change color if wanted or owned
-        "color": "#36a64f",
+        "color": "#e8912d" if highlight else "#36a64f",
         "title": title,
         "title_link": set['bricksetURL'],
         "fields": fields,
